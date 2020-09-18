@@ -423,7 +423,7 @@
 </script>
 </div>
 
-<div id="UcHeaderOpener_1" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="656" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls/ucHeaderOpener.usercontrol" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="707" data-tchmi-width-unit="px" data-tchmi-state="%i%stateVideoDataGrid%/i%" data-tchmi-title="Help video">
+<div id="UcHeaderOpener_1" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="656" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls/ucHeaderOpener.usercontrol" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="707" data-tchmi-width-unit="px" data-tchmi-state="%i%stateVideoDataGrid%/i%" data-tchmi-title="Help video" data-tchmi-tooltip="Use Chrome to see this video">
 
 </div>
 
