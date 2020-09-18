@@ -91,7 +91,18 @@
     "editable": false,
     "horizontalAlignment": "Center",
     "verticalAlignment": "Center",
-    "format": null
+    "format": {
+      "objectType": "Function",
+      "active": true,
+      "fn": "TcHmi.Functions.Beckhoff.GaugeValueFormatter",
+      "fnParams": [
+        {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:general#/definitions/Number",
+          "value": 2.0
+        }
+      ]
+    }
   },
   {
     "name": "Maximun",
@@ -108,7 +119,18 @@
     "editable": false,
     "horizontalAlignment": "Center",
     "verticalAlignment": "Center",
-    "format": null
+    "format": {
+      "objectType": "Function",
+      "active": true,
+      "fn": "TcHmi.Functions.Beckhoff.GaugeValueFormatter",
+      "fnParams": [
+        {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:general#/definitions/Number",
+          "value": 2.0
+        }
+      ]
+    }
   }
 ]
 </script>
@@ -204,125 +226,88 @@
                   "objectType": "FunctionExpression",
                   "functionExpression": "%s%PLC1.Parameters.aParameters%/s%[%i%RowIndex%/i%].Maximun"
                 },
-                "compareOperator": ">",
+                "compareOperator": "<=",
                 "logic": null
+              },
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%i%testvalue%/i%"
+                },
+                "compare2": {
+                  "objectType": "FunctionExpression",
+                  "functionExpression": "%s%PLC1.Parameters.aParameters%/s%[%i%RowIndex%/i%].Minimun"
+                },
+                "compareOperator": ">=",
+                "logic": "AND"
               }
             ],
             "then": [
               {
-                "objectType": "JavaScript",
+                "objectType": "Function",
                 "active": true,
-                "sourceLines": [
-                  "//alert('massimo');"
-                ],
-                "injectContextObject": false,
-                "asyncWait": true,
-                "waitMode": "Synchronous"
-              }
-            ]
-          },
-          {
-            "else": [
-              {
-                "objectType": "Condition",
-                "active": true,
-                "parts": [
+                "fn": "SetStructElementByIndex",
+                "fnParams": [
                   {
-                    "if": [
-                      {
-                        "compare1": {
-                          "objectType": "Symbol",
-                          "valueType": "tchmi:general#/definitions/String",
-                          "symbolExpression": "%i%testvalue%/i%"
-                        },
-                        "compare2": {
-                          "objectType": "FunctionExpression",
-                          "functionExpression": "%s%PLC1.Parameters.aParameters%/s%[%i%RowIndex%/i%].Minimun"
-                        },
-                        "compareOperator": "<",
-                        "logic": null
-                      }
-                    ],
-                    "then": [
-                      {
-                        "objectType": "JavaScript",
-                        "active": true,
-                        "sourceLines": [
-                          "//alert('minimo');"
-                        ],
-                        "injectContextObject": false,
-                        "asyncWait": true,
-                        "waitMode": "Synchronous"
-                      }
-                    ]
+                    "objectType": "FunctionExpression",
+                    "functionExpression": "'%s%PLC1.Parameters.aParameters%/s%'"
                   },
                   {
-                    "else": [
-                      {
-                        "objectType": "Function",
-                        "active": true,
-                        "fn": "SetStructElementByIndex",
-                        "fnParams": [
-                          {
-                            "objectType": "FunctionExpression",
-                            "functionExpression": "'%s%PLC1.Parameters.aParameters%/s%'"
-                          },
-                          {
-                            "objectType": "StaticValue",
-                            "valueType": "tchmi:general#/definitions/String",
-                            "value": "Value"
-                          },
-                          {
-                            "objectType": "Symbol",
-                            "valueType": "tchmi:general#/definitions/String",
-                            "symbolExpression": "%i%RowIndex%/i%"
-                          },
-                          {
-                            "objectType": "Symbol",
-                            "valueType": "tchmi:general#/definitions/String",
-                            "symbolExpression": "%i%testvalue%/i%"
-                          }
-                        ],
-                        "asyncWait": true
-                      },
-                      {
-                        "objectType": "Function",
-                        "active": true,
-                        "fn": "SetStructElementByIndex",
-                        "fnParams": [
-                          {
-                            "objectType": "FunctionExpression",
-                            "functionExpression": "'%s%PLC1.Parameters.aParameters%/s%'"
-                          },
-                          {
-                            "objectType": "StaticValue",
-                            "valueType": "tchmi:general#/definitions/String",
-                            "value": "StoredValue"
-                          },
-                          {
-                            "objectType": "Symbol",
-                            "valueType": "tchmi:general#/definitions/String",
-                            "symbolExpression": "%i%RowIndex%/i%"
-                          },
-                          {
-                            "objectType": "Symbol",
-                            "valueType": "tchmi:general#/definitions/String",
-                            "symbolExpression": "%i%testvalue%/i%"
-                          }
-                        ],
-                        "asyncWait": true
-                      }
-                    ]
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "value": "Value"
+                  },
+                  {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "symbolExpression": "%i%RowIndex%/i%"
+                  },
+                  {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "symbolExpression": "%i%testvalue%/i%"
+                  }
+                ],
+                "asyncWait": true
+              },
+              {
+                "objectType": "Function",
+                "active": true,
+                "fn": "SetStructElementByIndex",
+                "fnParams": [
+                  {
+                    "objectType": "FunctionExpression",
+                    "functionExpression": "'%s%PLC1.Parameters.aParameters%/s%'"
+                  },
+                  {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "value": "StoredValue"
+                  },
+                  {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "symbolExpression": "%i%RowIndex%/i%"
+                  },
+                  {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "symbolExpression": "%i%testvalue%/i%"
                   }
                 ],
                 "asyncWait": true
               }
             ]
+          },
+          {
+            "else": []
           }
         ],
         "asyncWait": true
       }
-    ]
+    ],
+    "displayName": "Range checking"
   }
 ]
 </script>

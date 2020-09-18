@@ -12,17 +12,17 @@
     var ExampleClassesProvider = function ExampleClassesProvider(rowData, rowIndex, rowNumber) {
         var classes = [];
 
-        var value = Number(rowData.Value);
+        var value = Number(rowData.Value);  //casting to number
 
-        if (isNaN(value)) {
-            classes.push('isNaN');
+        if (isNaN(value)) {         //if it is not a number
+            classes.push('isNaN');  //use the class 'isNan' of ExampleStyle.css file
         } else {
-            if (rowData.Value > rowData.Maximun) {
-                classes.push('max-input');
+            if (rowData.Value > rowData.Maximun) {  //if greater than max  
+                classes.push('max-input');          //use the class 'max-input' of ExampleStyle.css file
             }
 
-            if (rowData.Value < rowData.Minimun) {
-                classes.push('min-input');
+            if (rowData.Value < rowData.Minimun) {  //if lower than max 
+                classes.push('min-input');          //use the class 'min-input' of ExampleStyle.css file
             }
         }
 

@@ -3,6 +3,7 @@
   <GVL Name="Parameters" Id="{29f0d58c-14cb-49f4-9e0b-3c230de6166c}">
     <Declaration><![CDATA[{attribute 'qualified_only'}
 VAR_GLOBAL
+	//Lista of single structure variables
 	rParameter01 : Parameter;
 	rParameter02 : Parameter;
 	rParameter03 : Parameter;
@@ -12,6 +13,7 @@ VAR_GLOBAL
 	rParameter07 : Parameter;
 	rParameter08 : Parameter;
 	
+	//Array of structure
 	aParameters : ARRAY [0..9] OF Parameter;
 END_VAR]]></Declaration>
   </GVL>

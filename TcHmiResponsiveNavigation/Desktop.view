@@ -795,7 +795,7 @@
 
 </div>
 
-<div id="NumPadKeyboard_1" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="300" data-tchmi-height-unit="px" data-tchmi-left="600" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-width="250" data-tchmi-width-unit="px" data-tchmi-top="0" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-zindex="1000" data-tchmi-creator-visibility="Visible">
+<div id="NumPadKeyboard_1" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="300" data-tchmi-height-unit="px" data-tchmi-left="600" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-width="250" data-tchmi-width-unit="px" data-tchmi-top="-500" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-zindex="1000" data-tchmi-creator-visibility="Visible">
 
 <div id="TcHmiKeyboard_2" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiKeyboard" data-tchmi-height="250" data-tchmi-height-unit="px" data-tchmi-label-font-size="14" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-scale-mode="ScaleToFit" data-tchmi-top="0" data-tchmi-top-unit="%" data-tchmi-width="790" data-tchmi-width-unit="px" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-layout-file="KeyboardLayouts/Calculator.keyboard.json">
 <script data-tchmi-target-attribute="data-tchmi-keyboard-padding" type="application/json">
