@@ -1,0 +1,24 @@
+{
+    "USERS": {
+        "Fabrizio": {
+            "ENABLED": true,
+            "PASSWORD": "e156b9cc0e42ade4c12f632d72d309174f1cbcff3388c8b24298cb24770bb39c",
+            "SALT": "cUzox29SZPI2WEjTxu8/E77VxEdjDMvizzJbUE0T7+bJSaTKS1fI7AVKdvbjhzliM+2zIbMZEESEd/3BSclXAA=="
+        },
+        "JohnDoe": {
+            "ENABLED": true,
+            "PASSWORD": "724dd88a5fa3bb387e3b2ca45725b958f5588bb959c172fe0d3a503e369b48b8",
+            "SALT": "bl1bE07Zn//nrpWgH6IbAOnc+rz/W+QTKDFea8npNuIdPsL3Pd9OsscTwnYf8ZaRXcAAffNDUfA3JeSebusAAA=="
+        },
+        "__SystemAdministrator": {
+            "ENABLED": false,
+            "PASSWORD": "",
+            "SALT": ""
+        },
+        "__SystemGuest": {
+            "ENABLED": true,
+            "PASSWORD": "",
+            "SALT": ""
+        }
+    }
+}

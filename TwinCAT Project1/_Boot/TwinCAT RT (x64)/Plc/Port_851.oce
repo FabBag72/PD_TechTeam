@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<TcEventSources Version="2">
+	<Source>
+		<GUID>{F33B7717-7061-454A-A302-A0FC35FD98A6}</GUID>
+		<Name LcId="1040">Eventi macchina</Name>
+		<Name LcId="1033">MachineEvents</Name>
+		<Event>
+			<Id>1</Id>
+			<Message LcId="1040">Processo iniziato</Message>
+			<Message LcId="1033">Process started</Message>
+		</Event>
+		<Event>
+			<Id>2</Id>
+			<Message LcId="1040">Processo finito</Message>
+			<Message LcId="1033">Process stopped</Message>
+		</Event>
+	</Source>
+</TcEventSources>

@@ -1,0 +1,23 @@
+﻿{
+  "$schema": "../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.742.0/runtimes/native1.12-tchmi/Schema/LocalizationDescription.Schema.json",
+  "locale": "en-US",
+  "localizedText": {
+    "Text1": "Hello World!",
+    "Text2": "I'm a localized text.",
+    "English": "English",
+    "German": "German",
+    "Italian": "Italian",
+    "Description": "Description",
+    "Value": "Value",
+    "Minimun": "Minimun",
+    "Maximun": "Maximun",
+    "L_SendMessage": "Send Message",
+    "L_RaiseAlarm": "Raise Alarm",
+    "L_ClearAlarm": "Clear alarm",
+    "L_Active": "Active Alarms",
+    "L_AllEvents": "All Events",
+    "L_Language": "Language",
+    "L_NewKey": "AABB",
+    "L_StoredValue": "Stored Value"
+  }
+}

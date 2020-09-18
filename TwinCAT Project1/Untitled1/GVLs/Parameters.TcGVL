@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.4">
+  <GVL Name="Parameters" Id="{29f0d58c-14cb-49f4-9e0b-3c230de6166c}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+VAR_GLOBAL
+	rParameter01 : Parameter;
+	rParameter02 : Parameter;
+	rParameter03 : Parameter;
+	rParameter04 : Parameter;
+	rParameter05 : Parameter;
+	rParameter06 : Parameter;
+	rParameter07 : Parameter;
+	rParameter08 : Parameter;
+	
+	aParameters : ARRAY [0..9] OF Parameter;
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>

@@ -1,0 +1,51 @@
+﻿{
+  "controlTypeValues": {},
+  "controlClassValues": {
+    "Input_Background": {
+      "attributes": {
+        "BackgroundColor": {
+          "color": "rgba(0, 255, 0, 1)"
+        }
+      },
+      "themedResources": {}
+    },
+    "Max_Background": {
+      "attributes": {
+        "BackgroundColor": {
+          "color": "rgba(255, 0, 0, 1)"
+        }
+      },
+      "themedResources": {}
+    },
+    "Min_Background": {
+      "attributes": {
+        "BackgroundColor": {
+          "color": "rgba(0, 0, 255, 1)"
+        }
+      },
+      "themedResources": {}
+    },
+    "MyClass": {
+      "attributes": {},
+      "themedResources": {}
+    },
+    "Old_Background": {
+      "attributes": {
+        "BackgroundColor": {
+          "color": "rgba(239, 234, 234, 1)"
+        }
+      },
+      "themedResources": {}
+    },
+    "SetTab": {
+      "attributes": {
+        "BackgroundColor": {
+          "color": "rgba(244, 0, 255, 1)"
+        },
+        "TextFontStyle": "Italic"
+      },
+      "themedResources": {}
+    }
+  },
+  "$schema": "../../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.742.0/runtimes/native1.12-tchmi/Schema/ThemeDescription.Schema.json"
+}

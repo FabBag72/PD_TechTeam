@@ -1,0 +1,2274 @@
+{
+  "useIndirectInput": false,
+  "hasNumPad": true,
+  "displayName": "Italian",
+  "localeName": "it-IT",
+  "layouts": [
+    {
+      "dimensions": {
+        "width": 1370.0,
+        "height": 290.0
+      },
+      "name": "default",
+      "keys": [
+        {
+          "geometry": {
+            "left": 56.93,
+            "top": 0.0,
+            "width": 8.03,
+            "height": 17.24
+          },
+          "type": "edit",
+          "code": "Backspace",
+          "key": "Backspace",
+          "longpressAction": "repeat",
+          "labels": [
+            {
+              "type": "svg",
+              "svg": {
+                "dimensions": {
+                  "width": 22.0,
+                  "height": 14.0
+                },
+                "path": "M 0.5 7 L 7 0.5 L 21.5 0.5 L 21.5 13.5 L 7 13.5 Z M 10 3 L 18 11 M 10 11 L 18 3"
+              }
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 60.22,
+            "top": 20.69,
+            "width": 4.74,
+            "height": 37.93
+          },
+          "code": "Enter",
+          "key": "Enter",
+          "labels": [
+            {
+              "type": "svg",
+              "svg": {
+                "dimensions": {
+                  "width": 22.0,
+                  "height": 14.0
+                },
+                "path": "M 21.5 8.5 L 21.5 0.5 L 21.5 8.5 L 5.5 8.5 M 5.5 3.5 L 0.5 8.5 L 5.5 13.5"
+              }
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 53.65,
+            "top": 62.07,
+            "width": 11.31,
+            "height": 17.24
+          },
+          "type": "modifier",
+          "code": "ShiftRight",
+          "key": "Shift",
+          "mode": "sticky",
+          "location": "right",
+          "labels": [
+            {
+              "type": "svg",
+              "svg": {
+                "dimensions": {
+                  "width": 14.0,
+                  "height": 14.0
+                },
+                "path": "M 3.5 13.5 L 3.5 6.5 L 0.5 6.5 L 7 0.5 L 13.5 6.5 L 10.5 6.5 L 10.5 13.5 Z"
+              }
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 0.0,
+            "top": 82.76,
+            "width": 4.74,
+            "height": 17.24
+          },
+          "type": "modifier",
+          "code": "ControlLeft",
+          "key": "Control",
+          "mode": "sticky",
+          "location": "left",
+          "labels": [
+            {
+              "type": "text",
+              "text": "Ctrl"
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 10.95,
+            "top": 82.76,
+            "width": 4.74,
+            "height": 17.24
+          },
+          "type": "modifier",
+          "code": "AltLeft",
+          "key": "Alt",
+          "mode": "sticky",
+          "location": "left",
+          "labels": [
+            {
+              "type": "text",
+              "text": "Alt"
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 0.0,
+            "top": 41.38,
+            "width": 6.93,
+            "height": 17.24
+          },
+          "type": "modifier",
+          "code": "CapsLock",
+          "key": "CapsLock",
+          "mode": "toggle",
+          "labels": [
+            {
+              "type": "svg",
+              "svg": {
+                "dimensions": {
+                  "width": 14.0,
+                  "height": 14.0
+                },
+                "path": "M 3.5 0.5 L 3.5 7.5 L 0.5 7.5 L 7 13.5 L 13.5 7.5 L 10.5 7.5 L 10.5 0.5 Z"
+              }
+            }
+          ]
+        },
+        {
+          "ignoreModifiers": true,
+          "geometry": {
+            "left": 16.42,
+            "top": 82.76,
+            "width": 26.64,
+            "height": 17.24
+          },
+          "code": "Space",
+          "key": " ",
+          "labels": [
+            {
+              "type": "text",
+              "text": " "
+            }
+          ]
+        },
+        {
+          "shiftKey": "=",
+          "noCapsLock": true,
+          "geometry": {
+            "left": 43.8,
+            "top": 0.0,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "code": "Digit0",
+          "key": "0",
+          "labels": [
+            {
+              "type": "text",
+              "visible": [
+                "default"
+              ],
+              "text": "0"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "shift"
+              ],
+              "text": "="
+            }
+          ]
+        },
+        {
+          "shiftKey": "!",
+          "noCapsLock": true,
+          "geometry": {
+            "left": 4.38,
+            "top": 0.0,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "code": "Digit1",
+          "key": "1",
+          "labels": [
+            {
+              "type": "text",
+              "visible": [
+                "default"
+              ],
+              "text": "1"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "shift"
+              ],
+              "text": "!"
+            }
+          ]
+        },
+        {
+          "shiftKey": "\"",
+          "noCapsLock": true,
+          "geometry": {
+            "left": 8.76,
+            "top": 0.0,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "code": "Digit2",
+          "key": "2",
+          "labels": [
+            {
+              "type": "text",
+              "visible": [
+                "default"
+              ],
+              "text": "2"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "shift"
+              ],
+              "text": "\""
+            }
+          ]
+        },
+        {
+          "shiftKey": "£",
+          "noCapsLock": true,
+          "geometry": {
+            "left": 13.14,
+            "top": 0.0,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "code": "Digit3",
+          "key": "3",
+          "labels": [
+            {
+              "type": "text",
+              "visible": [
+                "default"
+              ],
+              "text": "3"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "shift"
+              ],
+              "text": "£"
+            }
+          ]
+        },
+        {
+          "shiftKey": "$",
+          "noCapsLock": true,
+          "geometry": {
+            "left": 17.52,
+            "top": 0.0,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "code": "Digit4",
+          "key": "4",
+          "labels": [
+            {
+              "type": "text",
+              "visible": [
+                "default"
+              ],
+              "text": "4"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "shift"
+              ],
+              "text": "$"
+            }
+          ]
+        },
+        {
+          "shiftKey": "%",
+          "ctrlAltKey": "€",
+          "noCapsLock": true,
+          "geometry": {
+            "left": 21.9,
+            "top": 0.0,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "code": "Digit5",
+          "key": "5",
+          "labels": [
+            {
+              "type": "text",
+              "visible": [
+                "default"
+              ],
+              "text": "5"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "shift"
+              ],
+              "text": "%"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "altgr"
+              ],
+              "text": "€"
+            }
+          ]
+        },
+        {
+          "shiftKey": "&",
+          "noCapsLock": true,
+          "geometry": {
+            "left": 26.28,
+            "top": 0.0,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "code": "Digit6",
+          "key": "6",
+          "labels": [
+            {
+              "type": "text",
+              "visible": [
+                "default"
+              ],
+              "text": "6"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "shift"
+              ],
+              "text": "&"
+            }
+          ]
+        },
+        {
+          "shiftKey": "/",
+          "noCapsLock": true,
+          "geometry": {
+            "left": 30.66,
+            "top": 0.0,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "code": "Digit7",
+          "key": "7",
+          "labels": [
+            {
+              "type": "text",
+              "visible": [
+                "default"
+              ],
+              "text": "7"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "shift"
+              ],
+              "text": "/"
+            }
+          ]
+        },
+        {
+          "shiftKey": "(",
+          "noCapsLock": true,
+          "geometry": {
+            "left": 35.04,
+            "top": 0.0,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "code": "Digit8",
+          "key": "8",
+          "labels": [
+            {
+              "type": "text",
+              "visible": [
+                "default"
+              ],
+              "text": "8"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "shift"
+              ],
+              "text": "("
+            }
+          ]
+        },
+        {
+          "shiftKey": ")",
+          "noCapsLock": true,
+          "geometry": {
+            "left": 39.42,
+            "top": 0.0,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "code": "Digit9",
+          "key": "9",
+          "labels": [
+            {
+              "type": "text",
+              "visible": [
+                "default"
+              ],
+              "text": "9"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "shift"
+              ],
+              "text": ")"
+            }
+          ]
+        },
+        {
+          "shiftKey": "A",
+          "geometry": {
+            "left": 7.66,
+            "top": 41.38,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "code": "KeyA",
+          "key": "a",
+          "labels": [
+            {
+              "type": "text",
+              "visible": [
+                "default"
+              ],
+              "text": "a"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "shift"
+              ],
+              "text": "A"
+            }
+          ]
+        },
+        {
+          "shiftKey": "B",
+          "geometry": {
+            "left": 27.37,
+            "top": 62.07,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "code": "KeyB",
+          "key": "b",
+          "labels": [
+            {
+              "type": "text",
+              "visible": [
+                "default"
+              ],
+              "text": "b"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "shift"
+              ],
+              "text": "B"
+            }
+          ]
+        },
+        {
+          "shiftKey": "C",
+          "geometry": {
+            "left": 18.61,
+            "top": 62.07,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "code": "KeyC",
+          "key": "c",
+          "labels": [
+            {
+              "type": "text",
+              "visible": [
+                "default"
+              ],
+              "text": "c"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "shift"
+              ],
+              "text": "C"
+            }
+          ]
+        },
+        {
+          "shiftKey": "D",
+          "geometry": {
+            "left": 16.42,
+            "top": 41.38,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "code": "KeyD",
+          "key": "d",
+          "labels": [
+            {
+              "type": "text",
+              "visible": [
+                "default"
+              ],
+              "text": "d"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "shift"
+              ],
+              "text": "D"
+            }
+          ]
+        },
+        {
+          "shiftKey": "E",
+          "ctrlAltKey": "€",
+          "capsLock": {
+            "ctrlAltKey": "€",
+            "shiftCtrlAltKey": ""
+          },
+          "geometry": {
+            "left": 15.33,
+            "top": 20.69,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "code": "KeyE",
+          "key": "e",
+          "labels": [
+            {
+              "type": "text",
+              "visible": [
+                "default"
+              ],
+              "text": "e"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "shift"
+              ],
+              "text": "E"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "altgr"
+              ],
+              "hidden": [
+                "capslockshiftaltgr"
+              ],
+              "text": "€"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "capslockaltgr"
+              ],
+              "text": "€"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "capslockshiftaltgr"
+              ],
+              "text": ""
+            }
+          ]
+        },
+        {
+          "shiftKey": "F",
+          "geometry": {
+            "left": 20.8,
+            "top": 41.38,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "code": "KeyF",
+          "key": "f",
+          "labels": [
+            {
+              "type": "text",
+              "visible": [
+                "default"
+              ],
+              "text": "f"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "shift"
+              ],
+              "text": "F"
+            }
+          ]
+        },
+        {
+          "shiftKey": "G",
+          "geometry": {
+            "left": 25.18,
+            "top": 41.38,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "code": "KeyG",
+          "key": "g",
+          "labels": [
+            {
+              "type": "text",
+              "visible": [
+                "default"
+              ],
+              "text": "g"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "shift"
+              ],
+              "text": "G"
+            }
+          ]
+        },
+        {
+          "shiftKey": "H",
+          "geometry": {
+            "left": 29.56,
+            "top": 41.38,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "code": "KeyH",
+          "key": "h",
+          "labels": [
+            {
+              "type": "text",
+              "visible": [
+                "default"
+              ],
+              "text": "h"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "shift"
+              ],
+              "text": "H"
+            }
+          ]
+        },
+        {
+          "shiftKey": "I",
+          "geometry": {
+            "left": 37.23,
+            "top": 20.69,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "code": "KeyI",
+          "key": "i",
+          "labels": [
+            {
+              "type": "text",
+              "visible": [
+                "default"
+              ],
+              "text": "i"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "shift"
+              ],
+              "text": "I"
+            }
+          ]
+        },
+        {
+          "shiftKey": "J",
+          "geometry": {
+            "left": 33.94,
+            "top": 41.38,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "code": "KeyJ",
+          "key": "j",
+          "labels": [
+            {
+              "type": "text",
+              "visible": [
+                "default"
+              ],
+              "text": "j"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "shift"
+              ],
+              "text": "J"
+            }
+          ]
+        },
+        {
+          "shiftKey": "K",
+          "geometry": {
+            "left": 38.32,
+            "top": 41.38,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "code": "KeyK",
+          "key": "k",
+          "labels": [
+            {
+              "type": "text",
+              "visible": [
+                "default"
+              ],
+              "text": "k"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "shift"
+              ],
+              "text": "K"
+            }
+          ]
+        },
+        {
+          "shiftKey": "L",
+          "geometry": {
+            "left": 42.7,
+            "top": 41.38,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "code": "KeyL",
+          "key": "l",
+          "labels": [
+            {
+              "type": "text",
+              "visible": [
+                "default"
+              ],
+              "text": "l"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "shift"
+              ],
+              "text": "L"
+            }
+          ]
+        },
+        {
+          "shiftKey": "M",
+          "geometry": {
+            "left": 36.13,
+            "top": 62.07,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "code": "KeyM",
+          "key": "m",
+          "labels": [
+            {
+              "type": "text",
+              "visible": [
+                "default"
+              ],
+              "text": "m"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "shift"
+              ],
+              "text": "M"
+            }
+          ]
+        },
+        {
+          "shiftKey": "N",
+          "geometry": {
+            "left": 31.75,
+            "top": 62.07,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "code": "KeyN",
+          "key": "n",
+          "labels": [
+            {
+              "type": "text",
+              "visible": [
+                "default"
+              ],
+              "text": "n"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "shift"
+              ],
+              "text": "N"
+            }
+          ]
+        },
+        {
+          "shiftKey": "O",
+          "geometry": {
+            "left": 41.61,
+            "top": 20.69,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "code": "KeyO",
+          "key": "o",
+          "labels": [
+            {
+              "type": "text",
+              "visible": [
+                "default"
+              ],
+              "text": "o"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "shift"
+              ],
+              "text": "O"
+            }
+          ]
+        },
+        {
+          "shiftKey": "P",
+          "geometry": {
+            "left": 45.99,
+            "top": 20.69,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "code": "KeyP",
+          "key": "p",
+          "labels": [
+            {
+              "type": "text",
+              "visible": [
+                "default"
+              ],
+              "text": "p"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "shift"
+              ],
+              "text": "P"
+            }
+          ]
+        },
+        {
+          "shiftKey": "Q",
+          "geometry": {
+            "left": 6.57,
+            "top": 20.69,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "code": "KeyQ",
+          "key": "q",
+          "labels": [
+            {
+              "type": "text",
+              "visible": [
+                "default"
+              ],
+              "text": "q"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "shift"
+              ],
+              "text": "Q"
+            }
+          ]
+        },
+        {
+          "shiftKey": "R",
+          "geometry": {
+            "left": 19.71,
+            "top": 20.69,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "code": "KeyR",
+          "key": "r",
+          "labels": [
+            {
+              "type": "text",
+              "visible": [
+                "default"
+              ],
+              "text": "r"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "shift"
+              ],
+              "text": "R"
+            }
+          ]
+        },
+        {
+          "shiftKey": "S",
+          "geometry": {
+            "left": 12.04,
+            "top": 41.38,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "code": "KeyS",
+          "key": "s",
+          "labels": [
+            {
+              "type": "text",
+              "visible": [
+                "default"
+              ],
+              "text": "s"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "shift"
+              ],
+              "text": "S"
+            }
+          ]
+        },
+        {
+          "shiftKey": "T",
+          "geometry": {
+            "left": 24.09,
+            "top": 20.69,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "code": "KeyT",
+          "key": "t",
+          "labels": [
+            {
+              "type": "text",
+              "visible": [
+                "default"
+              ],
+              "text": "t"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "shift"
+              ],
+              "text": "T"
+            }
+          ]
+        },
+        {
+          "shiftKey": "U",
+          "geometry": {
+            "left": 32.85,
+            "top": 20.69,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "code": "KeyU",
+          "key": "u",
+          "labels": [
+            {
+              "type": "text",
+              "visible": [
+                "default"
+              ],
+              "text": "u"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "shift"
+              ],
+              "text": "U"
+            }
+          ]
+        },
+        {
+          "shiftKey": "V",
+          "geometry": {
+            "left": 22.99,
+            "top": 62.07,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "code": "KeyV",
+          "key": "v",
+          "labels": [
+            {
+              "type": "text",
+              "visible": [
+                "default"
+              ],
+              "text": "v"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "shift"
+              ],
+              "text": "V"
+            }
+          ]
+        },
+        {
+          "shiftKey": "W",
+          "geometry": {
+            "left": 10.95,
+            "top": 20.69,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "code": "KeyW",
+          "key": "w",
+          "labels": [
+            {
+              "type": "text",
+              "visible": [
+                "default"
+              ],
+              "text": "w"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "shift"
+              ],
+              "text": "W"
+            }
+          ]
+        },
+        {
+          "shiftKey": "X",
+          "geometry": {
+            "left": 14.23,
+            "top": 62.07,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "code": "KeyX",
+          "key": "x",
+          "labels": [
+            {
+              "type": "text",
+              "visible": [
+                "default"
+              ],
+              "text": "x"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "shift"
+              ],
+              "text": "X"
+            }
+          ]
+        },
+        {
+          "shiftKey": "Y",
+          "geometry": {
+            "left": 28.47,
+            "top": 20.69,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "code": "KeyY",
+          "key": "y",
+          "labels": [
+            {
+              "type": "text",
+              "visible": [
+                "default"
+              ],
+              "text": "y"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "shift"
+              ],
+              "text": "Y"
+            }
+          ]
+        },
+        {
+          "shiftKey": "Z",
+          "geometry": {
+            "left": 9.85,
+            "top": 62.07,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "code": "KeyZ",
+          "key": "z",
+          "labels": [
+            {
+              "type": "text",
+              "visible": [
+                "default"
+              ],
+              "text": "z"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "shift"
+              ],
+              "text": "Z"
+            }
+          ]
+        },
+        {
+          "shiftKey": "é",
+          "ctrlAltKey": "[",
+          "shiftCtrlAltKey": "{",
+          "noCapsLock": true,
+          "geometry": {
+            "left": 50.36,
+            "top": 20.69,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "code": "BracketLeft",
+          "key": "è",
+          "labels": [
+            {
+              "type": "text",
+              "visible": [
+                "default"
+              ],
+              "text": "è"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "shift"
+              ],
+              "text": "é"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "altgr"
+              ],
+              "text": "["
+            },
+            {
+              "type": "text",
+              "visible": [
+                "shiftaltgr"
+              ],
+              "text": "{"
+            }
+          ]
+        },
+        {
+          "shiftKey": "*",
+          "ctrlAltKey": "]",
+          "shiftCtrlAltKey": "}",
+          "noCapsLock": true,
+          "geometry": {
+            "left": 54.74,
+            "top": 20.69,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "code": "BracketRight",
+          "key": "+",
+          "labels": [
+            {
+              "type": "text",
+              "visible": [
+                "default"
+              ],
+              "text": "+"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "shift"
+              ],
+              "text": "*"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "altgr"
+              ],
+              "text": "]"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "shiftaltgr"
+              ],
+              "text": "}"
+            }
+          ]
+        },
+        {
+          "shiftKey": ";",
+          "noCapsLock": true,
+          "geometry": {
+            "left": 40.51,
+            "top": 62.07,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "code": "Comma",
+          "key": ",",
+          "labels": [
+            {
+              "type": "text",
+              "visible": [
+                "default"
+              ],
+              "text": ","
+            },
+            {
+              "type": "text",
+              "visible": [
+                "shift"
+              ],
+              "text": ";"
+            }
+          ]
+        },
+        {
+          "shiftKey": "_",
+          "noCapsLock": true,
+          "geometry": {
+            "left": 49.27,
+            "top": 62.07,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "code": "Slash",
+          "key": "-",
+          "labels": [
+            {
+              "type": "text",
+              "visible": [
+                "default"
+              ],
+              "text": "-"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "shift"
+              ],
+              "text": "_"
+            }
+          ]
+        },
+        {
+          "shiftKey": ":",
+          "noCapsLock": true,
+          "geometry": {
+            "left": 44.89,
+            "top": 62.07,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "code": "Period",
+          "key": ".",
+          "labels": [
+            {
+              "type": "text",
+              "visible": [
+                "default"
+              ],
+              "text": "."
+            },
+            {
+              "type": "text",
+              "visible": [
+                "shift"
+              ],
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "shiftKey": "§",
+          "noCapsLock": true,
+          "geometry": {
+            "left": 55.84,
+            "top": 41.38,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "code": "Backslash",
+          "key": "ù",
+          "labels": [
+            {
+              "type": "text",
+              "visible": [
+                "default"
+              ],
+              "text": "ù"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "shift"
+              ],
+              "text": "§"
+            }
+          ]
+        },
+        {
+          "shiftKey": "ç",
+          "ctrlAltKey": "@",
+          "noCapsLock": true,
+          "geometry": {
+            "left": 47.08,
+            "top": 41.38,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "code": "Semicolon",
+          "key": "ò",
+          "labels": [
+            {
+              "type": "text",
+              "visible": [
+                "default"
+              ],
+              "text": "ò"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "shift"
+              ],
+              "text": "ç"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "altgr"
+              ],
+              "text": "@"
+            }
+          ]
+        },
+        {
+          "shiftKey": "?",
+          "noCapsLock": true,
+          "geometry": {
+            "left": 48.18,
+            "top": 0.0,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "code": "Minus",
+          "key": "'",
+          "labels": [
+            {
+              "type": "text",
+              "visible": [
+                "default"
+              ],
+              "text": "'"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "shift"
+              ],
+              "text": "?"
+            }
+          ]
+        },
+        {
+          "shiftKey": "|",
+          "noCapsLock": true,
+          "geometry": {
+            "left": 0.0,
+            "top": 0.0,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "code": "Backquote",
+          "key": "\\",
+          "labels": [
+            {
+              "type": "text",
+              "visible": [
+                "default"
+              ],
+              "text": "\\"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "shift"
+              ],
+              "text": "|"
+            }
+          ]
+        },
+        {
+          "shiftKey": "^",
+          "noCapsLock": true,
+          "geometry": {
+            "left": 52.55,
+            "top": 0.0,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "code": "Equal",
+          "key": "ì",
+          "labels": [
+            {
+              "type": "text",
+              "visible": [
+                "default"
+              ],
+              "text": "ì"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "shift"
+              ],
+              "text": "^"
+            }
+          ]
+        },
+        {
+          "shiftKey": "°",
+          "ctrlAltKey": "#",
+          "noCapsLock": true,
+          "geometry": {
+            "left": 51.46,
+            "top": 41.38,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "code": "Quote",
+          "key": "à",
+          "labels": [
+            {
+              "type": "text",
+              "visible": [
+                "default"
+              ],
+              "text": "à"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "shift"
+              ],
+              "text": "°"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "altgr"
+              ],
+              "text": "#"
+            }
+          ]
+        },
+        {
+          "shiftKey": ">",
+          "noCapsLock": true,
+          "geometry": {
+            "left": 5.47,
+            "top": 62.07,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "code": "IntlBackslash",
+          "key": "<",
+          "labels": [
+            {
+              "type": "text",
+              "visible": [
+                "default"
+              ],
+              "text": "<"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "shift"
+              ],
+              "text": ">"
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 0.0,
+            "top": 20.69,
+            "width": 5.84,
+            "height": 17.24
+          },
+          "code": "Tab",
+          "key": "Tab",
+          "labels": [
+            {
+              "type": "svg",
+              "svg": {
+                "dimensions": {
+                  "width": 22.0,
+                  "height": 16.0
+                },
+                "path": "M 0.5 0.5 L 0.5 8.5 M 21.5 4.5 L 6.5 4.5 M 6.5 0.5 L 2.5 4.5 L 6.5 8.5 M 21.5 7.5 L 21.5 15.5 M 0.5 11.5 L 15.5 11.5 M 15.5 7.5 L 19.5 11.5 L 15.5 15.5"
+              }
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 0.0,
+            "top": 62.07,
+            "width": 4.74,
+            "height": 17.24
+          },
+          "type": "modifier",
+          "code": "ShiftLeft",
+          "key": "Shift",
+          "mode": "sticky",
+          "location": "left",
+          "labels": [
+            {
+              "type": "svg",
+              "svg": {
+                "dimensions": {
+                  "width": 14.0,
+                  "height": 14.0
+                },
+                "path": "M 3.5 13.5 L 3.5 6.5 L 0.5 6.5 L 7 0.5 L 13.5 6.5 L 10.5 6.5 L 10.5 13.5 Z"
+              }
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 43.8,
+            "top": 82.76,
+            "width": 4.74,
+            "height": 17.24
+          },
+          "type": "modifier",
+          "code": "ControlLeft,AltRight",
+          "key": "Control,Alt",
+          "mode": "sticky",
+          "location": "left,right",
+          "labels": [
+            {
+              "type": "text",
+              "text": "Alt Gr"
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 60.22,
+            "top": 82.76,
+            "width": 4.74,
+            "height": 17.24
+          },
+          "type": "modifier",
+          "code": "ControlRight",
+          "key": "Control",
+          "mode": "sticky",
+          "location": "right",
+          "labels": [
+            {
+              "type": "text",
+              "text": "Ctrl"
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 67.88,
+            "top": 0.0,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "type": "modifier",
+          "code": "Insert",
+          "key": "Insert",
+          "mode": "toggle",
+          "labels": [
+            {
+              "type": "text",
+              "text": "Ins"
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 67.88,
+            "top": 20.69,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "type": "edit",
+          "code": "Delete",
+          "key": "Delete",
+          "longpressAction": "repeat",
+          "labels": [
+            {
+              "type": "text",
+              "text": "Del"
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 72.26,
+            "top": 0.0,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "type": "action",
+          "code": "Home",
+          "key": "Home",
+          "labels": [
+            {
+              "type": "text",
+              "text": "Home"
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 72.26,
+            "top": 20.69,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "type": "action",
+          "code": "End",
+          "key": "End",
+          "labels": [
+            {
+              "type": "text",
+              "text": "End"
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 72.26,
+            "top": 62.07,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "type": "action",
+          "code": "ArrowUp",
+          "key": "ArrowUp",
+          "longpressAction": "repeat",
+          "labels": [
+            {
+              "type": "svg",
+              "svg": {
+                "dimensions": {
+                  "width": 14.0,
+                  "height": 7.0
+                },
+                "path": "M 0.5 6.5 L 7 0.5 L 13.5 6.5"
+              }
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 67.88,
+            "top": 82.76,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "type": "action",
+          "code": "ArrowLeft",
+          "key": "ArrowLeft",
+          "longpressAction": "repeat",
+          "labels": [
+            {
+              "type": "svg",
+              "svg": {
+                "dimensions": {
+                  "width": 7.0,
+                  "height": 14.0
+                },
+                "path": "M 6.5 0.5 L 0.5 7 L 6.5 13.5"
+              }
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 72.26,
+            "top": 82.76,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "type": "action",
+          "code": "ArrowDown",
+          "key": "ArrowDown",
+          "longpressAction": "repeat",
+          "labels": [
+            {
+              "type": "svg",
+              "svg": {
+                "dimensions": {
+                  "width": 14.0,
+                  "height": 7.0
+                },
+                "path": "M 0.5 0.5 L 7 6.5 L 13.5 0.5"
+              }
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 76.64,
+            "top": 82.76,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "type": "action",
+          "code": "ArrowRight",
+          "key": "ArrowRight",
+          "longpressAction": "repeat",
+          "labels": [
+            {
+              "type": "svg",
+              "svg": {
+                "dimensions": {
+                  "width": 7.0,
+                  "height": 14.0
+                },
+                "path": "M 0.5 0.5 L 6.5 7 L 0.5 13.5"
+              }
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 83.21,
+            "top": 0.0,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "type": "modifier",
+          "code": "NumLock",
+          "key": "NumLock",
+          "mode": "toggle",
+          "location": "numpad",
+          "labels": [
+            {
+              "type": "text",
+              "text": "Num"
+            }
+          ]
+        },
+        {
+          "shiftKey": "/",
+          "noCapsLock": true,
+          "geometry": {
+            "left": 87.59,
+            "top": 0.0,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "code": "NumpadDivide",
+          "key": "/",
+          "location": "numpad",
+          "labels": [
+            {
+              "type": "text",
+              "text": "÷"
+            }
+          ]
+        },
+        {
+          "shiftKey": "*",
+          "noCapsLock": true,
+          "geometry": {
+            "left": 91.97,
+            "top": 0.0,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "code": "NumpadMultiply",
+          "key": "*",
+          "location": "numpad",
+          "labels": [
+            {
+              "type": "text",
+              "text": "×"
+            }
+          ]
+        },
+        {
+          "shiftKey": "-",
+          "noCapsLock": true,
+          "geometry": {
+            "left": 96.35,
+            "top": 0.0,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "code": "NumpadSubtract",
+          "key": "-",
+          "location": "numpad",
+          "labels": [
+            {
+              "type": "text",
+              "text": "-"
+            }
+          ]
+        },
+        {
+          "numlockType": "character",
+          "numlockKey": "7",
+          "noCapsLock": true,
+          "geometry": {
+            "left": 83.21,
+            "top": 20.69,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "type": "action",
+          "code": "Numpad7",
+          "key": "Home",
+          "location": "numpad",
+          "labels": [
+            {
+              "type": "text",
+              "hidden": [
+                "numlock"
+              ],
+              "text": "Home"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "numlock"
+              ],
+              "text": "7"
+            }
+          ]
+        },
+        {
+          "numlockType": "character",
+          "numlockKey": "8",
+          "noCapsLock": true,
+          "geometry": {
+            "left": 87.59,
+            "top": 20.69,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "type": "action",
+          "code": "Numpad8",
+          "key": "ArrowUp",
+          "location": "numpad",
+          "labels": [
+            {
+              "type": "svg",
+              "hidden": [
+                "numlock"
+              ],
+              "svg": {
+                "dimensions": {
+                  "width": 14.0,
+                  "height": 7.0
+                },
+                "path": "M 0.5 6.5 L 7 0.5 L 13.5 6.5"
+              }
+            },
+            {
+              "type": "text",
+              "visible": [
+                "numlock"
+              ],
+              "text": "8"
+            }
+          ]
+        },
+        {
+          "numlockType": "character",
+          "numlockKey": "9",
+          "noCapsLock": true,
+          "geometry": {
+            "left": 91.97,
+            "top": 20.69,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "code": "Numpad9",
+          "key": "",
+          "location": "numpad",
+          "labels": [
+            {
+              "type": "text",
+              "visible": [
+                "numlock"
+              ],
+              "text": "9"
+            }
+          ]
+        },
+        {
+          "shiftKey": "+",
+          "noCapsLock": true,
+          "geometry": {
+            "left": 96.35,
+            "top": 20.69,
+            "width": 3.65,
+            "height": 37.93
+          },
+          "code": "NumpadAdd",
+          "key": "+",
+          "location": "numpad",
+          "labels": [
+            {
+              "type": "text",
+              "text": "+"
+            }
+          ]
+        },
+        {
+          "numlockType": "character",
+          "numlockKey": "4",
+          "noCapsLock": true,
+          "geometry": {
+            "left": 83.21,
+            "top": 41.38,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "type": "action",
+          "code": "Numpad4",
+          "key": "ArrowLeft",
+          "location": "numpad",
+          "labels": [
+            {
+              "type": "svg",
+              "hidden": [
+                "numlock"
+              ],
+              "svg": {
+                "dimensions": {
+                  "width": 7.0,
+                  "height": 14.0
+                },
+                "path": "M 6.5 0.5 L 0.5 7 L 6.5 13.5"
+              }
+            },
+            {
+              "type": "text",
+              "visible": [
+                "numlock"
+              ],
+              "text": "4"
+            }
+          ]
+        },
+        {
+          "numlockType": "character",
+          "numlockKey": "5",
+          "noCapsLock": true,
+          "geometry": {
+            "left": 87.59,
+            "top": 41.38,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "code": "Numpad5",
+          "key": "",
+          "location": "numpad",
+          "labels": [
+            {
+              "type": "text",
+              "visible": [
+                "numlock"
+              ],
+              "text": "5"
+            }
+          ]
+        },
+        {
+          "numlockType": "character",
+          "numlockKey": "6",
+          "noCapsLock": true,
+          "geometry": {
+            "left": 91.97,
+            "top": 41.38,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "type": "action",
+          "code": "Numpad6",
+          "key": "ArrowRight",
+          "location": "numpad",
+          "labels": [
+            {
+              "type": "svg",
+              "hidden": [
+                "numlock"
+              ],
+              "svg": {
+                "dimensions": {
+                  "width": 7.0,
+                  "height": 14.0
+                },
+                "path": "M 0.5 0.5 L 6.5 7 L 0.5 13.5"
+              }
+            },
+            {
+              "type": "text",
+              "visible": [
+                "numlock"
+              ],
+              "text": "6"
+            }
+          ]
+        },
+        {
+          "numlockType": "character",
+          "numlockKey": "1",
+          "noCapsLock": true,
+          "geometry": {
+            "left": 83.21,
+            "top": 62.07,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "type": "action",
+          "code": "Numpad1",
+          "key": "End",
+          "location": "numpad",
+          "labels": [
+            {
+              "type": "text",
+              "hidden": [
+                "numlock"
+              ],
+              "text": "End"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "numlock"
+              ],
+              "text": "1"
+            }
+          ]
+        },
+        {
+          "numlockType": "character",
+          "numlockKey": "2",
+          "noCapsLock": true,
+          "geometry": {
+            "left": 87.59,
+            "top": 62.07,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "type": "action",
+          "code": "Numpad2",
+          "key": "ArrowDown",
+          "location": "numpad",
+          "labels": [
+            {
+              "type": "svg",
+              "hidden": [
+                "numlock"
+              ],
+              "svg": {
+                "dimensions": {
+                  "width": 14.0,
+                  "height": 7.0
+                },
+                "path": "M 0.5 0.5 L 7 6.5 L 13.5 0.5"
+              }
+            },
+            {
+              "type": "text",
+              "visible": [
+                "numlock"
+              ],
+              "text": "2"
+            }
+          ]
+        },
+        {
+          "numlockType": "character",
+          "numlockKey": "3",
+          "noCapsLock": true,
+          "geometry": {
+            "left": 91.97,
+            "top": 62.07,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "code": "Numpad3",
+          "key": "",
+          "location": "numpad",
+          "labels": [
+            {
+              "type": "text",
+              "visible": [
+                "numlock"
+              ],
+              "text": "3"
+            }
+          ]
+        },
+        {
+          "geometry": {
+            "left": 96.35,
+            "top": 62.07,
+            "width": 3.65,
+            "height": 37.93
+          },
+          "code": "NumpadEnter",
+          "key": "Enter",
+          "location": "numpad",
+          "labels": [
+            {
+              "type": "text",
+              "text": "Enter"
+            }
+          ]
+        },
+        {
+          "numlockType": "character",
+          "numlockKey": "0",
+          "noCapsLock": true,
+          "geometry": {
+            "left": 83.21,
+            "top": 82.76,
+            "width": 8.03,
+            "height": 17.24
+          },
+          "type": "action",
+          "code": "Numpad0",
+          "key": "Insert",
+          "location": "numpad",
+          "labels": [
+            {
+              "type": "text",
+              "hidden": [
+                "numlock"
+              ],
+              "text": "Ins"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "numlock"
+              ],
+              "text": "0"
+            }
+          ]
+        },
+        {
+          "numlockType": "character",
+          "numlockKey": ".",
+          "noCapsLock": true,
+          "geometry": {
+            "left": 91.97,
+            "top": 82.76,
+            "width": 3.65,
+            "height": 17.24
+          },
+          "type": "action",
+          "code": "NumpadDecimal",
+          "key": "Delete",
+          "location": "numpad",
+          "labels": [
+            {
+              "type": "text",
+              "hidden": [
+                "numlock"
+              ],
+              "text": "Del"
+            },
+            {
+              "type": "text",
+              "visible": [
+                "numlock"
+              ],
+              "text": "."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

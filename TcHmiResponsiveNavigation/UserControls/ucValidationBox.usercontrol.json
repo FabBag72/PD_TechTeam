@@ -1,0 +1,82 @@
+﻿{
+  "parameters": [
+    {
+      "name": "data-tchmi-value",
+      "displayName": "value",
+      "visible": true,
+      "type": "tchmi:general#/definitions/Number",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "value",
+      "propertySetterName": "setValue",
+      "propertyGetterName": "getValue"
+    },
+    {
+      "name": "data-tchmi-maximun",
+      "displayName": "maximun",
+      "visible": true,
+      "type": "tchmi:general#/definitions/Number",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "maximun",
+      "propertySetterName": "setMaximun",
+      "propertyGetterName": "getMaximun"
+    },
+    {
+      "name": "data-tchmi-minimun",
+      "displayName": "minimun",
+      "visible": true,
+      "type": "tchmi:general#/definitions/Number",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "minimun",
+      "propertySetterName": "setMinimun",
+      "propertyGetterName": "getMinimun"
+    },
+    {
+      "name": "data-tchmi-ndecpt",
+      "displayName": "nDecPt",
+      "visible": true,
+      "type": "tchmi:general#/definitions/Number",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "nDecPt",
+      "propertySetterName": "setNDecPt",
+      "propertyGetterName": "getNDecPt"
+    },
+    {
+      "name": "data-tchmi-parametername",
+      "displayName": "parameterName",
+      "visible": true,
+      "type": "tchmi:general#/definitions/String",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "parameterName",
+      "propertySetterName": "setParameterName",
+      "propertyGetterName": "getParameterName"
+    }
+  ],
+  "virtualRights": [],
+  "$schema": "../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.742.0/runtimes/native1.12-tchmi/Schema/UserControlConfig.Schema.json",
+  "description": ""
+}

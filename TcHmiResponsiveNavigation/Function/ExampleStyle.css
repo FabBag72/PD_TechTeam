@@ -1,0 +1,11 @@
+﻿#TcHmiDatagrid tr.max-input td[data-column-name="Value"] {
+    background-color: red;
+}
+
+#TcHmiDatagrid tr.min-input td[data-column-name="Value"] {
+    background-color: deepskyblue;
+}
+
+#TcHmiDatagrid tr.isNaN td[data-column-name="Value"] {
+    background-color: palevioletred;
+}

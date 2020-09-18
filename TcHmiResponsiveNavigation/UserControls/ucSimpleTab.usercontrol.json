@@ -1,0 +1,82 @@
+﻿{
+  "parameters": [
+    {
+      "name": "data-tchmi-text",
+      "displayName": "Text",
+      "visible": true,
+      "type": "tchmi:general#/definitions/String",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "Text",
+      "propertySetterName": "setText",
+      "propertyGetterName": "getText"
+    },
+    {
+      "name": "data-tchmi-actstate",
+      "displayName": "ActState",
+      "visible": true,
+      "type": "tchmi:general#/definitions/Number",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "ActState",
+      "propertySetterName": "setActState",
+      "propertyGetterName": "getActState"
+    },
+    {
+      "name": "data-tchmi-setstate",
+      "displayName": "SetState",
+      "visible": true,
+      "type": "tchmi:general#/definitions/Number",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "SetState",
+      "propertySetterName": "setSetState",
+      "propertyGetterName": "getSetState"
+    },
+    {
+      "name": "data-tchmi-content",
+      "displayName": "content",
+      "visible": true,
+      "type": "tchmi:framework#/definitions/ContentPath",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "content",
+      "propertySetterName": "setContent",
+      "propertyGetterName": "getContent"
+    },
+    {
+      "name": "data-tchmi-region",
+      "displayName": "region",
+      "visible": true,
+      "type": "tchmi:framework#/definitions/TcHmiRegion",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "region",
+      "propertySetterName": "setRegion",
+      "propertyGetterName": "getRegion"
+    }
+  ],
+  "virtualRights": [],
+  "$schema": "../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.742.0/runtimes/native1.12-tchmi/Schema/UserControlConfig.Schema.json",
+  "description": ""
+}

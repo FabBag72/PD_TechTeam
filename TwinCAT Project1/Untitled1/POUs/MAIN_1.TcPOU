@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.4">
+  <POU Name="MAIN_1" Id="{9ae84a09-de24-4b52-a2ed-2baa5985f4b1}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN_1
+VAR
+	fbEventlogger : FB_TcEventLogger;
+	fbAlarm: FB_TcAlarm;
+	fbMessage: FB_TcMessage;
+	
+	bAlarm: BOOL;
+	bMessage : BOOL;
+	bIsInitalized: BOOL;
+	bClearAlarm: BOOL;
+	bConfirmAlarm: BOOL;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[IF NOT bIsInitalized THEN
+	bIsInitalized := TRUE;
+	fbMessage.CreateEx(TC_Events.MyEvents.Start, 0);
+	fbAlarm.CreateEx(TC_Events.MyEvents.Stop, TRUE, 0);
+END_IF
+
+IF bMessage THEN
+	bMessage := FALSE;
+	fbMessage.Send(0);
+END_IF
+
+IF bAlarm THEN
+	bAlarm := FALSE;
+	fbAlarm.Raise(0);
+END_IF
+
+IF bClearAlarm THEN
+	bClearAlarm := FALSE;
+	fbAlarm.Clear(0, TRUE);
+END_IF
+]]></ST>
+    </Implementation>
+    <LineIds Name="MAIN_1">
+      <LineId Id="30" Count="1" />
+      <LineId Id="62" Count="0" />
+      <LineId Id="32" Count="0" />
+      <LineId Id="28" Count="1" />
+      <LineId Id="2" Count="0" />
+      <LineId Id="39" Count="0" />
+      <LineId Id="11" Count="1" />
+      <LineId Id="15" Count="0" />
+      <LineId Id="14" Count="0" />
+      <LineId Id="40" Count="0" />
+      <LineId Id="17" Count="0" />
+      <LineId Id="37" Count="0" />
+      <LineId Id="79" Count="3" />
+      <LineId Id="78" Count="0" />
+      <LineId Id="87" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.4">
+  <GVL Name="GVL" Id="{f292a4ae-2e5b-4d3d-8dca-e00892af48de}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+VAR_GLOBAL
+	arrStruct : ARRAY [0..9] OF ST_MyStruct;
+	arrReal : ARRAY [0..9] OF REAL;
+	iTest : INT;
+	rTest : REAL;
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>

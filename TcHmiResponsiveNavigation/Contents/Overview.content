@@ -1,0 +1,7 @@
+﻿<div id="Overview" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="800" data-tchmi-height="640" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-right="0" data-tchmi-bottom="0">
+
+<div id="TcHmi_Controls_Beckhoff_TcHmiPdfViewer" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiPdfViewer" data-tchmi-height="480" data-tchmi-height-unit="px" data-tchmi-left="20" data-tchmi-left-unit="%" data-tchmi-top="1" data-tchmi-top-unit="%" data-tchmi-width="684" data-tchmi-width-unit="px" data-tchmi-file="pdf/TcHmiResponsiveNavigation_Tutorial.pdf" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-right="20" data-tchmi-bottom="10" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-page-mode="thumbs" data-tchmi-page="1">
+
+</div>
+
+</div>

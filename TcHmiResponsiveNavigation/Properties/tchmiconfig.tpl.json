@@ -1,0 +1,242 @@
+﻿{
+  "$schema": "../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.742.0/runtimes/native1.12-tchmi/Schema/TchmiConfig.Schema.json",
+  "basePath": "./framework",
+  "scaleMode": "None",
+  "startupView": "Desktop.view",
+  "loginPage": "/LoginPage/LoginPage1.html",
+  "tcHmiServer": {
+    "websocketIntervalTime": 500,
+    "websocketTimeout": 20000,
+    "websocketSystemTimeout": 60000,
+    "websocketSubscriptionMode": "Change"
+  },
+  "activeTheme": "Base",
+  "themes": {
+    "Base": {
+      "resources": [
+        {
+          "name": "Themes/Base/Base.theme",
+          "description": "",
+          "type": "ThemedValues"
+        },
+        {
+          "name": "Themes/Base/BaseStyle.css",
+          "description": "",
+          "type": "Stylesheet"
+        }
+      ],
+      "replacesThemeForControls": []
+    }
+  },
+  "dependencyFiles": [
+    {
+      "name": "Fonts/Fonts.css",
+      "description": "",
+      "type": "Stylesheet"
+    },
+    {
+      "name": "Function/NumberValidation.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
+      "name": "Function/SetStructElementByIndex.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
+      "name": "CodeBehind/TopMostLayerHandling.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
+      "name": "Function/ExampleClassesProvider.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
+      "name": "Function/ExampleStyle.css",
+      "description": "",
+      "type": "Stylesheet"
+    }
+  ],
+  "userControls": [
+    {
+      "url": "UserControls/ucHeaderOpener.usercontrol"
+    },
+    {
+      "url": "UserControls/ucSimpleTab.usercontrol"
+    },
+    {
+      "url": "UserControls/ucValidationBox.usercontrol"
+    }
+  ],
+  "content": [
+    {
+      "url": "Contents/Other/Language.content",
+      "preload": false,
+      "keepAlive": false
+    },
+    {
+      "url": "Contents/submenu2/EventGridSample.content",
+      "preload": false,
+      "keepAlive": false
+    },
+    {
+      "url": "Contents/submenu2/UserManager.content",
+      "preload": false,
+      "keepAlive": false
+    },
+    {
+      "url": "Contents/submenu/DataGrid.content",
+      "preload": false,
+      "keepAlive": false
+    },
+    {
+      "url": "Contents/submenu/Dialog.content",
+      "preload": false,
+      "keepAlive": false
+    },
+    {
+      "url": "Contents/submenu/OtherMenus.content",
+      "preload": false,
+      "keepAlive": false
+    },
+    {
+      "url": "Contents/submenu/Settings.content",
+      "preload": false,
+      "keepAlive": false
+    },
+    {
+      "url": "Contents/submenu/SimpleData.content",
+      "preload": false,
+      "keepAlive": false
+    },
+    {
+      "url": "Contents/submenu/TabMenu.content",
+      "preload": false,
+      "keepAlive": false
+    },
+    {
+      "url": "Contents/Overview.content",
+      "preload": false,
+      "keepAlive": false
+    },
+    {
+      "url": "Contents/submenu/LateralMenu.content",
+      "preload": false,
+      "keepAlive": false
+    },
+    {
+      "url": "Contents/submenu/Array.content",
+      "preload": false,
+      "keepAlive": false
+    }
+  ],
+  "views": [
+    {
+      "url": "Desktop.view",
+      "preload": false,
+      "keepAlive": false
+    }
+  ],
+  "userFunctions": [
+    {
+      "url": "Function\\NumberValidation.js"
+    },
+    {
+      "url": "Function\\SetStructElementByIndex.js"
+    },
+    {
+      "url": "Function\\ExampleClassesProvider.js"
+    }
+  ],
+  "symbols": {
+    "internal": {
+      "testvalue": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/REAL32",
+        "persist": false,
+        "readonly": false
+      },
+      "Index": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/Number",
+        "persist": false,
+        "readonly": false
+      },
+      "Index2": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/Number",
+        "persist": false,
+        "readonly": false
+      },
+      "RowIndex": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/Number",
+        "persist": false,
+        "readonly": false
+      },
+      "ColIndex": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/Number",
+        "persist": false,
+        "readonly": false
+      },
+      "TabMenuState": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/Number",
+        "persist": false,
+        "readonly": false
+      },
+      "state1": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/Number",
+        "persist": false,
+        "readonly": false
+      },
+      "stateVideoDataGrid": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/Number",
+        "persist": false,
+        "readonly": false
+      }
+    }
+  },
+  "trigger": [],
+  "actionTemplates": [],
+  "languages": {
+    "it-IT": "Localization\\Language1.localization",
+    "de-DE": "Localization\\de-DE.localization",
+    "en-US": "Localization\\en-US.localization"
+  },
+  "disableLoadingOptimization": false,
+  "creatorSettings": {
+    "viewport": {
+      "defaultWidth": 800,
+      "defaultHeight": 600
+    }
+  },
+  "packages": [
+    {
+      "name": "Beckhoff.TwinCAT.HMI.Controls",
+      "basePath": "/Beckhoff.TwinCAT.HMI.Controls"
+    },
+    {
+      "name": "Beckhoff.TwinCAT.HMI.Framework",
+      "basePath": "/framework"
+    },
+    {
+      "name": "Beckhoff.TwinCAT.HMI.Functions",
+      "basePath": "/Beckhoff.TwinCAT.HMI.Functions"
+    },
+    {
+      "name": "Beckhoff.TwinCAT.HMI.ResponsiveNavigation",
+      "basePath": "/Beckhoff.TwinCAT.HMI.ResponsiveNavigation"
+    },
+    {
+      "name": "Beckhoff.TwinCAT.HMI.PDFViewer",
+      "basePath": "/Beckhoff.TwinCAT.HMI.PDFViewer"
+    }
+  ]
+}

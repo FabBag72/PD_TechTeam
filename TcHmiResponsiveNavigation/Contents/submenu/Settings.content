@@ -1,0 +1,107 @@
+﻿<div id="Settings" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="800" data-tchmi-height="640" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-right="0" data-tchmi-bottom="0">
+
+<div id="TcHmi_Controls_System_TcHmiGrid_3" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-height="300" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="300" data-tchmi-width-unit="px" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-right="50" data-tchmi-bottom="0" data-tchmi-right-unit="%">
+        <script data-tchmi-target-attribute="data-tchmi-column-options" type="application/json">
+[
+  {
+    "width": 1.0,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidth": null,
+    "maxWidthUnit": "px",
+    "minWidth": 100.0,
+    "minWidthUnit": "px",
+    "overflow": false
+  },
+  {
+    "width": 1.0,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidth": null,
+    "maxWidthUnit": "px",
+    "minWidth": 100.0,
+    "minWidthUnit": "px",
+    "overflow": false
+  }
+]
+</script>
+        <script data-tchmi-target-attribute="data-tchmi-row-options" type="application/json">
+[
+  {
+    "height": 1.0,
+    "heightUnit": "factor",
+    "heightMode": "Value",
+    "maxHeight": null,
+    "maxHeightUnit": "px",
+    "minHeight": 0.0,
+    "minHeightUnit": "px",
+    "overflow": false
+  },
+  {
+    "height": 1.0,
+    "heightUnit": "factor",
+    "heightMode": "Value",
+    "maxHeight": null,
+    "maxHeightUnit": "px",
+    "minHeight": 0.0,
+    "minHeightUnit": "px",
+    "overflow": false
+  },
+  {
+    "height": 1.0,
+    "heightUnit": "factor",
+    "heightMode": "Value",
+    "maxHeight": null,
+    "maxHeightUnit": "px",
+    "minHeight": 0.0,
+    "minHeightUnit": "px",
+    "overflow": false
+  },
+  {
+    "height": 1.0,
+    "heightUnit": "factor",
+    "heightMode": "Value",
+    "maxHeight": null,
+    "maxHeightUnit": "px",
+    "minHeight": 0.0,
+    "minHeightUnit": "px",
+    "overflow": false
+  }
+]
+</script>
+
+        <div id="UcValidationBox_8" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls/ucValidationBox.usercontrol" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-value="%s%PLC1.Parameters.rParameter01::Value%/s%" data-tchmi-maximun="%s%PLC1.Parameters.rParameter01::Maximun%/s%" data-tchmi-minimun="%s%PLC1.Parameters.rParameter01::Minimun%/s%" data-tchmi-parametername="%s%PLC1.Parameters.rParameter01::Description%/s%" data-tchmi-ndecpt="%s%PLC1.Parameters.rParameter01::nDecpt%/s%">
+
+        </div>
+
+        <div data-tchmi-grid-row-index="1" data-tchmi-grid-column-index="0" id="UcValidationBox_9" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls/ucValidationBox.usercontrol" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-value="%s%PLC1.Parameters.rParameter02::Value%/s%" data-tchmi-maximun="%s%PLC1.Parameters.rParameter02::Maximun%/s%" data-tchmi-minimun="%s%PLC1.Parameters.rParameter02::Minimun%/s%" data-tchmi-ndecpt="%s%PLC1.Parameters.rParameter02::nDecpt%/s%" data-tchmi-parametername="%s%PLC1.Parameters.rParameter02::Description%/s%">
+
+        </div>
+
+        <div data-tchmi-grid-row-index="2" data-tchmi-grid-column-index="0" id="UcValidationBox_10" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls/ucValidationBox.usercontrol" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-value="%s%PLC1.Parameters.rParameter03::Value%/s%" data-tchmi-maximun="%s%PLC1.Parameters.rParameter03::Maximun%/s%" data-tchmi-minimun="%s%PLC1.Parameters.rParameter03::Minimun%/s%" data-tchmi-ndecpt="%s%PLC1.Parameters.rParameter03::nDecpt%/s%" data-tchmi-parametername="%s%PLC1.Parameters.rParameter03::Description%/s%">
+
+        </div>
+
+        <div data-tchmi-grid-row-index="3" data-tchmi-grid-column-index="0" id="UcValidationBox_11" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls/ucValidationBox.usercontrol" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-value="%s%PLC1.Parameters.rParameter04::Value%/s%" data-tchmi-maximun="%s%PLC1.Parameters.rParameter04::Maximun%/s%" data-tchmi-minimun="%s%PLC1.Parameters.rParameter04::Minimun%/s%" data-tchmi-ndecpt="%s%PLC1.Parameters.rParameter04::nDecpt%/s%" data-tchmi-parametername="%s%PLC1.Parameters.rParameter04::Description%/s%">
+
+        </div>
+
+        <div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="1" id="UcValidationBox_12" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls/ucValidationBox.usercontrol" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-value="%s%PLC1.Parameters.rParameter05::Value%/s%" data-tchmi-maximun="%s%PLC1.Parameters.rParameter05::Maximun%/s%" data-tchmi-minimun="%s%PLC1.Parameters.rParameter04::Minimun%/s%" data-tchmi-ndecpt="%s%PLC1.Parameters.rParameter05::nDecpt%/s%" data-tchmi-parametername="%s%PLC1.Parameters.rParameter05::Description%/s%">
+
+        </div>
+
+        <div data-tchmi-grid-row-index="1" data-tchmi-grid-column-index="1" id="UcValidationBox_13" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls/ucValidationBox.usercontrol" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-value="%s%PLC1.Parameters.rParameter06::Value%/s%" data-tchmi-maximun="%s%PLC1.Parameters.rParameter06::Maximun%/s%" data-tchmi-minimun="%s%PLC1.Parameters.rParameter06::Minimun%/s%" data-tchmi-ndecpt="%s%PLC1.Parameters.rParameter06::nDecpt%/s%" data-tchmi-parametername="%s%PLC1.Parameters.rParameter06::Description%/s%">
+
+        </div>
+
+        <div data-tchmi-grid-row-index="2" data-tchmi-grid-column-index="1" id="UcValidationBox_14" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls/ucValidationBox.usercontrol" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-value="%s%PLC1.Parameters.rParameter05::Value%/s%" data-tchmi-maximun="%s%PLC1.Parameters.rParameter07::Maximun%/s%" data-tchmi-minimun="%s%PLC1.Parameters.rParameter07::Minimun%/s%" data-tchmi-ndecpt="%s%PLC1.Parameters.rParameter07::nDecpt%/s%" data-tchmi-parametername="%s%PLC1.Parameters.rParameter07::Description%/s%">
+
+        </div>
+
+        <div data-tchmi-grid-row-index="3" data-tchmi-grid-column-index="1" id="UcValidationBox_15" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls/ucValidationBox.usercontrol" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-value="%s%PLC1.Parameters.rParameter07::Value%/s%" data-tchmi-maximun="%s%PLC1.Parameters.rParameter08::Maximun%/s%" data-tchmi-minimun="%s%PLC1.Parameters.rParameter08::Minimun%/s%" data-tchmi-ndecpt="%s%PLC1.Parameters.rParameter08::nDecpt%/s%" data-tchmi-parametername="%s%PLC1.Parameters.rParameter08::Description%/s%">
+
+        </div>
+
+    </div>
+
+</div>

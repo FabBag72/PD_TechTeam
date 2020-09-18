@@ -1,0 +1,29 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "definitions": {
+    "UserControls_ucHeaderOpener": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControls\\ucHeaderOpener.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/UserControls_ucHeaderOpener"
+    },
+    "UserControls_ucSimpleTab": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControls\\ucSimpleTab.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/UserControls_ucSimpleTab"
+    },
+    "UserControls_ucValidationBox": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControls\\ucValidationBox.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/UserControls_ucValidationBox"
+    }
+  }
+}

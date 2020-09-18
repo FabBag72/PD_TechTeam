@@ -1,0 +1,9 @@
+{
+    "LIMIT_INITIAL_EVENT_IMPORT": 1000,
+    "TARGET_SYSTEMS": {
+        "Local": {
+            "ADDRESS": "127.0.0.1.1.1",
+            "ENABLED": true
+        }
+    }
+}

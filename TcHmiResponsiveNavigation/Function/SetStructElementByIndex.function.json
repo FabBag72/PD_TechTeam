@@ -1,0 +1,61 @@
+﻿{
+  "function": {
+    "name": "SetStructElementByIndex",
+    "displayName": "SetStructElementByIndex",
+    "visible": true,
+    "category": "",
+    "waitMode": "Synchronous",
+    "injectContextObject": false,
+    "description": "",
+    "returnValue": {
+      "type": "tchmi:general#/definitions/String"
+    },
+    "arguments": [
+      {
+        "name": "StructName",
+        "displayName": "StructName",
+        "type": "tchmi:general#/definitions/String",
+        "description": "Struct Name",
+        "defaultValue": "",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false
+      },
+      {
+        "name": "StructElement",
+        "displayName": "StructElement",
+        "type": "tchmi:general#/definitions/String",
+        "description": "Element of the struct",
+        "defaultValue": "",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false
+      },
+      {
+        "name": "Index",
+        "displayName": "Index",
+        "type": "tchmi:general#/definitions/INT",
+        "description": "Index of struct",
+        "defaultValue": "",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false
+      },
+      {
+        "name": "Value",
+        "displayName": "Value",
+        "type": "tchmi:general#/definitions/Any",
+        "description": "Value to set",
+        "defaultValue": "",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false
+      }
+    ]
+  },
+  "$schema": "../Packages/Beckhoff.TwinCAT.HMI.Framework.12.742.0/runtimes/native1.12-tchmi/Schema/FunctionDescription.Schema.json"
+}
