@@ -13,7 +13,7 @@ VAR_GLOBAL
 	rParameter07 : Parameter;
 	rParameter08 : Parameter;
 	
-	//Array of structure
+	//Array of structures
 	aParameters : ARRAY [0..9] OF Parameter;
 END_VAR]]></Declaration>
   </GVL>

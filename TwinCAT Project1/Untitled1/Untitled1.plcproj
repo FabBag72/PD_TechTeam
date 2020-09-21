@@ -15,6 +15,7 @@
     <Implicit_KindOfTask>{b38f16a9-3a70-4b9a-88c9-44503c83dbf8}</Implicit_KindOfTask>
     <Implicit_Jitter_Distribution>{d2e83663-d7b8-45af-ae3d-5be3a1ec95db}</Implicit_Jitter_Distribution>
     <LibraryReferences>{b8d46703-065f-4c11-bbc3-4028e98aa5f9}</LibraryReferences>
+    <Released>false</Released>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="DUTs\Parameter.TcDUT">

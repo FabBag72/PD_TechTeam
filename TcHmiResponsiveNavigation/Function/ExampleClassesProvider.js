@@ -21,7 +21,7 @@
                 classes.push('max-input');          //use the class 'max-input' of ExampleStyle.css file
             }
 
-            if (rowData.Value < rowData.Minimun) {  //if lower than max 
+            if (rowData.Value < rowData.Minimun) {  //if lower than min 
                 classes.push('min-input');          //use the class 'min-input' of ExampleStyle.css file
             }
         }
