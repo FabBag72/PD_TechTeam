@@ -256,7 +256,7 @@
       <SubType>Content</SubType>
       <DependentUpon>UserControls\ucValidationBox.usercontrol</DependentUpon>
     </Content>
-    <Content Include="Video\2020-07-22 20-34-41.mp4">
+    <Content Include="Video\DatagridInsertTutorial.mp4">
       <SubType>Content</SubType>
     </Content>
     <Folder Include="Contents\Other" />
