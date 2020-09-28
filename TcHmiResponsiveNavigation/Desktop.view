@@ -1077,4 +1077,98 @@
 
 </div>
 
+<div id="TcHmiContainerA" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="1" data-tchmi-height="200" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="%" data-tchmi-top="10" data-tchmi-top-unit="%" data-tchmi-width="200" data-tchmi-width-unit="px" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-right="10" data-tchmi-right-unit="%" data-tchmi-bottom="10" data-tchmi-bottom-unit="%" data-tchmi-zindex="1002" data-tchmi-visibility="Collapsed">
+
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "rgba(255, 255, 255, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+{
+  "left": "Solid",
+  "right": "Solid",
+  "top": "Solid",
+  "bottom": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 1,
+  "right": 1,
+  "top": 1,
+  "bottom": 1,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+<div id="TcHmi_Controls_Beckhoff_TcHmiImage_33" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="1" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left-unit="px" data-tchmi-src="Images/close_pressed.svg" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="30" data-tchmi-width-unit="px" data-tchmi-width-mode="Value" data-tchmi-height-mode="Value" data-tchmi-right="0" data-tchmi-zindex="10">
+
+
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 1,
+  "right": 0,
+  "top": 0,
+  "bottom": 1,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+{
+  "left": "Solid",
+  "right": "None",
+  "top": "None",
+  "bottom": "Solid"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmi_Controls_Beckhoff_TcHmiImage_33.onPressed",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiContainerA::Visibility%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Collapsed"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmi_OverlayContainer::Visibility%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Collapsed"
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+
+<div id="TcHmiRegionA" data-tchmi-type="TcHmi.Controls.System.TcHmiRegion" data-tchmi-height="500" data-tchmi-height-unit="px" data-tchmi-left="-1" data-tchmi-left-unit="px" data-tchmi-top="-1" data-tchmi-top-unit="px" data-tchmi-width="500" data-tchmi-width-unit="px" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-right="1" data-tchmi-bottom="1" data-tchmi-visibility="Visible" data-tchmi-zindex="5">
+
+</div>
+
+</div>
+
 </div>

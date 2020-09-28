@@ -132,6 +132,9 @@
     <Content Include="Contents\submenu\Dialog.content">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Contents\submenu\ExampleContents\BeckhoffInfo.content">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Contents\submenu\OtherMenus.content">
       <SubType>Content</SubType>
     </Content>
@@ -235,6 +238,15 @@
     <Content Include="Server\TcHmiEventLogger\TcHmiEventLogger.Storage.json">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Server\TcHmiVision\TcHmiVision.Config.default.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiVision\TcHmiVision.Config.remote.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiVision\TcHmiVision.Storage.json">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="UserControls\ucHeaderOpener.usercontrol">
       <SubType>Content</SubType>
     </Content>
@@ -262,6 +274,7 @@
     <Folder Include="Contents\Other" />
     <Folder Include="Contents\submenu2" />
     <Folder Include="Contents\submenu" />
+    <Folder Include="Contents\submenu\ExampleContents" />
     <Folder Include="Fonts\" />
     <Folder Include="Images" />
     <Folder Include="Images\Manifest" />
@@ -274,6 +287,7 @@
     <Folder Include="Function" />
     <Folder Include="CodeBehind" />
     <Folder Include="LoginPage" />
+    <Folder Include="Server\TcHmiVision" />
     <Folder Include="Video" />
     <Folder Include="pdf" />
     <Folder Include="Server\TcHmiEventLogger" />

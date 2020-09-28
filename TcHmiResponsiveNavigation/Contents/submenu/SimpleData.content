@@ -11,70 +11,7 @@
 </script>
 
 
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
-  {
-    "event": "%ctrl%TcHmi_Controls_Beckhoff_TcHmiTextbox::Text%/ctrl%",
-    "actions": [
-      {
-        "objectType": "Condition",
-        "active": true,
-        "parts": [
-          {
-            "if": [
-              {
-                "compare1": {
-                  "objectType": "Symbol",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "symbolExpression": "%ctrl%TcHmi_Controls_Beckhoff_TcHmiTextbox::Text%/ctrl%"
-                },
-                "compare2": {
-                  "objectType": "Symbol",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "symbolExpression": "%ctrl%TcHmi_Controls_Beckhoff_TcHmiTextblock_4::Text%/ctrl%"
-                },
-                "compareOperator": "!=",
-                "logic": null
-              }
-            ],
-            "then": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmi_Controls_Beckhoff_TcHmiTextbox::BackgroundColor%/ctrl%",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:framework#/definitions/Color",
-                  "value": {
-                    "color": "rgba(255, 25, 0, 1)"
-                  }
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "else": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmi_Controls_Beckhoff_TcHmiTextbox::BackgroundColor%/ctrl%",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:framework#/definitions/Color",
-                  "value": null
-                },
-                "asyncWait": true
-              }
-            ]
-          }
-        ],
-        "asyncWait": true
-      }
-    ]
-  }
-]
-</script>
+
 </div>
 
 <div id="TcHmi_Controls_Beckhoff_TcHmiTextblock_4" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-text="%s%PLC1.GVL.iTest%/s%" data-tchmi-top="40" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True">

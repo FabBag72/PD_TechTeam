@@ -142,6 +142,13 @@
             "PATH": "TcHmiUserManagement\\",
             "REQUIRED": true,
             "STARTUPTYPE": 1
+        },
+        "TcHmiVision": {
+            "ENABLED": true,
+            "NAME": "TcHmiVision",
+            "PATH": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.Vision.12.742.0\\runtimes\\win\\net472\\",
+            "REQUIRED": false,
+            "STARTUPTYPE": 1
         }
     },
     "FILES": {
@@ -2955,6 +2962,35 @@
             },
             "USEMAPPING": true
         },
+        "TcHmiVision.Config": {
+            "ACCESS": 0,
+            "DOMAIN": "TcHmiVision",
+            "HIDDEN": true,
+            "MAPPING": "Config",
+            "OPTIONS": {},
+            "SCHEMA": {},
+            "USEMAPPING": true
+        },
+        "TcHmiVision.GetSchema": {
+            "ACCESS": 3,
+            "DOMAIN": "TcHmiVision",
+            "HIDDEN": true,
+            "MAPPING": "GetSchema",
+            "OPTIONS": {},
+            "SCHEMA": {
+                "function": true
+            },
+            "USEMAPPING": true
+        },
+        "TcHmiVision.ListSymbols": {
+            "ACCESS": 3,
+            "DOMAIN": "TcHmiVision",
+            "HIDDEN": true,
+            "MAPPING": "ListSymbols",
+            "OPTIONS": {},
+            "SCHEMA": {},
+            "USEMAPPING": true
+        },
         "Unsubscribe": {
             "ACCESS": 3,
             "DOMAIN": "TcHmiSrv",
@@ -3184,6 +3220,7 @@
         "/Beckhoff.TwinCAT.HMI.PDFViewer": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\Packages\\Beckhoff.TwinCAT.HMI.PDFViewer.12.742.0\\runtimes\\native1.12-tchmi",
         "/Beckhoff.TwinCAT.HMI.ResponsiveNavigation": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\Packages\\Beckhoff.TwinCAT.HMI.ResponsiveNavigation.12.742.0\\runtimes\\native1.12-tchmi",
         "/Beckhoff.TwinCAT.HMI.SqliteHistorize": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\Packages\\Beckhoff.TwinCAT.HMI.SqliteHistorize.12.742.0",
+        "/Beckhoff.TwinCAT.HMI.Vision": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\Packages\\Beckhoff.TwinCAT.HMI.Vision.12.742.0",
         "/bin": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\TcHmiResponsiveNavigation\\bin\\",
         "/bin/framework": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\TcHmiResponsiveNavigation\\bin\\framework",
         "/framework": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\Packages\\Beckhoff.TwinCAT.HMI.Framework.12.742.0\\runtimes\\native1.12-tchmi"

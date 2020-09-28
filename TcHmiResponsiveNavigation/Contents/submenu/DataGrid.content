@@ -11,7 +11,7 @@
     "widthUnit": "px",
     "resize": true,
     "sortable": false,
-    "minWidth": 100,
+    "minWidth": 70,
     "minWidthUnit": "px",
     "cellBackground": null,
     "textColor": null,
@@ -28,7 +28,7 @@
     "widthUnit": "px",
     "resize": false,
     "sortable": false,
-    "minWidth": 100,
+    "minWidth": 70,
     "minWidthUnit": "px",
     "cellBackground": null,
     "textColor": null,
@@ -84,7 +84,7 @@
     "widthUnit": "px",
     "resize": true,
     "sortable": false,
-    "minWidth": 70,
+    "minWidth": 100,
     "minWidthUnit": "px",
     "cellBackground": null,
     "textColor": null,
@@ -108,11 +108,11 @@
     "name": "Maximun",
     "label": "%l%Maximun%/l%",
     "control": "TextBlock",
-    "width": 100,
+    "width": 70,
     "widthUnit": "px",
     "resize": true,
     "sortable": false,
-    "minWidth": 70,
+    "minWidth": 100,
     "minWidthUnit": "px",
     "cellBackground": null,
     "textColor": null,
@@ -408,7 +408,7 @@
 </script>
 </div>
 
-<div id="UcHeaderOpener_1" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="656" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls/ucHeaderOpener.usercontrol" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="707" data-tchmi-width-unit="px" data-tchmi-state="%i%stateVideoDataGrid%/i%" data-tchmi-title="Help video" data-tchmi-tooltip="Use Chrome to see this video">
+<div id="UcHeaderOpener_1" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="656" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls/ucHeaderOpener.usercontrol" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="707" data-tchmi-width-unit="px" data-tchmi-state="%i%stateVideoDataGrid%/i%" data-tchmi-title="Video Tutorial" data-tchmi-tooltip="Use Chrome to see this video">
 
 </div>
 

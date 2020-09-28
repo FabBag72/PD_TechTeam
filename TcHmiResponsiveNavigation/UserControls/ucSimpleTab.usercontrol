@@ -2,7 +2,7 @@
 
 
 
-<div id="TcHmiTextblock_12" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%pp%Text%/pp%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+<div id="TcHmiTextblock_12" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-text="%pp%Text%/pp%" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-right="10" data-tchmi-bottom="0" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
 
 <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
@@ -40,7 +40,8 @@
 }
 </script>
 
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
   {
     "event": "TcHmiTextblock_12.onPressed",
     "actions": [
@@ -74,17 +75,18 @@
       {
         "objectType": "Condition",
         "active": true,
-        "asyncWait": true,
         "parts": [
           {
             "if": [
               {
                 "compare1": {
                   "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
                   "symbolExpression": "%pp%ActState%/pp%"
                 },
                 "compare2": {
                   "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
                   "symbolExpression": "%pp%SetState%/pp%"
                 },
                 "compareOperator": "==",
@@ -96,7 +98,6 @@
                 "objectType": "WriteToSymbol",
                 "active": true,
                 "symbolExpression": "%ctrl%TcHmiTextblock_12::ClassNames%/ctrl%",
-                "valueType": "tchmi:framework#/definitions/ClassNameList",
                 "value": {
                   "objectType": "StaticValue",
                   "valueType": "tchmi:framework#/definitions/ClassNameList",
@@ -108,9 +109,8 @@
               },
               {
                 "objectType": "WriteToSymbol",
-                "active": true,
+                "active": false,
                 "symbolExpression": "%ctrl%TcHmiTextblock_12::Top%/ctrl%",
-                "valueType": "tchmi:framework#/definitions/MeasurementValue",
                 "value": {
                   "objectType": "StaticValue",
                   "valueType": "tchmi:framework#/definitions/MeasurementValue",
@@ -126,7 +126,6 @@
                 "objectType": "WriteToSymbol",
                 "active": true,
                 "symbolExpression": "%ctrl%TcHmiTextblock_12::ClassNames%/ctrl%",
-                "valueType": "tchmi:framework#/definitions/ClassNameList",
                 "value": {
                   "objectType": "StaticValue",
                   "valueType": "tchmi:framework#/definitions/ClassNameList",
@@ -136,23 +135,24 @@
               },
               {
                 "objectType": "WriteToSymbol",
-                "active": true,
+                "active": false,
                 "symbolExpression": "%ctrl%TcHmiTextblock_12::Top%/ctrl%",
-                "valueType": "tchmi:framework#/definitions/MeasurementValue",
                 "value": {
                   "objectType": "StaticValue",
                   "valueType": "tchmi:framework#/definitions/MeasurementValue",
-                  "value": 3.0
+                  "value": 5.0
                 },
                 "asyncWait": true
               }
             ]
           }
-        ]
+        ],
+        "asyncWait": true
       }
     ]
   }
-]</script>
+]
+</script>
 </div>
 
 </div>

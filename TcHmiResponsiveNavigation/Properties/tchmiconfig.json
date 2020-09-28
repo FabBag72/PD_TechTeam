@@ -98,6 +98,11 @@
       "keepAlive": false
     },
     {
+      "url": "Contents/submenu/ExampleContents/BeckhoffInfo.content",
+      "preload": false,
+      "keepAlive": false
+    },
+    {
       "url": "Contents/submenu/OtherMenus.content",
       "preload": false,
       "keepAlive": false
@@ -196,6 +201,12 @@
         "readonly": false
       },
       "stateVideoDataGrid": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/Number",
+        "persist": false,
+        "readonly": false
+      },
+      "state2": {
         "value": 0.0,
         "type": "tchmi:general#/definitions/Number",
         "persist": false,

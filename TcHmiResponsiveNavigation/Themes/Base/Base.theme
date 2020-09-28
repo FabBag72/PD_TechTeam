@@ -25,10 +25,6 @@
       },
       "themedResources": {}
     },
-    "MyClass": {
-      "attributes": {},
-      "themedResources": {}
-    },
     "Old_Background": {
       "attributes": {
         "BackgroundColor": {
@@ -42,7 +38,44 @@
         "BackgroundColor": {
           "color": "rgba(244, 0, 255, 1)"
         },
-        "TextFontStyle": "Italic"
+        "TextFontStyle": "Italic",
+        "BoxShadow": [
+          {
+            "color": {
+              "color": "rgba(255, 22, 177, 1)"
+            },
+            "offsetX": 0.0,
+            "offsetXUnit": "px",
+            "offsetY": 0.0,
+            "offsetYUnit": "px",
+            "inset": false,
+            "blur": 8.0,
+            "blurUnit": "px",
+            "spread": 2.0,
+            "spreadUnit": "px"
+          }
+        ]
+      },
+      "themedResources": {}
+    },
+    "Shadow": {
+      "attributes": {
+        "BoxShadow": [
+          {
+            "color": {
+              "color": "rgba(255, 154, 177, 1)"
+            },
+            "offsetX": 0.0,
+            "offsetXUnit": "px",
+            "offsetY": 0.0,
+            "offsetYUnit": "px",
+            "inset": false,
+            "blur": 5.0,
+            "blurUnit": "px",
+            "spread": 6.0,
+            "spreadUnit": "px"
+          }
+        ]
       },
       "themedResources": {}
     }
