@@ -58,6 +58,11 @@
       "name": "Function/ExampleStyle.css",
       "description": "",
       "type": "Stylesheet"
+    },
+    {
+      "name": "Function/CalculationMethod.js",
+      "description": "",
+      "type": "JavaScript"
     }
   ],
   "userControls": [
@@ -72,6 +77,11 @@
     }
   ],
   "content": [
+    {
+      "url": "Contents/Features/RPC.content",
+      "preload": false,
+      "keepAlive": false
+    },
     {
       "url": "Contents/Other/Language.content",
       "preload": false,
@@ -154,6 +164,9 @@
     },
     {
       "url": "Function\\ExampleClassesProvider.js"
+    },
+    {
+      "url": "Function\\CalculationMethod.js"
     }
   ],
   "symbols": {
@@ -207,6 +220,18 @@
         "readonly": false
       },
       "state2": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/Number",
+        "persist": false,
+        "readonly": false
+      },
+      "AAA": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/Number",
+        "persist": false,
+        "readonly": false
+      },
+      "BBB": {
         "value": 0.0,
         "type": "tchmi:general#/definitions/Number",
         "persist": false,

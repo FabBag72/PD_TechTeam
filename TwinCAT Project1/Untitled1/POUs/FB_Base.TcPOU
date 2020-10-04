@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.4">
+  <POU Name="FB_Base" Id="{a47b3dd3-3c95-4dd3-a852-b40984128896}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_Base
+VAR_INPUT
+END_VAR
+VAR_OUTPUT
+END_VAR
+VAR
+	_CalcCounter : INT;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[]]></ST>
+    </Implementation>
+    <Property Name="CalcCounter" Id="{fcd7ee22-aec1-4153-995f-912de616842c}">
+      <Declaration><![CDATA[{attribute 'monitoring' := 'call'}
+PROPERTY CalcCounter : INT]]></Declaration>
+      <Get Name="Get" Id="{1488e565-0a32-43b8-9c5a-1a3bdf452a0b}">
+        <Declaration><![CDATA[VAR
+END_VAR
+]]></Declaration>
+        <Implementation>
+          <ST><![CDATA[CalcCounter := _CalcCounter;]]></ST>
+        </Implementation>
+      </Get>
+      <Set Name="Set" Id="{f2bc713d-a704-42a1-8f54-24d4e3514627}">
+        <Declaration><![CDATA[VAR
+END_VAR
+]]></Declaration>
+        <Implementation>
+          <ST><![CDATA[_CalcCounter := CalcCounter;]]></ST>
+        </Implementation>
+      </Set>
+    </Property>
+    <Method Name="Calculation" Id="{412fe29f-4f1f-4527-b4ec-f067d5c4a43c}">
+      <Declaration><![CDATA[{attribute 'TcRpcEnable'}
+METHOD Calculation : REAL
+VAR_INPUT	
+	in1, in2 : REAL;
+	operator : E_Operator;
+END_VAR
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[CASE operator OF
+	E_Operator.idle_operator:
+		;
+	E_Operator.sum_operator:
+		Calculation := in1 + in2;
+	E_Operator.diff_operator:
+		Calculation := in1 - in2;
+	E_Operator.mul_operator:
+		Calculation := in1 * in2;
+	E_Operator.ratio_operator:
+		IF in2 <> 0 THEN
+			Calculation := in1 / in2;
+		END_IF	
+END_CASE
+_CalcCounter := _CalcCounter + 1;]]></ST>
+      </Implementation>
+    </Method>
+    <LineIds Name="FB_Base">
+      <LineId Id="9" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_Base.CalcCounter.Get">
+      <LineId Id="2" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_Base.CalcCounter.Set">
+      <LineId Id="2" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_Base.Calculation">
+      <LineId Id="5" Count="0" />
+      <LineId Id="10" Count="0" />
+      <LineId Id="14" Count="0" />
+      <LineId Id="11" Count="0" />
+      <LineId Id="15" Count="0" />
+      <LineId Id="12" Count="0" />
+      <LineId Id="16" Count="0" />
+      <LineId Id="13" Count="0" />
+      <LineId Id="17" Count="0" />
+      <LineId Id="8" Count="0" />
+      <LineId Id="19" Count="0" />
+      <LineId Id="18" Count="0" />
+      <LineId Id="20" Count="0" />
+      <LineId Id="9" Count="0" />
+      <LineId Id="21" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

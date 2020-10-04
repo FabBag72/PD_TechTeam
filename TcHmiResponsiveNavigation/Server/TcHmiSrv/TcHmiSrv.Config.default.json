@@ -49,6 +49,60 @@
             "minItems": 10,
             "type": "array"
         },
+        "PLC1.BOOL(VOID)": {
+            "allOf": [
+                {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                {
+                    "function": true
+                }
+            ]
+        },
+        "PLC1.FB_Base": {
+            "properties": {
+                "CalcCounter": {
+                    "$ref": "#/definitions/PLC1.INT(INT)"
+                },
+                "Calculation": {
+                    "$ref": "#/definitions/PLC1.REAL(in1 : REAL, in2 : REAL, operator : E_Operator)"
+                },
+                "_CalcCounter": {
+                    "$ref": "tchmi:general#/definitions/INT"
+                }
+            },
+            "type": "object"
+        },
+        "PLC1.FB_ExtBase": {
+            "properties": {
+                "CalcCounter": {
+                    "$ref": "#/definitions/PLC1.INT(INT)"
+                },
+                "Calculation": {
+                    "$ref": "#/definitions/PLC1.REAL(in1 : REAL, in2 : REAL, operator : E_Operator)"
+                },
+                "ResetCalcCounter": {
+                    "$ref": "#/definitions/PLC1.BOOL(VOID)"
+                },
+                "_CalcCounter": {
+                    "$ref": "tchmi:general#/definitions/INT"
+                }
+            },
+            "type": "object"
+        },
+        "PLC1.INT(INT)": {
+            "allOf": [
+                {
+                    "$ref": "tchmi:general#/definitions/INT"
+                },
+                {
+                    "function": true,
+                    "writeValue": {
+                        "$ref": "tchmi:general#/definitions/INT"
+                    }
+                }
+            ]
+        },
         "PLC1.Parameter": {
             "properties": {
                 "Description": {
@@ -71,6 +125,35 @@
                 }
             },
             "type": "object"
+        },
+        "PLC1.REAL(in1 : REAL, in2 : REAL, operator : E_Operator)": {
+            "allOf": [
+                {
+                    "$ref": "tchmi:general#/definitions/REAL"
+                },
+                {
+                    "function": true,
+                    "writeValue": {
+                        "properties": {
+                            "in1": {
+                                "$ref": "tchmi:general#/definitions/REAL"
+                            },
+                            "in2": {
+                                "$ref": "tchmi:general#/definitions/REAL"
+                            },
+                            "operator": {
+                                "$ref": "#/definitions/PLC1.E_Operator"
+                            }
+                        },
+                        "required": [
+                            "in1",
+                            "in2",
+                            "operator"
+                        ],
+                        "type": "object"
+                    }
+                }
+            ]
         },
         "PLC1.ST_MyStruct": {
             "properties": {
@@ -2039,6 +2122,42 @@
             "MAPPING": "PLC1::GVL::iTest",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/INT"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.MAIN.Base": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::MAIN::Base",
+            "OPTIONS": {
+                "comment": "Base FB"
+            },
+            "SCHEMA": {
+                "$ref": "tchmi:server#/definitions/PLC1.FB_Base"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.MAIN.Base.CalcCounter": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::MAIN::Base::CalcCounter",
+            "SCHEMA": {
+                "$ref": "tchmi:server#/definitions/PLC1.INT(INT)"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.MAIN.ExtBase": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::MAIN::ExtBase",
+            "OPTIONS": {
+                "comment": "Extended FB\t"
+            },
+            "SCHEMA": {
+                "$ref": "tchmi:server#/definitions/PLC1.FB_ExtBase"
             },
             "USEMAPPING": true
         },

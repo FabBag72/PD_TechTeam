@@ -237,6 +237,39 @@
       }
     ],
     "accessRight": ""
+  },
+  {
+    "name": "Features",
+    "page": "",
+    "parameter": "",
+    "subtitle": "",
+    "image": "",
+    "imageWidth": null,
+    "imageWidthUnit": "",
+    "imageHeight": null,
+    "imageHeightUnit": "",
+    "children": [
+      {
+        "name": "Miscellaneous",
+        "showColumnName": false,
+        "children": [
+          {
+            "name": "RPC",
+            "page": "Contents/Features/RPC.content",
+            "parameter": "",
+            "image": "",
+            "imageWidth": null,
+            "imageWidthUnit": "",
+            "imageHeight": null,
+            "imageHeightUnit": "",
+            "children": "",
+            "accessRight": ""
+          }
+        ],
+        "accessRight": ""
+      }
+    ],
+    "accessRight": ""
   }
 ]
 </script>

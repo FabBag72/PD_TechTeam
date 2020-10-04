@@ -7,6 +7,9 @@ VAR
 	i: INT;
 	j: INT;
 	
+	// FB Instances
+	Base : FB_Base;			//Base FB
+	ExtBase : FB_ExtBase;	//Extended FB	
 END_VAR
 ]]></Declaration>
     <Implementation>
@@ -67,7 +70,8 @@ END_VAR
 	END_FOR	
 END_IF
 
-MAIN_1();]]></ST>
+MAIN_1();
+]]></ST>
     </Implementation>
     <LineIds Name="MAIN">
       <LineId Id="2" Count="0" />
@@ -94,6 +98,7 @@ MAIN_1();]]></ST>
       <LineId Id="7" Count="0" />
       <LineId Id="77" Count="0" />
       <LineId Id="76" Count="0" />
+      <LineId Id="91" Count="0" />
     </LineIds>
   </POU>
 </TcPlcObject>

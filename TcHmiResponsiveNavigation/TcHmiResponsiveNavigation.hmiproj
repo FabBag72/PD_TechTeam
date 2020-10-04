@@ -23,7 +23,7 @@
     <EnableTypeScript>true</EnableTypeScript>
     <AzureFunctionsVersion>v2</AzureFunctionsVersion>
     <Name>TcHmiResponsiveNavigation</Name>
-    <HmiCommunicationRouterPort>10107</HmiCommunicationRouterPort>
+    <HmiCommunicationRouterPort>10109</HmiCommunicationRouterPort>
     <HmiCommunicationServerAuthPort>13000</HmiCommunicationServerAuthPort>
     <HmiInitial>1.12.742.0</HmiInitial>
     <HmiRecent>1.12.742.0</HmiRecent>
@@ -117,6 +117,9 @@
     <Content Include="CodeBehind\TopMostLayerHandling.js">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Contents\Features\RPC.content">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Contents\Other\Language.content">
       <SubType>Content</SubType>
     </Content>
@@ -145,6 +148,13 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Contents\submenu\TabMenu.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Function\CalculationMethod.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>Function\CalculationMethod.js</DependentUpon>
+    </Content>
+    <Content Include="Function\CalculationMethod.js">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Function\ExampleClassesProvider.function.json">
@@ -271,6 +281,7 @@
     <Content Include="Video\DatagridInsertTutorial.mp4">
       <SubType>Content</SubType>
     </Content>
+    <Folder Include="Contents\Features" />
     <Folder Include="Contents\Other" />
     <Folder Include="Contents\submenu2" />
     <Folder Include="Contents\submenu" />

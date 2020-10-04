@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.4">
+  <POU Name="FB_ExtBase" Id="{1ab1edfc-eaca-4163-a3d9-89b9003bda36}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_ExtBase EXTENDS FB_Base
+VAR_INPUT
+END_VAR
+VAR_OUTPUT
+END_VAR
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[]]></ST>
+    </Implementation>
+    <Property Name="CalcCounter" Id="{e25c9eb2-8a79-4b2f-aa7c-0e57f7945920}">
+      <Declaration><![CDATA[{attribute 'monitoring' := 'call'}
+PROPERTY CalcCounter : INT]]></Declaration>
+      <Get Name="Get" Id="{06227bd2-54ef-4a3a-b5bf-6e46c72afd9b}">
+        <Declaration><![CDATA[VAR
+END_VAR
+]]></Declaration>
+        <Implementation>
+          <ST><![CDATA[]]></ST>
+        </Implementation>
+      </Get>
+    </Property>
+    <Method Name="ResetCalcCounter" Id="{b2279c0b-5c7a-4983-a2f2-267a91ab785e}">
+      <Declaration><![CDATA[{attribute 'TcRpcEnable'}
+METHOD ResetCalcCounter : BOOL
+VAR_INPUT
+END_VAR
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[_CalcCounter := 0;]]></ST>
+      </Implementation>
+    </Method>
+    <LineIds Name="FB_ExtBase">
+      <LineId Id="9" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_ExtBase.CalcCounter.Get">
+      <LineId Id="2" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_ExtBase.ResetCalcCounter">
+      <LineId Id="5" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>
