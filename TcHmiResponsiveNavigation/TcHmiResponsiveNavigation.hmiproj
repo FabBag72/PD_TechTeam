@@ -26,7 +26,7 @@
     <HmiCommunicationRouterPort>10109</HmiCommunicationRouterPort>
     <HmiCommunicationServerAuthPort>13000</HmiCommunicationServerAuthPort>
     <HmiInitial>1.12.742.0</HmiInitial>
-    <HmiRecent>1.12.742.0</HmiRecent>
+    <HmiRecent>1.12.742.4</HmiRecent>
   </PropertyGroup>
   <PropertyGroup>
     <TwinCATHmi_Tasks>$(TcHmiDirectory)\MSBuild\Beckhoff.TwinCAT.HMI.tasks</TwinCATHmi_Tasks>
@@ -150,6 +150,9 @@
     <Content Include="Contents\submenu\TabMenu.content">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Contents\ThirdPartyCtrl\AmChartJS.content">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Function\CalculationMethod.function.json">
       <SubType>Content</SubType>
       <DependentUpon>Function\CalculationMethod.js</DependentUpon>
@@ -179,6 +182,9 @@
       <DependentUpon>Function\SetStructElementByIndex.js</DependentUpon>
     </Content>
     <Content Include="Function\SetStructElementByIndex.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\AmCharts_Logo.png">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Images\close_pressed.svg">
@@ -212,6 +218,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Images\warning_pressed.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Chart.bundle.min.js">
       <SubType>Content</SubType>
     </Content>
     <Content Include="KeyboardLayouts\Calculator.keyboard.json">
@@ -257,6 +266,13 @@
     <Content Include="Server\TcHmiVision\TcHmiVision.Storage.json">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="UserControls\Radar.usercontrol">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UserControls\Radar.usercontrol.json">
+      <SubType>Content</SubType>
+      <DependentUpon>UserControls\Radar.usercontrol</DependentUpon>
+    </Content>
     <Content Include="UserControls\ucHeaderOpener.usercontrol">
       <SubType>Content</SubType>
     </Content>
@@ -282,6 +298,7 @@
       <SubType>Content</SubType>
     </Content>
     <Folder Include="Contents\Features" />
+    <Folder Include="Contents\ThirdPartyCtrl" />
     <Folder Include="Contents\Other" />
     <Folder Include="Contents\submenu2" />
     <Folder Include="Contents\submenu" />

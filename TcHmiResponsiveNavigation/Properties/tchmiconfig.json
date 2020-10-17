@@ -63,6 +63,11 @@
       "name": "Function/CalculationMethod.js",
       "description": "",
       "type": "JavaScript"
+    },
+    {
+      "name": "Imports/Chart.bundle.min.js",
+      "description": "",
+      "type": "JavaScript"
     }
   ],
   "userControls": [
@@ -74,6 +79,9 @@
     },
     {
       "url": "UserControls/ucValidationBox.usercontrol"
+    },
+    {
+      "url": "UserControls/Radar.usercontrol"
     }
   ],
   "content": [
@@ -144,6 +152,11 @@
     },
     {
       "url": "Contents/submenu/Array.content",
+      "preload": false,
+      "keepAlive": false
+    },
+    {
+      "url": "Contents/ThirdPartyCtrl/AmChartJS.content",
       "preload": false,
       "keepAlive": false
     }
@@ -234,6 +247,12 @@
       "BBB": {
         "value": 0.0,
         "type": "tchmi:general#/definitions/Number",
+        "persist": false,
+        "readonly": false
+      },
+      "ID": {
+        "value": "0",
+        "type": "tchmi:general#/definitions/String",
         "persist": false,
         "readonly": false
       }

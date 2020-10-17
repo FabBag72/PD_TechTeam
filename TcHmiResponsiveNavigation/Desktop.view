@@ -270,6 +270,39 @@
       }
     ],
     "accessRight": ""
+  },
+  {
+    "name": "Third Party Controls",
+    "page": "",
+    "parameter": "",
+    "subtitle": "",
+    "image": "",
+    "imageWidth": null,
+    "imageWidthUnit": "",
+    "imageHeight": null,
+    "imageHeightUnit": "",
+    "children": [
+      {
+        "name": "AMChartJS",
+        "showColumnName": false,
+        "children": [
+          {
+            "name": "AMChartJS",
+            "page": "Contents/ThirdPartyCtrl/AmChartJS.content",
+            "parameter": "",
+            "image": "Images/AmCharts_Logo.png",
+            "imageWidth": null,
+            "imageWidthUnit": "",
+            "imageHeight": null,
+            "imageHeightUnit": "",
+            "children": "",
+            "accessRight": ""
+          }
+        ],
+        "accessRight": ""
+      }
+    ],
+    "accessRight": ""
   }
 ]
 </script>

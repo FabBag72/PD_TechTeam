@@ -1,0 +1,27 @@
+﻿<div id="Radar" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControl" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="100" data-tchmi-height="100" data-tchmi-width-unit="%" data-tchmi-height-unit="%" data-tchmi-creator-viewport-width="500" data-tchmi-creator-viewport-height="500">
+
+<div id="chartjsHost" data-tchmi-type="TcHmi.Controls.System.TcHmiHtmlHost" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-bottom="0" data-tchmi-right="0" data-tchmi-height-unit="px">
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "chartjsHost.onAttached",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "// Ricerca host\nvar chartjsHost = document.getElementById('chartjsHost').firstChild;\n\n// Creazione canvas\nvar canvas = document.createElement('canvas');\nchartjsHost.appendChild(canvas);\ncanvas.style.width = '100%';\ncanvas.style.height = '100%';\ncanvas.style.display = 'block';\n\n// Creazione chart\nchartjsHost.chart = new Chart(canvas, {\n    type: 'radar',\n    data: {\n    \tlabels: ['Misura1', 'Misura2', 'Misura3', 'Misura4'],\n        datasets: [{ \n            borderColor: 'red',    \t           \t\n            data: [1, 1, 1, 1],\n        }]\n    },\n    options: {\n    \tlegend: {\n            display: false\n        },\n        scale: {\n    \t\tticks: {\n                suggestedMin: 0,\n                suggestedMax: 100\n            }\n        }\n    }\n});\n\n// Monitoraggio simboli\nvar valueNames = ['Misura1', 'Misura2', 'Misura3', 'Misura4'];\nvar otherNames = ['MinMisura', 'MaxMisura', 'Colore'];\nvar names = [...valueNames, ...otherNames];\n\nvar updateData = function (v) {\n\tvar dataset = chartjsHost.chart.data.datasets[0];\n\tvar options = chartjsHost.chart.options;\n\t// Svuoto l'array\n\tdataset.data.splice(0, dataset.data.length);\n\tdataset.data.push(...valueNames.map(n => new TcHmi.Symbol('%pp%' + n + '%/pp%').read()));\n\t\n\t// Aggiorno altri parametri\n\toptions.scale.ticks.suggestedMin = new TcHmi.Symbol('%pp%' + otherNames[0] + '%/pp%').read();\n\toptions.scale.ticks.suggestedMax = new TcHmi.Symbol('%pp%' + otherNames[1] + '%/pp%').read();\n\tvar color = new TcHmi.Symbol('%pp%' + otherNames[2] + '%/pp%').read();\n\t//dataset.borderColor = color;\n\t//dataset.backgroundColor = color;\n\t\n\t// Aggiorno il grafico\n\tchartjsHost.chart.update();\n};\n\nfor (var x = 0; x < names.length; x++) {\n\tvar symbol = new TcHmi.Symbol('%pp%' + names[x] + '%/pp%');\n    var destroySymbol = symbol.watch(updateData);\n}"
+        ],
+        "injectContextObject": true,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  }
+]
+</script>
+</div>
+
+</div>

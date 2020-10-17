@@ -3,12 +3,15 @@
 	<Translations>
 		<Text TxtId="MachineEvents">
 			<Text LcId="1040"><![CDATA[Eventi macchina]]></Text>
+			<Text LcId="1031"><![CDATA[Mascine event]]></Text>
 		</Text>
 		<Text TxtId="Process started">
 			<Text LcId="1040"><![CDATA[Processo iniziato]]></Text>
+			<Text LcId="1031"><![CDATA[Proces started]]></Text>
 		</Text>
 		<Text TxtId="Process stopped">
 			<Text LcId="1040"><![CDATA[Processo finito]]></Text>
+			<Text LcId="1031"><![CDATA[Process stopped]]></Text>
 		</Text>
 	</Translations>
 	<DataTypes>
@@ -28,6 +31,25 @@
 			<Hides>
 				<Hide GUID="{3AF86453-E94A-4ED7-82EB-25E53F0F8472}"/>
 				<Hide GUID="{E4B222E6-32C2-479B-A9D3-36AB29765D72}"/>
+			</Hides>
+		</DataType>
+		<DataType>
+			<Name GUID="{F595B3F1-CB80-4F59-B86B-A0B3C8F3C7E2}" PersistentType="true">MyEvents</Name>
+			<DisplayName TxtId=""><![CDATA[MachineEvents]]></DisplayName>
+			<EventId>
+				<Name Id="1">Start</Name>
+				<DisplayName TxtId=""><![CDATA[Process started]]></DisplayName>
+				<Severity>Info</Severity>
+			</EventId>
+			<EventId>
+				<Name Id="2">Stop</Name>
+				<DisplayName TxtId=""><![CDATA[Process stopped]]></DisplayName>
+				<Severity>Warning</Severity>
+			</EventId>
+			<Hides>
+				<Hide GUID="{3AF86453-E94A-4ED7-82EB-25E53F0F8472}"/>
+				<Hide GUID="{E4B222E6-32C2-479B-A9D3-36AB29765D72}"/>
+				<Hide GUID="{F33B7717-7061-454A-A302-A0FC35FD98A6}"/>
 			</Hides>
 		</DataType>
 	</DataTypes>
