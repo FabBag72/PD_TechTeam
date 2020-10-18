@@ -283,14 +283,14 @@
     "imageHeightUnit": "",
     "children": [
       {
-        "name": "AMChartJS",
+        "name": "ChartJS.org",
         "showColumnName": false,
         "children": [
           {
-            "name": "AMChartJS",
-            "page": "Contents/ThirdPartyCtrl/AmChartJS.content",
+            "name": "ChartJS",
+            "page": "Contents/ThirdPartyCtrl/ChartJS.content",
             "parameter": "",
-            "image": "Images/AmCharts_Logo.png",
+            "image": "Images/ChartJS_logo.jpg",
             "imageWidth": null,
             "imageWidthUnit": "",
             "imageHeight": null,

@@ -39,6 +39,14 @@
         }
       ]
     },
+    "UserControls_Doughnut": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControls\\Doughnut.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/UserControls_Doughnut"
+    },
     "UserControls_Radar": {
       "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
       "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",

@@ -72,6 +72,9 @@
   ],
   "userControls": [
     {
+      "url": "UserControls/Radar.usercontrol"
+    },
+    {
       "url": "UserControls/ucHeaderOpener.usercontrol"
     },
     {
@@ -81,7 +84,7 @@
       "url": "UserControls/ucValidationBox.usercontrol"
     },
     {
-      "url": "UserControls/Radar.usercontrol"
+      "url": "UserControls/Doughnut.usercontrol"
     }
   ],
   "content": [
@@ -156,7 +159,7 @@
       "keepAlive": false
     },
     {
-      "url": "Contents/ThirdPartyCtrl/AmChartJS.content",
+      "url": "Contents/ThirdPartyCtrl/ChartJS.content",
       "preload": false,
       "keepAlive": false
     }
@@ -253,6 +256,36 @@
       "ID": {
         "value": "0",
         "type": "tchmi:general#/definitions/String",
+        "persist": false,
+        "readonly": false
+      },
+      "Data1": {
+        "value": 10,
+        "type": "tchmi:general#/definitions/INT16",
+        "persist": false,
+        "readonly": false
+      },
+      "Data2": {
+        "value": 20,
+        "type": "tchmi:general#/definitions/INT16",
+        "persist": false,
+        "readonly": false
+      },
+      "Data3": {
+        "value": 30,
+        "type": "tchmi:general#/definitions/INT16",
+        "persist": false,
+        "readonly": false
+      },
+      "Data4": {
+        "value": 40,
+        "type": "tchmi:general#/definitions/INT16",
+        "persist": false,
+        "readonly": false
+      },
+      "Data5": {
+        "value": 50,
+        "type": "tchmi:general#/definitions/INT16",
         "persist": false,
         "readonly": false
       }

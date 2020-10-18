@@ -24,7 +24,7 @@
     <AzureFunctionsVersion>v2</AzureFunctionsVersion>
     <Name>TcHmiResponsiveNavigation</Name>
     <HmiCommunicationRouterPort>10109</HmiCommunicationRouterPort>
-    <HmiCommunicationServerAuthPort>13000</HmiCommunicationServerAuthPort>
+    <HmiCommunicationServerAuthPort>13001</HmiCommunicationServerAuthPort>
     <HmiInitial>1.12.742.0</HmiInitial>
     <HmiRecent>1.12.742.4</HmiRecent>
   </PropertyGroup>
@@ -150,7 +150,7 @@
     <Content Include="Contents\submenu\TabMenu.content">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Contents\ThirdPartyCtrl\AmChartJS.content">
+    <Content Include="Contents\ThirdPartyCtrl\ChartJS.content">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Function\CalculationMethod.function.json">
@@ -184,7 +184,7 @@
     <Content Include="Function\SetStructElementByIndex.js">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Images\AmCharts_Logo.png">
+    <Content Include="Images\ChartJS_logo.jpg">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Images\close_pressed.svg">
@@ -265,6 +265,13 @@
     </Content>
     <Content Include="Server\TcHmiVision\TcHmiVision.Storage.json">
       <SubType>Content</SubType>
+    </Content>
+    <Content Include="UserControls\Doughnut.usercontrol">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UserControls\Doughnut.usercontrol.json">
+      <SubType>Content</SubType>
+      <DependentUpon>UserControls\Doughnut.usercontrol</DependentUpon>
     </Content>
     <Content Include="UserControls\Radar.usercontrol">
       <SubType>Content</SubType>
