@@ -120,6 +120,9 @@
     <Content Include="Contents\Features\RPC.content">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Contents\Features\TcHMI_Animation.content">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Contents\Other\Language.content">
       <SubType>Content</SubType>
     </Content>
@@ -157,6 +160,13 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Contents\ThirdPartyCtrl\ChartJS.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Function\Animate.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>Function\Animate.js</DependentUpon>
+    </Content>
+    <Content Include="Function\Animate.js">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Function\CalculationMethod.function.json">

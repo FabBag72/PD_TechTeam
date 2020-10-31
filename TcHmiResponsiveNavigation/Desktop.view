@@ -251,11 +251,30 @@
     "children": [
       {
         "name": "Miscellaneous",
-        "showColumnName": false,
+        "showColumnName": true,
         "children": [
           {
             "name": "RPC",
             "page": "Contents/Features/RPC.content",
+            "parameter": "",
+            "image": "",
+            "imageWidth": null,
+            "imageWidthUnit": "",
+            "imageHeight": null,
+            "imageHeightUnit": "",
+            "children": "",
+            "accessRight": ""
+          }
+        ],
+        "accessRight": ""
+      },
+      {
+        "name": "TcHMI Framework",
+        "showColumnName": true,
+        "children": [
+          {
+            "name": "TcHMI Animation",
+            "page": "Contents/Features/TcHMI_Animation.content",
             "parameter": "",
             "image": "",
             "imageWidth": null,

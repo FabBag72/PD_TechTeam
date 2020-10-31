@@ -68,6 +68,11 @@
       "name": "Imports/Chart.bundle.min.js",
       "description": "",
       "type": "JavaScript"
+    },
+    {
+      "name": "Function/Animate.js",
+      "description": "",
+      "type": "JavaScript"
     }
   ],
   "userControls": [
@@ -95,6 +100,16 @@
     },
     {
       "url": "Contents/Other/Language.content",
+      "preload": false,
+      "keepAlive": false
+    },
+    {
+      "url": "Contents/Overview/Overview.content",
+      "preload": false,
+      "keepAlive": false
+    },
+    {
+      "url": "Contents/StartPage.content",
       "preload": false,
       "keepAlive": false
     },
@@ -159,12 +174,7 @@
       "keepAlive": false
     },
     {
-      "url": "Contents/Overview/Overview.content",
-      "preload": false,
-      "keepAlive": false
-    },
-    {
-      "url": "Contents/StartPage.content",
+      "url": "Contents/Features/TcHMI_Animation.content",
       "preload": false,
       "keepAlive": false
     }
@@ -188,6 +198,9 @@
     },
     {
       "url": "Function\\CalculationMethod.js"
+    },
+    {
+      "url": "Function\\Animate.js"
     }
   ],
   "symbols": {
