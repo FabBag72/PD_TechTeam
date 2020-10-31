@@ -72,6 +72,9 @@
   ],
   "userControls": [
     {
+      "url": "UserControls/Doughnut.usercontrol"
+    },
+    {
       "url": "UserControls/Radar.usercontrol"
     },
     {
@@ -82,9 +85,6 @@
     },
     {
       "url": "UserControls/ucValidationBox.usercontrol"
-    },
-    {
-      "url": "UserControls/Doughnut.usercontrol"
     }
   ],
   "content": [
@@ -144,7 +144,7 @@
       "keepAlive": false
     },
     {
-      "url": "Contents/Overview.content",
+      "url": "Contents/ThirdPartyCtrl/ChartJS.content",
       "preload": false,
       "keepAlive": false
     },
@@ -159,7 +159,12 @@
       "keepAlive": false
     },
     {
-      "url": "Contents/ThirdPartyCtrl/ChartJS.content",
+      "url": "Contents/Overview/Overview.content",
+      "preload": false,
+      "keepAlive": false
+    },
+    {
+      "url": "Contents/StartPage.content",
       "preload": false,
       "keepAlive": false
     }
@@ -286,6 +291,12 @@
       "Data5": {
         "value": 50,
         "type": "tchmi:general#/definitions/INT16",
+        "persist": false,
+        "readonly": false
+      },
+      "SetOperator": {
+        "value": true,
+        "type": "tchmi:general#/definitions/Boolean",
         "persist": false,
         "readonly": false
       }

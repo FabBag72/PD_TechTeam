@@ -5,9 +5,13 @@
     (function (Functions) {
         var TcHmiResponsiveNavigation;
         (function (TcHmiResponsiveNavigation) {
-            function CalculationMethod(par1) {
-                TcHmi.Symbol.writeEx("%s%PLC1.MAIN.Base::Calculation%/s%", { in1: 1, in2: 3, operator: 1 }, function (data) {
-                    console.log(data);
+            function CalculationMethod(ctx, in1, in2, operator) {
+                TcHmi.Symbol.writeEx("%s%PLC1.MAIN.Base::Calculation%/s%", { in1: in1, in2: in2, operator: operator}, function (data) {
+                    var value = data.value;
+                    value = value.toString();
+                    console.log(value);
+                    ctx.success(value);
+                    return;
                 });
             }
             TcHmiResponsiveNavigation.CalculationMethod = CalculationMethod;

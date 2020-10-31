@@ -129,9 +129,8 @@
         "active": true,
         "symbolExpression": "%i%Data5%/i%",
         "value": {
-          "objectType": "StaticValue",
-          "valueType": "tchmi:general#/definitions/String",
-          "value": "parseInt(Math.random() * 80)"
+          "objectType": "FunctionExpression",
+          "functionExpression": "parseInt(Math.random() * 80)"
         },
         "asyncWait": true
       }

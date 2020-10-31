@@ -1,40 +1,66 @@
 ﻿{
-  "$schema": "../.hmiframework/Schema/FunctionDescription.Schema.json",
-  "apiVersion": 1,
-  "version": {
-    "full": "0.0.0.0",
-    "major": 0,
-    "minor": 0,
-    "revision": 0,
-    "build": 0
-  },
-  "dependencyFiles": [
-    {
-      "name": "CalculationMethod.js",
-      "type": "JavaScript",
-      "description": ""
-    }
-  ],
   "function": {
     "name": "CalculationMethod",
     "namespace": "TcHmi.Functions.TcHmiResponsiveNavigation",
     "displayName": "CalculationMethod",
     "description": "",
-    "waitMode": "Synchronous",
+    "waitMode": "Asynchronous",
     "category": "",
     "returnValue": {
-      "type": "tchmi:general#/definitions/String"
+      "type": "tchmi:general#/definitions/INT"
     },
+    "visible": true,
+    "injectContextObject": true,
     "arguments": [
       {
-        "name": "par1",
-        "displayName": "Parameter",
-        "type": "tchmi:general#/definitions/Number",
-        "description": "This is an important Parameter which does... This text is used in a tooltip.",
-        "defaultValue": null,
+        "name": "ctx",
+        "displayName": "ctx",
+        "type": "tchmi:framework#/definitions/ContextReference",
+        "description": "Context Reference",
+        "defaultValue": "",
         "required": true,
-        "bindable": true
+        "bindable": false,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "in1",
+        "displayName": "in1",
+        "type": "tchmi:general#/definitions/REAL",
+        "description": "This is an important Parameter which does... This text is used in a tooltip.",
+        "defaultValue": "0",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "in2",
+        "displayName": "in2",
+        "type": "tchmi:general#/definitions/REAL",
+        "description": "",
+        "defaultValue": "0",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "operator",
+        "displayName": "operator",
+        "type": "tchmi:server#/definitions/PLC1.E_Operator",
+        "description": "",
+        "defaultValue": "1",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
       }
     ]
-  }
+  },
+  "$schema": "../.hmiframework/Schema/FunctionDescription.Schema.json"
 }

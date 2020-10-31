@@ -123,6 +123,12 @@
     <Content Include="Contents\Other\Language.content">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Contents\Overview\Overview.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Contents\StartPage.content">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Contents\submenu2\EventGridSample.content">
       <SubType>Content</SubType>
     </Content>
@@ -245,6 +251,9 @@
     <Content Include="LoginPage\LoginPage1.html">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="packages.config">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="pdf\TcHmiResponsiveNavigation_Tutorial.pdf">
       <SubType>Content</SubType>
     </Content>
@@ -305,6 +314,7 @@
       <SubType>Content</SubType>
     </Content>
     <Folder Include="Contents\Features" />
+    <Folder Include="Contents\Overview" />
     <Folder Include="Contents\ThirdPartyCtrl" />
     <Folder Include="Contents\Other" />
     <Folder Include="Contents\submenu2" />
@@ -335,9 +345,6 @@
     <Content Include=".eslintrc.json">
       <Visible>false</Visible>
     </Content>
-    <Content Include="Contents\Overview.content">
-      <SubType>Content</SubType>
-    </Content>
     <Content Include="Contents\submenu\LateralMenu.content">
       <SubType>Content</SubType>
     </Content>
@@ -361,10 +368,6 @@
       <SubType>Content</SubType>
       <Visible>true</Visible>
       <DependentUpon>tsconfig.tpl.json</DependentUpon>
-    </Content>
-    <Content Include="packages.config">
-      <SubType>Content</SubType>
-      <Visible>true</Visible>
     </Content>
     <Content Include="packages.xsd">
       <SubType>Content</SubType>

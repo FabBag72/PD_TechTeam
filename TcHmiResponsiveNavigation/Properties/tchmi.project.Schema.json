@@ -1,44 +1,6 @@
 ﻿{
   "$schema": "http://json-schema.org/draft-04/schema#",
   "definitions": {
-    "PLC1.E_Operator": {
-      "allOf": [
-        {
-          "enum": [
-            "0",
-            "1",
-            "2",
-            "3",
-            "4"
-          ],
-          "options": [
-            {
-              "value": 0,
-              "label": "idle_operator"
-            },
-            {
-              "value": 1,
-              "label": "sum_operator"
-            },
-            {
-              "value": 2,
-              "label": "diff_operator"
-            },
-            {
-              "value": 3,
-              "label": "mul_operator"
-            },
-            {
-              "value": 4,
-              "label": "ratio_operator"
-            }
-          ]
-        },
-        {
-          "$ref": "tchmi:general#/definitions/INT16"
-        }
-      ]
-    },
     "UserControls_Doughnut": {
       "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
       "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",

@@ -106,7 +106,7 @@
 ]
 </script>
 
-<div id="UcSimpleTab" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls/ucSimpleTab.usercontrol" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-setstate="1" data-tchmi-text="Primo" data-tchmi-region="%ctrl%TcHmiTabMenuRegion%/ctrl%" data-tchmi-content="Contents/Overview.content" data-tchmi-actstate="%i%TabMenuState%/i%" data-tchmi-zindex="100">
+<div id="UcSimpleTab" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls/ucSimpleTab.usercontrol" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-setstate="1" data-tchmi-text="Primo" data-tchmi-region="%ctrl%TcHmiTabMenuRegion%/ctrl%" data-tchmi-content="Contents/Overview/Overview.content" data-tchmi-actstate="%i%TabMenuState%/i%" data-tchmi-zindex="100">
 
 </div>
 

@@ -11,9 +11,9 @@
             "SALT": "bl1bE07Zn//nrpWgH6IbAOnc+rz/W+QTKDFea8npNuIdPsL3Pd9OsscTwnYf8ZaRXcAAffNDUfA3JeSebusAAA=="
         },
         "__SystemAdministrator": {
-            "ENABLED": false,
-            "PASSWORD": "",
-            "SALT": ""
+            "ENABLED": true,
+            "PASSWORD": "616005e4bf6f686a44a0043a4af654c2483c1303af9430d604e81a8cba442d08",
+            "SALT": "Vw4F9iJS6/sOHBs1W/2O/D9eybrw6QHtsl5nbvvdZNdRysGwm+pbxYGZpiTgaBKLwNiFkWcLUNLmyMgfJHtcAA=="
         },
         "__SystemGuest": {
             "ENABLED": true,
