@@ -31,9 +31,9 @@ List of content.
     * EventGrid Sample, EventGridSample.content.
 
 * Features
-  * RPC, Remote Procedure Call, PLC FB method calling by TcHMI framework. Read/Write FB Property. (**under construction)
+  * RPC, Remote Procedure Call, PLC FB method calling by TcHMI framework. Read/Write FB Property.
   
 * Third Party Controls
-  * ChartsJS radar and doughnut sample
+  * ChartsJS radar and doughnut samples.
     
 
