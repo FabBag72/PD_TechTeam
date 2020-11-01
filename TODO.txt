@@ -1,2 +1,2 @@
-- Chiamata metodo FB del PLC.
-- Schema P&ID: https://commons.wikimedia.org/wiki/Category:P%26ID_symbols (Vedi esempi di Oleg Muller)
+- Chiamata metodo FB del PLC. OK
+- Schema P&I Diagram: https://commons.wikimedia.org/wiki/Category:P%26ID_symbols. OK
