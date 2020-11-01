@@ -149,6 +149,11 @@
       "keepAlive": false
     },
     {
+      "url": "Contents/submenu/P_and_I_Diagram.content",
+      "preload": false,
+      "keepAlive": false
+    },
+    {
       "url": "Contents/submenu/Settings.content",
       "preload": false,
       "keepAlive": false
@@ -175,11 +180,6 @@
     },
     {
       "url": "Contents/submenu/Array.content",
-      "preload": false,
-      "keepAlive": false
-    },
-    {
-      "url": "Contents/submenu/P_and_I_Diagram.content",
       "preload": false,
       "keepAlive": false
     }
