@@ -182,6 +182,25 @@
           }
         ],
         "accessRight": ""
+      },
+      {
+        "name": "P&I Diagram",
+        "showColumnName": true,
+        "children": [
+          {
+            "name": "P&I Diagram",
+            "page": "Contents/submenu/P_and_I_Diagram.content",
+            "parameter": "",
+            "image": "",
+            "imageWidth": null,
+            "imageWidthUnit": "",
+            "imageHeight": null,
+            "imageHeightUnit": "",
+            "children": "",
+            "accessRight": ""
+          }
+        ],
+        "accessRight": ""
       }
     ],
     "accessRight": ""

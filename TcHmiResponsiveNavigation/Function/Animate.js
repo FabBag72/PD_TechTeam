@@ -23,14 +23,11 @@
         var animation = new TcHmi.Animation(ControlElement.getId(), '') // Create the animation
             .fillMode('forwards')   // Set fillMode 
             .addKeyframe('left', ControlElement.getLeft() + ControlElement.getLeftUnit(), 0) // Add first keyframe to current position
-            .addKeyframe('left', (ControlElement.getLeft() + 50) + ControlElement.getLeftUnit(), 0.5) // Add second keyframe to current position +50
-            .addKeyframe('top', ControlElement.getTop() + ControlElement.getTopUnit(), 0.75) // Add first keyframe to current position
-            .addKeyframe('top', (ControlElement.getTop() + 20) + ControlElement.getTopUnit(), 1) // Add second keyframe to current position +50
+            .addKeyframe('left', (ControlElement.getLeft() + 50) + ControlElement.getLeftUnit(), 1) // Add second keyframe to current position +50
             .duration(1000);    // Set duration for 1sec
         animation.cleanup(Cleanup); // Cleanup to set values after animation
         animation.run();    // Runs the animation
         TcHmi.Controls.get(ControlElement.getId()).setLeft(ControlElement.getLeft() + 50);  // Set the real position of element
-        //TcHmi.Controls.get(ControlElement.getId()).setTop(ControlElement.getTop() + 20);  // Set the real position of element
     };
 
     TcHmi.Functions.registerFunction('Animate', Animate);

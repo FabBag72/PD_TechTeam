@@ -99,6 +99,11 @@
       "keepAlive": false
     },
     {
+      "url": "Contents/Features/TcHMI_Animation.content",
+      "preload": false,
+      "keepAlive": false
+    },
+    {
       "url": "Contents/Other/Language.content",
       "preload": false,
       "keepAlive": false
@@ -174,7 +179,7 @@
       "keepAlive": false
     },
     {
-      "url": "Contents/Features/TcHMI_Animation.content",
+      "url": "Contents/submenu/P_and_I_Diagram.content",
       "preload": false,
       "keepAlive": false
     }
