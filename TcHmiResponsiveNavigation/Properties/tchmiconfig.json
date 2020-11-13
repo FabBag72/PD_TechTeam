@@ -73,6 +73,41 @@
       "name": "Function/Animate.js",
       "description": "",
       "type": "JavaScript"
+    },
+    {
+      "name": "Function/ListGroups.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
+      "name": "Function/ImportUserConfig.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
+      "name": "Function/IMPORTServerConfig.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
+      "name": "Function/ExportUserConfig.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
+      "name": "Function/ExportServerConfig.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
+      "name": "Function/ChangePsw.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
+      "name": "Function/AddUser.js",
+      "description": "",
+      "type": "JavaScript"
     }
   ],
   "userControls": [
@@ -105,11 +140,6 @@
     },
     {
       "url": "Contents/Other/Language.content",
-      "preload": false,
-      "keepAlive": false
-    },
-    {
-      "url": "Contents/Overview/Overview.content",
       "preload": false,
       "keepAlive": false
     },
@@ -150,6 +180,11 @@
     },
     {
       "url": "Contents/submenu/P_and_I_Diagram.content",
+      "preload": false,
+      "keepAlive": false
+    },
+    {
+      "url": "Contents/submenu/Responsive Navigation.content",
       "preload": false,
       "keepAlive": false
     },
@@ -206,6 +241,27 @@
     },
     {
       "url": "Function\\Animate.js"
+    },
+    {
+      "url": "Function\\ListGroups.js"
+    },
+    {
+      "url": "Function\\ImportUserConfig.js"
+    },
+    {
+      "url": "Function\\IMPORTServerConfig.js"
+    },
+    {
+      "url": "Function\\ExportUserConfig.js"
+    },
+    {
+      "url": "Function\\ExportServerConfig.js"
+    },
+    {
+      "url": "Function\\ChangePsw.js"
+    },
+    {
+      "url": "Function\\AddUser.js"
     }
   ],
   "symbols": {
@@ -317,6 +373,36 @@
         "type": "tchmi:general#/definitions/Boolean",
         "persist": false,
         "readonly": false
+      },
+      "newPsw": {
+        "value": "",
+        "type": "tchmi:general#/definitions/String",
+        "persist": false,
+        "readonly": false
+      },
+      "newPswConf": {
+        "value": "",
+        "type": "tchmi:general#/definitions/String",
+        "persist": false,
+        "readonly": false
+      },
+      "newUser_Name": {
+        "value": "",
+        "type": "tchmi:general#/definitions/String",
+        "persist": false,
+        "readonly": false
+      },
+      "newUser_Psw": {
+        "value": "",
+        "type": "tchmi:general#/definitions/String",
+        "persist": false,
+        "readonly": false
+      },
+      "newUser_Group": {
+        "value": "",
+        "type": "tchmi:general#/definitions/String",
+        "persist": false,
+        "readonly": false
       }
     }
   },
@@ -354,6 +440,10 @@
     {
       "name": "Beckhoff.TwinCAT.HMI.PDFViewer",
       "basePath": "/Beckhoff.TwinCAT.HMI.PDFViewer"
+    },
+    {
+      "name": "JB.TcHmiTextboxExtended",
+      "basePath": "/JB.TcHmiTextboxExtended"
     }
   ],
   "keyboardLayouts": [

@@ -43,19 +43,6 @@
 <script data-tchmi-target-attribute="data-tchmi-menu-source-data" type="application/json">
 [
   {
-    "name": "Overview",
-    "page": "Contents/Overview/Overview.content",
-    "parameter": "",
-    "subtitle": "",
-    "image": "",
-    "imageWidth": 100.0,
-    "imageWidthUnit": "%",
-    "imageHeight": 100.0,
-    "imageHeightUnit": "%",
-    "children": "",
-    "accessRight": ""
-  },
-  {
     "name": "Submenu",
     "page": "",
     "parameter": "",
@@ -70,6 +57,18 @@
         "name": "Sample menu",
         "showColumnName": true,
         "children": [
+          {
+            "name": "Responsive Navigation",
+            "page": "Contents/submenu/Responsive Navigation.content",
+            "parameter": "",
+            "image": "",
+            "imageWidth": null,
+            "imageWidthUnit": "",
+            "imageHeight": null,
+            "imageHeightUnit": "",
+            "children": "",
+            "accessRight": ""
+          },
           {
             "name": "Lateral Menu",
             "page": "Contents/submenu/LateralMenu.content",

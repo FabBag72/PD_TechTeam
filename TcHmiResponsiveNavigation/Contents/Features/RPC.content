@@ -68,4 +68,106 @@
 
 </div>
 
+<div id="TcHmi_Controls_Beckhoff_TcHmiTextblock_24" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="84" data-tchmi-height-unit="px" data-tchmi-left="415" data-tchmi-left-unit="px" data-tchmi-text="{attribute 'TcRpcEnable'}
+METHOD Calculation : REAL
+VAR_INPUT	
+	in1, in2 : REAL;
+	operator : E_Operator;
+END_VAR" data-tchmi-top="27" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True">
+
+</div>
+
+<div id="TcHmi_Controls_Beckhoff_TcHmiTextblock_25" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="243" data-tchmi-height-unit="px" data-tchmi-left="415" data-tchmi-left-unit="px" data-tchmi-text="CASE operator OF
+	E_Operator.idle_operator:
+		;
+	E_Operator.sum_operator:
+		Calculation := in1 + in2;
+	E_Operator.diff_operator:
+		Calculation := in1 - in2;
+	E_Operator.mul_operator:
+		Calculation := in1 * in2;
+	E_Operator.ratio_operator:
+		IF in2 data-tchmi-top="121" data-tchmi-top-unit="px" data-tchmi-width="212" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" <> 0 THEN
+			Calculation := in1 / in2;
+		END_IF	
+END_CASE
+_CalcCounter := _CalcCounter + 1;"
+	E_Operator.idle_operator:
+		;
+	E_Operator.sum_operator:
+		Calculation := in1 + in2;
+	E_Operator.diff_operator:
+		Calculation := in1 - in2;
+	E_Operator.mul_operator:
+		Calculation := in1 * in2;
+	E_Operator.ratio_operator:
+		IF in2 <> 0 THEN
+			Calculation := in1 / in2;
+		END_IF	
+END_CASE
+_CalcCounter := _CalcCounter + 1;"
+	E_Operator.idle_operator:
+		;
+	E_Operator.sum_operator:
+		Calculation := in1 + in2;
+	E_Operator.diff_operator:
+		Calculation := in1 - in2;
+	E_Operator.mul_operator:
+		Calculation := in1 * in2;
+	E_Operator.ratio_operator:
+		IF in2 data-tchmi-top="216" data-tchmi-top-unit="px" data-tchmi-width="212" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" <> 0 THEN
+			Calculation := in1 / in2;
+		END_IF	
+END_CASE
+_CalcCounter := _CalcCounter + 1;"
+	E_Operator.idle_operator:
+		;
+	E_Operator.sum_operator:
+		Calculation := in1 + in2;
+	E_Operator.diff_operator:
+		Calculation := in1 - in2;
+	E_Operator.mul_operator:
+		Calculation := in1 * in2;
+	E_Operator.ratio_operator:
+		IF in2 <> 0 THEN
+			Calculation := in1 / in2;
+		END_IF	
+END_CASE
+_CalcCounter := _CalcCounter + 1;"
+	E_Operator.idle_operator:
+		;
+	E_Operator.sum_operator:
+		Calculation := in1 + in2;
+	E_Operator.diff_operator:
+		Calculation := in1 - in2;
+	E_Operator.mul_operator:
+		Calculation := in1 * in2;
+	E_Operator.ratio_operator:
+		IF in2 data-tchmi-top="216" data-tchmi-top-unit="px" data-tchmi-width="212" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" <> 0 THEN
+			Calculation := in1 / in2;
+		END_IF	
+END_CASE
+_CalcCounter := _CalcCounter + 1;"
+	E_Operator.idle_operator:
+		;
+	E_Operator.sum_operator:
+		Calculation := in1 + in2;
+	E_Operator.diff_operator:
+		Calculation := in1 - in2;
+	E_Operator.mul_operator:
+		Calculation := in1 * in2;
+	E_Operator.ratio_operator:
+		IF in2 <> 0 THEN
+			Calculation := in1 / in2;
+		END_IF	
+EN data-tchmi-top="216" data-tchmi-width="150" data-tchmi-word-wrap="True"D_CASE
+_CalcCounter := _CalcCounter + 1;"	E_Operator.idle_operator:		;	E_Operator.sum_operator:		Calculation := in1 + in2;	E_Operator.diff_operator:		Calculation := in1 - in2;	E_Operator.mul_operator:		Calculation := in1 * in2;	E_Operator.ratio_operator:		IF in2 data-tchmi-top-unit="px" data-tchmi-width-unit="px" <> 0 THEN			Calculation := in1 / in2;		END_IF	END_CASE_CalcCounter := _CalcCounter + 1;" data-tchmi-top="216" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True">
+
+</div>
+
+<div id="TcHmi_Controls_Beckhoff_TcHmiTextblock_26" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="38" data-tchmi-height-unit="px" data-tchmi-left="213" data-tchmi-left-unit="px" data-tchmi-text="{attribute 'monitoring' := 'call'}
+PROPERTY CalcCounter : INT" data-tchmi-top="37" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True">
+
+</div>
+
 </div>

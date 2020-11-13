@@ -23,7 +23,7 @@
     <EnableTypeScript>true</EnableTypeScript>
     <AzureFunctionsVersion>v2</AzureFunctionsVersion>
     <Name>TcHmiResponsiveNavigation</Name>
-    <HmiCommunicationRouterPort>10111</HmiCommunicationRouterPort>
+    <HmiCommunicationRouterPort>10112</HmiCommunicationRouterPort>
     <HmiCommunicationServerAuthPort>13001</HmiCommunicationServerAuthPort>
     <HmiInitial>1.12.742.0</HmiInitial>
     <HmiRecent>1.12.742.4</HmiRecent>
@@ -126,9 +126,6 @@
     <Content Include="Contents\Other\Language.content">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Contents\Overview\Overview.content">
-      <SubType>Content</SubType>
-    </Content>
     <Content Include="Contents\StartPage.content">
       <SubType>Content</SubType>
     </Content>
@@ -153,6 +150,9 @@
     <Content Include="Contents\submenu\P_and_I_Diagram.content">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Contents\submenu\Responsive Navigation.content">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Contents\submenu\Settings.content">
       <SubType>Content</SubType>
     </Content>
@@ -163,6 +163,13 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Contents\ThirdPartyCtrl\ChartJS.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Function\AddUser.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>Function\AddUser.js</DependentUpon>
+    </Content>
+    <Content Include="Function\AddUser.js">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Function\Animate.function.json">
@@ -179,6 +186,13 @@
     <Content Include="Function\CalculationMethod.js">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Function\ChangePsw.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>Function\ChangePsw.js</DependentUpon>
+    </Content>
+    <Content Include="Function\ChangePsw.js">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Function\ExampleClassesProvider.function.json">
       <SubType>Content</SubType>
       <DependentUpon>Function\ExampleClassesProvider.js</DependentUpon>
@@ -187,6 +201,41 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Function\ExampleStyle.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Function\ExportServerConfig.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>Function\ExportServerConfig.js</DependentUpon>
+    </Content>
+    <Content Include="Function\ExportServerConfig.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Function\ExportUserConfig.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>Function\ExportUserConfig.js</DependentUpon>
+    </Content>
+    <Content Include="Function\ExportUserConfig.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Function\IMPORTServerConfig.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>Function\IMPORTServerConfig.js</DependentUpon>
+    </Content>
+    <Content Include="Function\IMPORTServerConfig.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Function\ImportUserConfig.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>Function\ImportUserConfig.js</DependentUpon>
+    </Content>
+    <Content Include="Function\ImportUserConfig.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Function\ListGroups.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>Function\ListGroups.js</DependentUpon>
+    </Content>
+    <Content Include="Function\ListGroups.js">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Function\NumberValidation.function.json">
@@ -252,6 +301,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Imports\Chart.bundle.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Videos\DatagridInsertTutorial.mp4">
       <SubType>Content</SubType>
     </Content>
     <Content Include="KeyboardLayouts\Calculator.keyboard.json">
@@ -335,9 +387,6 @@
       <SubType>Content</SubType>
       <DependentUpon>UserControls\ucValidationBox.usercontrol</DependentUpon>
     </Content>
-    <Content Include="Video\DatagridInsertTutorial.mp4">
-      <SubType>Content</SubType>
-    </Content>
     <Folder Include="Contents\Features" />
     <Folder Include="Contents\Overview" />
     <Folder Include="Contents\ThirdPartyCtrl" />
@@ -358,7 +407,6 @@
     <Folder Include="CodeBehind" />
     <Folder Include="LoginPage" />
     <Folder Include="Server\TcHmiVision" />
-    <Folder Include="Video" />
     <Folder Include="pdf" />
     <Folder Include="Server\TcHmiEventLogger" />
     <Folder Include="UserControls" />

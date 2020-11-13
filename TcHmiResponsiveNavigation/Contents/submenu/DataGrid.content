@@ -340,7 +340,7 @@
 <script data-tchmi-target-attribute="data-tchmi-src-list" type="application/json">
 [
   {
-    "source": "Video/DatagridInsertTutorial.mp4",
+    "source": "Imports/Videos/DatagridInsertTutorial.mp4",
     "type": "video/mp4"
   }
 ]
@@ -377,7 +377,7 @@
                 "objectType": "JavaScript",
                 "active": true,
                 "sourceLines": [
-                  "$('#TcHmiVideoDataGrid').animate({height: '500px'}, \"slow\");"
+                  "$('#TcHmiVideoDataGrid').animate({height: '450px'}, \"slow\");"
                 ],
                 "injectContextObject": false,
                 "asyncWait": true,

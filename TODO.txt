@@ -1,2 +1,4 @@
 - Chiamata metodo FB del PLC. OK
-- Schema P&I Diagram: https://commons.wikimedia.org/wiki/Category:P%26ID_symbols. OK
+- Schema P&I Diagram: https://commons.wikimedia.org/wiki/Category:P%26ID_symbols. Finire con chiamata di un popup
+- Gestione utenti come da esempio di Arianna (vedi Veolia). Controllare con server definitivo e aggiungere rigraziamenti ad Arianna.
+- TrendLineChart con selezione della traccia (TcHmiReadLatestActiveAlarm)

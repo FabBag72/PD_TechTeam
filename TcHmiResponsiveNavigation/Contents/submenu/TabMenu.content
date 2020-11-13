@@ -4,12 +4,14 @@
 <script data-tchmi-target-attribute="data-tchmi-column-options" type="application/json">
 [
   {
-    "width": 1,
+    "width": 1.0,
     "widthUnit": "factor",
     "widthMode": "Value",
+    "maxWidth": null,
     "maxWidthUnit": "px",
+    "minWidth": 400.0,
     "minWidthUnit": "px",
-    "overflow": false
+    "overflow": true
   }
 ]
 </script>
@@ -23,7 +25,7 @@
     "maxHeightUnit": "px",
     "minHeight": null,
     "minHeightUnit": "px",
-    "overflow": false
+    "overflow": true
   },
   {
     "height": 10.0,
@@ -96,25 +98,35 @@
 <script data-tchmi-target-attribute="data-tchmi-row-options" type="application/json">
 [
   {
-    "height": 1,
+    "height": 1.0,
     "heightUnit": "factor",
     "heightMode": "Value",
+    "maxHeight": null,
     "maxHeightUnit": "px",
+    "minHeight": null,
     "minHeightUnit": "px",
     "overflow": false
   }
 ]
 </script>
 
-<div id="UcSimpleTab" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls/ucSimpleTab.usercontrol" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-setstate="1" data-tchmi-text="Primo" data-tchmi-region="%ctrl%TcHmiTabMenuRegion%/ctrl%" data-tchmi-content="Contents/Overview/Overview.content" data-tchmi-actstate="%i%TabMenuState%/i%" data-tchmi-zindex="100">
+<div id="UcSimpleTab" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls/ucSimpleTab.usercontrol" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-setstate="1" data-tchmi-text="Responsive Navigation" data-tchmi-region="%ctrl%TcHmiTabMenuRegion%/ctrl%" data-tchmi-content="Contents/submenu/Responsive Navigation.content" data-tchmi-actstate="%i%TabMenuState%/i%" data-tchmi-zindex="100">
 
 </div>
 
-<div id="UcSimpleTab_1" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="0" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls/ucSimpleTab.usercontrol" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-text="Secondo" data-tchmi-actstate="%i%TabMenuState%/i%" data-tchmi-setstate="2" data-tchmi-region="%ctrl%TcHmiTabMenuRegion%/ctrl%" data-tchmi-content="Contents/Other/Language.content" data-tchmi-zindex="100">
+<div id="UcSimpleTab_1" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="0" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls/ucSimpleTab.usercontrol" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-text="Language" data-tchmi-actstate="%i%TabMenuState%/i%" data-tchmi-setstate="2" data-tchmi-region="%ctrl%TcHmiTabMenuRegion%/ctrl%" data-tchmi-content="Contents/Other/Language.content" data-tchmi-zindex="100">
 
 </div>
 
-<div id="UcSimpleTab_2" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-grid-column-index="2" data-tchmi-grid-row-index="0" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls/ucSimpleTab.usercontrol" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-text="Terzo" data-tchmi-actstate="%i%TabMenuState%/i%" data-tchmi-setstate="3" data-tchmi-content="Contents/submenu/Array.content" data-tchmi-region="%ctrl%TcHmiTabMenuRegion%/ctrl%" data-tchmi-zindex="100">
+<div id="UcSimpleTab_2" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-grid-column-index="2" data-tchmi-grid-row-index="0" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls/ucSimpleTab.usercontrol" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-text="Array" data-tchmi-actstate="%i%TabMenuState%/i%" data-tchmi-setstate="3" data-tchmi-content="Contents/submenu/Array.content" data-tchmi-region="%ctrl%TcHmiTabMenuRegion%/ctrl%" data-tchmi-zindex="100">
+
+</div>
+
+<div id="UcSimpleTab_3" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-grid-column-index="3" data-tchmi-grid-row-index="0" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls/ucSimpleTab.usercontrol" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-setstate="4" data-tchmi-actstate="%i%TabMenuState%/i%" data-tchmi-region="%ctrl%TcHmiTabMenuRegion%/ctrl%" data-tchmi-content="Contents/submenu/P_and_I_Diagram.content" data-tchmi-text="P&I D">
+
+</div>
+
+<div id="UcSimpleTab_4" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-grid-column-index="4" data-tchmi-grid-row-index="0" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls/ucSimpleTab.usercontrol" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-setstate="5" data-tchmi-actstate="%i%TabMenuState%/i%" data-tchmi-region="%ctrl%TcHmiTabMenuRegion%/ctrl%" data-tchmi-content="Contents/submenu2/EventGridSample.content" data-tchmi-text="Event Grid">
 
 </div>
 
