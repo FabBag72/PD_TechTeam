@@ -108,11 +108,19 @@
       "name": "Function/AddUser.js",
       "description": "",
       "type": "JavaScript"
+    },
+    {
+      "name": "Function/SetColor.js",
+      "description": "",
+      "type": "JavaScript"
     }
   ],
   "userControls": [
     {
       "url": "UserControls/Doughnut.usercontrol"
+    },
+    {
+      "url": "UserControls/InfoPopUp.usercontrol"
     },
     {
       "url": "UserControls/Radar.usercontrol"
@@ -150,6 +158,11 @@
     },
     {
       "url": "Contents/submenu2/EventGridSample.content",
+      "preload": false,
+      "keepAlive": false
+    },
+    {
+      "url": "Contents/submenu2/HistoricalSelecting.content",
       "preload": false,
       "keepAlive": false
     },
@@ -262,6 +275,9 @@
     },
     {
       "url": "Function\\AddUser.js"
+    },
+    {
+      "url": "Function\\SetColor.js"
     }
   ],
   "symbols": {
@@ -401,6 +417,41 @@
       "newUser_Group": {
         "value": "",
         "type": "tchmi:general#/definitions/String",
+        "persist": false,
+        "readonly": false
+      },
+      "state3": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/Number",
+        "persist": false,
+        "readonly": false
+      },
+      "TrendLineDescr": {
+        "value": [],
+        "type": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiLineChart.ChartLineGraphDescriptionDefinitionList",
+        "persist": false,
+        "readonly": false
+      },
+      "TrendLineDescr_1": {
+        "type": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiLineChart.ChartLineGraphDescriptionDefinitionList",
+        "persist": false,
+        "readonly": false
+      },
+      "bRed": {
+        "value": false,
+        "type": "tchmi:general#/definitions/Boolean",
+        "persist": false,
+        "readonly": false
+      },
+      "bBlue": {
+        "value": false,
+        "type": "tchmi:general#/definitions/Boolean",
+        "persist": false,
+        "readonly": false
+      },
+      "bBlack": {
+        "value": false,
+        "type": "tchmi:general#/definitions/Boolean",
         "persist": false,
         "readonly": false
       }

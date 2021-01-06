@@ -9,6 +9,14 @@
       "type": "object",
       "id": "tchmi:project#/definitions/UserControls_Doughnut"
     },
+    "UserControls_InfoPopUp": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControls\\InfoPopUp.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/UserControls_InfoPopUp"
+    },
     "UserControls_Radar": {
       "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
       "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",

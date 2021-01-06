@@ -11,6 +11,16 @@ VAR
 	Base : FB_Base;			//Base FB
 	ExtBase : FB_ExtBase;	//Extended FB	
 	op : E_Operator;
+	
+	// Trend Line Chart //
+	bStart: BOOL;
+	plotSin: REAL;
+	nVal: REAL;
+	nVal2: INT;
+	LineWidth1 : INT;
+	LineWidth2 : INT;
+	/////////////////////
+	
 END_VAR
 ]]></Declaration>
     <Implementation>
@@ -72,7 +82,20 @@ END_VAR
 END_IF
 
 MAIN_1();
-]]></ST>
+
+// Trend Line Chart //
+IF bStart THEN
+	nVal := nVal+ 0.01;
+	IF (nVal > (2*pi)) THEN //IF (nVal > (8*pi)) THEN 
+		nVal := 0;
+	END_IF
+	plotSin := SIN(nVal); // plotSin := SIN(0.25*nVal);
+	nVal2 := nVal2 + 1;
+	IF nVal2 > 90 THEN
+		nVal2 := 0;
+	END_IF
+END_IF
+/////////////////////]]></ST>
     </Implementation>
     <LineIds Name="MAIN">
       <LineId Id="2" Count="0" />
@@ -99,6 +122,7 @@ MAIN_1();
       <LineId Id="7" Count="0" />
       <LineId Id="77" Count="0" />
       <LineId Id="76" Count="0" />
+      <LineId Id="113" Count="12" />
       <LineId Id="91" Count="0" />
     </LineIds>
   </POU>

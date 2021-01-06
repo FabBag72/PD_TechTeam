@@ -1,0 +1,23 @@
+﻿{
+  "parameters": [
+    {
+      "name": "data-tchmi-html_control",
+      "displayName": "HTML_Control",
+      "visible": true,
+      "type": "tchmi:framework#/definitions/TcHmiHtmlHost",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "HTML_Control",
+      "propertySetterName": "setHTML_Control",
+      "propertyGetterName": "getHTML_Control",
+      "refTo": ""
+    }
+  ],
+  "virtualRights": [],
+  "$schema": "../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.742.5/runtimes/native1.12-tchmi/Schema/UserControlConfig.Schema.json",
+  "description": ""
+}

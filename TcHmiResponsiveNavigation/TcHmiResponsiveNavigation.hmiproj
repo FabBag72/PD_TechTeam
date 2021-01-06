@@ -12,7 +12,7 @@
     <HmiTitle>Please enter your Title...</HmiTitle>
     <HmiVerboseLevel>2</HmiVerboseLevel>
     <HmiVersion>1.0.0.0</HmiVersion>
-    <HmiCommunicationServerPort>3001</HmiCommunicationServerPort>
+    <HmiCommunicationServerPort>3002</HmiCommunicationServerPort>
     <HmiLogTcHmiServerMessages>false</HmiLogTcHmiServerMessages>
     <HmiLogDesignerModeComMessages>false</HmiLogDesignerModeComMessages>
     <HmiServerVersion>Latest</HmiServerVersion>
@@ -26,7 +26,7 @@
     <HmiCommunicationRouterPort>10112</HmiCommunicationRouterPort>
     <HmiCommunicationServerAuthPort>13001</HmiCommunicationServerAuthPort>
     <HmiInitial>1.12.742.0</HmiInitial>
-    <HmiRecent>1.12.742.4</HmiRecent>
+    <HmiRecent>1.12.742.5</HmiRecent>
   </PropertyGroup>
   <PropertyGroup>
     <TwinCATHmi_Tasks>$(TcHmiDirectory)\MSBuild\Beckhoff.TwinCAT.HMI.tasks</TwinCATHmi_Tasks>
@@ -130,6 +130,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Contents\submenu2\EventGridSample.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Contents\submenu2\HistoricalSelecting.content">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Contents\submenu2\UserManager.content">
@@ -245,6 +248,13 @@
     <Content Include="Function\NumberValidation.js">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Function\SetColor.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>Function\SetColor.js</DependentUpon>
+    </Content>
+    <Content Include="Function\SetColor.js">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Function\SetStructElementByIndex.function.json">
       <SubType>Content</SubType>
       <DependentUpon>Function\SetStructElementByIndex.js</DependentUpon>
@@ -358,6 +368,13 @@
     <Content Include="UserControls\Doughnut.usercontrol.json">
       <SubType>Content</SubType>
       <DependentUpon>UserControls\Doughnut.usercontrol</DependentUpon>
+    </Content>
+    <Content Include="UserControls\InfoPopUp.usercontrol">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UserControls\InfoPopUp.usercontrol.json">
+      <SubType>Content</SubType>
+      <DependentUpon>UserControls\InfoPopUp.usercontrol</DependentUpon>
     </Content>
     <Content Include="UserControls\Radar.usercontrol">
       <SubType>Content</SubType>

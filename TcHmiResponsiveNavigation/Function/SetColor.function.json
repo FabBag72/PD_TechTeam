@@ -1,0 +1,66 @@
+﻿{
+  "function": {
+    "name": "SetColor",
+    "namespace": "TcHmi.Functions.TcHmiResponsiveNavigation",
+    "displayName": "SetColor",
+    "description": "",
+    "waitMode": "Synchronous",
+    "category": "",
+    "returnValue": {
+      "type": "tchmi:general#/definitions/String"
+    },
+    "visible": true,
+    "injectContextObject": false,
+    "arguments": [
+      {
+        "name": "Control_Identifier",
+        "displayName": "Control_Identifier",
+        "type": "tchmi:general#/definitions/String",
+        "description": "This is an important Parameter which does... This text is used in a tooltip.",
+        "defaultValue": null,
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "SetColorRed",
+        "displayName": "SetColorRed",
+        "type": "tchmi:general#/definitions/BOOL",
+        "description": "",
+        "defaultValue": null,
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "SetColorBlack",
+        "displayName": "SetColorBlack",
+        "type": "tchmi:general#/definitions/BOOL",
+        "description": "",
+        "defaultValue": null,
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "SetColorBlue",
+        "displayName": "SetColorBlue",
+        "type": "tchmi:general#/definitions/BOOL",
+        "description": "",
+        "defaultValue": null,
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      }
+    ]
+  },
+  "$schema": "../.hmiframework/Schema/FunctionDescription.Schema.json"
+}

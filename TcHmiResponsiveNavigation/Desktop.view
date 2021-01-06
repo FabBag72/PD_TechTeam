@@ -220,7 +220,7 @@
         "showColumnName": true,
         "children": [
           {
-            "name": "LogOut",
+            "name": "Users",
             "page": "Contents/submenu2/UserManager.content",
             "parameter": "",
             "image": "",
@@ -241,6 +241,25 @@
           {
             "name": "EventGrid Sample",
             "page": "Contents/submenu2/EventGridSample.content",
+            "parameter": "",
+            "image": "",
+            "imageWidth": null,
+            "imageWidthUnit": "",
+            "imageHeight": null,
+            "imageHeightUnit": "",
+            "children": "",
+            "accessRight": ""
+          }
+        ],
+        "accessRight": ""
+      },
+      {
+        "name": "Historizing",
+        "showColumnName": true,
+        "children": [
+          {
+            "name": "Historic selecting",
+            "page": "Contents/submenu2/HistoricalSelecting.content",
             "parameter": "",
             "image": "",
             "imageWidth": null,
