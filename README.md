@@ -32,6 +32,9 @@ List of content.
 
 * Features
   * RPC, Remote Procedure Call, PLC FB method calling by TcHMI framework. Read/Write FB Property.
+  * Animation
+    * animation methods of TcHMI framework
+    * javascript function binding to change a control property
   
 * Third Party Controls
   * ChartsJS radar and doughnut samples.
