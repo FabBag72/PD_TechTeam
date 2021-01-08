@@ -1,19 +1,35 @@
 ﻿{
   "parameters": [
     {
-      "name": "data-tchmi-html_control",
-      "displayName": "HTML_Control",
+      "name": "data-tchmi-control",
+      "displayName": "Control",
       "visible": true,
-      "type": "tchmi:framework#/definitions/TcHmiHtmlHost",
+      "type": "tchmi:framework#/definitions/Control",
       "category": "",
       "description": "",
       "requiredOnCompile": false,
       "readOnly": false,
       "bindable": true,
       "heritable": true,
-      "propertyName": "HTML_Control",
-      "propertySetterName": "setHTML_Control",
-      "propertyGetterName": "getHTML_Control",
+      "propertyName": "Control",
+      "propertySetterName": "setControl",
+      "propertyGetterName": "getControl",
+      "refTo": ""
+    },
+    {
+      "name": "data-tchmi-caption",
+      "displayName": "Caption",
+      "visible": true,
+      "type": "tchmi:general#/definitions/String",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "Caption",
+      "propertySetterName": "setCaption",
+      "propertyGetterName": "getCaption",
       "refTo": ""
     }
   ],
