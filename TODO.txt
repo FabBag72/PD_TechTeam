@@ -1,5 +1,5 @@
 - Chiamata metodo FB del PLC. OK
-- Schema P&I Diagram: https://commons.wikimedia.org/wiki/Category:P%26ID_symbols. Finire con chiamata di un popup
-- Gestione utenti come da esempio di Arianna (vedi Veolia). Controllare con server definitivo e aggiungere rigraziamenti ad Arianna.
-- TrendLineChart con selezione della traccia (TcHmiReadLatestActiveAlarm)
+- Schema P&I Diagram: https://commons.wikimedia.org/wiki/Category:P%26ID_symbols. Finire con chiamata di un popup- OK
+- Gestione utenti come da esempio di Arianna (vedi Veolia). Controllare con server definitivo e aggiungere rigraziamenti ad Arianna. OK
+- TrendLineChart con selezione della traccia (TcHmiReadLatestActiveAlarm).
 - Integrare esempio di Responsive Design come esempio: C:\Users\FabrizioB\Documents\TcXaeShell\HMI\TcHmiResponsiveDesign
