@@ -23,6 +23,7 @@ List of content.
     * DataGrid, DataGrid.content, see the video tutorial: Data entry by Data Grid list of parameters. Checking of min/max/isNaN. 
   * Dialog:
     * Dialog message, Dialog.content, Two ways for dialog message box or pop-up message.
+  * P&I Diagram: the diagram is a SVG with attribute preserveAspectRatio="none" so the diagram can fit to many aspect ratios. Then there are two popup windows linked to two elements: valve and compressor.
 
 * Submenu2:
   * User Managment
