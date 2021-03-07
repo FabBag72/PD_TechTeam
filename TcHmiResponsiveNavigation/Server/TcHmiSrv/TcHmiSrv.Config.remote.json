@@ -1,18 +1,7 @@
-{
-    "CERTIFICATEEXPIRATION": "P14000D",
-    "REQUIREAUTH": 2,
-    "VIRTUALDIRECTORIES": {
-        "/": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\TcHmiResponsiveNavigation",
-        "/Beckhoff.TwinCAT.HMI.Controls": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\Packages\\Beckhoff.TwinCAT.HMI.Controls.12.742.5\\runtimes\\native1.12-tchmi",
-        "/Beckhoff.TwinCAT.HMI.EventLogger": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\Packages\\Beckhoff.TwinCAT.HMI.EventLogger.12.742.5",
-        "/Beckhoff.TwinCAT.HMI.Functions": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\Packages\\Beckhoff.TwinCAT.HMI.Functions.12.742.5\\runtimes\\native1.12-tchmi",
-        "/Beckhoff.TwinCAT.HMI.PDFViewer": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\Packages\\Beckhoff.TwinCAT.HMI.PDFViewer.12.742.5\\runtimes\\native1.12-tchmi",
-        "/Beckhoff.TwinCAT.HMI.ResponsiveNavigation": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\Packages\\Beckhoff.TwinCAT.HMI.ResponsiveNavigation.12.742.5\\runtimes\\native1.12-tchmi",
-        "/Beckhoff.TwinCAT.HMI.SqliteHistorize": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\Packages\\Beckhoff.TwinCAT.HMI.SqliteHistorize.12.742.5",
-        "/Beckhoff.TwinCAT.HMI.Vision": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\Packages\\Beckhoff.TwinCAT.HMI.Vision.12.742.5",
-        "/JB.TcHmiTextboxExtended": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\Packages\\JB.TcHmiTextboxExtended.1.0.3\\runtimes\\native1.12-tchmi",
-        "/bin": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\TcHmiResponsiveNavigation\\bin\\",
-        "/bin/framework": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\TcHmiResponsiveNavigation\\bin\\framework",
-        "/framework": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\Packages\\Beckhoff.TwinCAT.HMI.Framework.12.742.5\\runtimes\\native1.12-tchmi"
-    }
+﻿{
+  "CERTIFICATEEXPIRATION": "P14000D",
+  "REQUIREAUTH": 2,
+  "VIRTUALDIRECTORIES": {
+    "/": "www"
+  }
 }

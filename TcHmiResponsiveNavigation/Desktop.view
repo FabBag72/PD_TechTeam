@@ -48,10 +48,8 @@
     "parameter": "",
     "subtitle": "",
     "image": "",
-    "imageWidth": null,
-    "imageWidthUnit": "",
-    "imageHeight": null,
-    "imageHeightUnit": "",
+    "imageWidthUnit": "px",
+    "imageHeightUnit": "px",
     "children": [
       {
         "name": "Sample menu",
@@ -210,10 +208,8 @@
     "parameter": "",
     "subtitle": "",
     "image": "",
-    "imageWidth": null,
-    "imageWidthUnit": "",
-    "imageHeight": null,
-    "imageHeightUnit": "",
+    "imageWidthUnit": "px",
+    "imageHeightUnit": "px",
     "children": [
       {
         "name": "User Managment",
@@ -281,10 +277,8 @@
     "parameter": "",
     "subtitle": "",
     "image": "",
-    "imageWidth": null,
-    "imageWidthUnit": "",
-    "imageHeight": null,
-    "imageHeightUnit": "",
+    "imageWidthUnit": "px",
+    "imageHeightUnit": "px",
     "children": [
       {
         "name": "Miscellaneous",
@@ -333,10 +327,8 @@
     "parameter": "",
     "subtitle": "",
     "image": "",
-    "imageWidth": null,
-    "imageWidthUnit": "",
-    "imageHeight": null,
-    "imageHeightUnit": "",
+    "imageWidthUnit": "px",
+    "imageHeightUnit": "px",
     "children": [
       {
         "name": "ChartJS.org",
@@ -359,6 +351,37 @@
       }
     ],
     "accessRight": ""
+  },
+  {
+    "name": "Documentation",
+    "imageWidthUnit": "px",
+    "imageHeightUnit": "px",
+    "children": [
+      {
+        "name": "Beckhoff",
+        "showColumnName": true,
+        "children": [
+          {
+            "name": "Infosys",
+            "page": "Contents/Documentation/DocBeckhoff.content",
+            "imageWidthUnit": "px",
+            "imageHeightUnit": "px"
+          }
+        ]
+      },
+      {
+        "name": "Friends",
+        "showColumnName": true,
+        "children": [
+          {
+            "name": "GitHub",
+            "page": "Contents/Documentation/Friends_Github.content",
+            "imageWidthUnit": "px",
+            "imageHeightUnit": "px"
+          }
+        ]
+      }
+    ]
   }
 ]
 </script>

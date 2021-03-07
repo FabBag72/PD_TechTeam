@@ -215,6 +215,7 @@
         }
     },
     "DEFLATECOMPRESSIONLEVEL": 5,
+    "DIAGNOSTICS_DOMAINS": [],
     "DISCOVERY": 2,
     "ENDPOINTS": [
         "http://127.0.0.1:13001",
@@ -226,13 +227,14 @@
             "ENABLED": true,
             "NAME": "TcHmiAds",
             "PATH": "TcHmiAds\\",
+            "PROCESSID": -1,
             "REQUIRED": false,
             "STARTUPTYPE": 1
         },
         "TcHmiEventLogger": {
             "ENABLED": true,
             "NAME": "TcHmiEventLogger",
-            "PATH": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.EventLogger.12.742.5\\runtimes\\win-x64\\native\\",
+            "PATH": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.EventLogger.12.744.2\\runtimes\\win-x64\\native\\",
             "REQUIRED": false,
             "STARTUPTYPE": 1
         },
@@ -240,13 +242,14 @@
             "ENABLED": true,
             "NAME": "TcHmiLua",
             "PATH": "TcHmiLua\\",
+            "PROCESSID": -1,
             "REQUIRED": true,
             "STARTUPTYPE": 1
         },
         "TcHmiSqliteHistorize": {
             "ENABLED": true,
             "NAME": "TcHmiSqliteHistorize",
-            "PATH": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.SqliteHistorize.12.742.5\\runtimes\\win-x64\\native\\",
+            "PATH": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.SqliteHistorize.12.744.2\\runtimes\\win-x64\\native\\",
             "REQUIRED": false,
             "STARTUPTYPE": 1
         },
@@ -254,6 +257,7 @@
             "ENABLED": true,
             "NAME": "TcHmiSqliteLogger",
             "PATH": "TcHmiSqliteLogger\\",
+            "PROCESSID": -1,
             "REQUIRED": true,
             "STARTUPTYPE": 0
         },
@@ -261,13 +265,14 @@
             "ENABLED": true,
             "NAME": "TcHmiUserManagement",
             "PATH": "TcHmiUserManagement\\",
+            "PROCESSID": -1,
             "REQUIRED": true,
             "STARTUPTYPE": 1
         },
         "TcHmiVision": {
             "ENABLED": true,
             "NAME": "TcHmiVision",
-            "PATH": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.Vision.12.742.5\\runtimes\\win\\net472\\",
+            "PATH": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.Vision.12.744.2\\runtimes\\win\\net472\\",
             "REQUIRED": false,
             "STARTUPTYPE": 1
         }
@@ -295,7 +300,6 @@
     "KEY": "LS0tLS1CRUdJTiBQUklWQVRFIEtFWS0tLS0tCk1JSUV2Z0lCQURBTkJna3Foa2lHOXcwQkFRRUZBQVNDQktnd2dnU2tBZ0VBQW9JQkFRQ3JwWk43UFM4NnVYVUUKN3lxNXZDRWtubzVGSWZKb0F5VFNBenBvQ1VQWklyNEtlTlNBWkFhZnBQNHhOampSNUlzT2dvMnExbHZpVnVYMwpFQkJsQjVjUEJkVE9aYTdIMkQyK2QzQmNZd2YvQUNTUlc5MFRBM0FUS3BSQUhIbmlqREl2bndFbDQvNWtSY2Q0CnZCZjBnNmcwODZhcTNjak9CTGtpSEFkZEJuZm9uaHN1NE51eDJaTy9CdFJCcWFEcmVtUDQ3Z0FyQjNteXg4YTgKT1o2Q2NTQlVCc1B1cXdLSEozVGdscnE2YzVGZFY0d2cwRzVTUFpJN3dQK3pVb0lNQlFVVHRBRjlsQ1RRUWZCYwprOXNOclUrdkVFaERzZ2ZEMk4xNEdvME5vVFMyUWYreUxWM3JFS3I0UUpFSUdpYytMRFhtTVBFaUU5L2g1eGJPCnFtR1JUK2k5QWdNQkFBRUNnZ0VBYlhEaStmN204REJ6VmpRUUwrQ3QyU1ZuWE5qcU1EdGc3SzYyUE1NN2lXVEgKZXZIVHZCRUswQnRwSDRPTTh2Y2ZXcDhQS05BSVFlWmFOZzcrQlF5ejJoWkR1MTNGOVJJQlBFSDNXRkNrTm9pbQp5QytrWTQwYmxuemRqWXNhZzhJVDlaMFNKRkNjVU43VThqd3JvZkdYL0RzbUYyZlZzdFg4SEsxMlhHL1ZZSER5CmNPU1RZMlRHTHBYSGcwRk9SMDQzL1FKSGM5OUVGSTJvWWJyTGRoMG43dEI4WkdPb25VRS9vWXp2d0ZhRFppR1YKOVFIQlY1MVIybS8rdEFBTHN0Q1BNRDQ2UzVnZVVrdTExOWYydkREeG5tWlJaUlRLcWVzejFRZ1h0aWE2VHdoOApiSTZUYVBTYm1TWkJic21yMEUxREgwWXFNclhlVllOS0h3cHNUNGM3Z1FLQmdRRGo1bFNEUkZERkJGclFaOEUyCmdCQWlsaVFPMno3bTV4Ty8xYzhRRExFaFdIcFpNR0paQk53djJvdlhwdzRxZEJ3NDI0SWR3THdGNjZZc0xoYjUKVjRSaStNTFZnYmx2aVNSU3c0NFgxWm9iejZ6ZnA0V0pDSGp0UzM5ODB6NDk2eVdtK0s5WitLenhrSVlvV0hVawpmeG1NY0lqKzRqcWNXdGJqR2ZyQ05JWitiUUtCZ1FEQXo1NDRmem9DL2VSQldyMy92Zlc0NnZFR3pXVlpnN1R0CmpYUHllWkd4SnY2bjJ2MzVlbVJJM2JvYm5YajFrVlhwM2huMzJWUWE5bmFrZm1wVVo0Y3paVExDSWN5T2VHV04KTk1JV0VuOVBxbzNkd0dSck83TkZrRFhHdTgrMHJaejAyRURQOWVzVUp0WndwT1JheFh5ZzdhUVF1cklvaWNrbQpUSkhhRjBkaGtRS0JnUUMvVStPbndIYStzSVU5YVozQUQ0dDhQZWhQd0tqeVdSVXZmR1MxNkxIY2VOZGVnVXhQCng5RERMQXN6SlVDelMzOVdESk1VUDNhYTBkZFVSKzFwcjV1cEs0Y0drRDRKOFd6WlB1dlAvcmUrbVg5YzFOczYKekM0WnFjU0NHeWFwL1B4RFRZeUpVRWlCRlFCTVp0Y1JxTkxlSUt3aXIvTGN5VGFXdW56WEJoblRrUUtCZ1FDdQo3ZTdMclVveG1xMnpTYU9sMm0rTWRNTjJlM1VmTUtvKytCNGcrSURoSzlMUThaT0krNnp1bXhRVnA5b3RXYzJMCm4vRUpkOGlocWNoY1YwRWJFTTZPSjV0VW5CdWRpc2YvdzhUdkI1c3Y2VHBLM1JsK1hLeTZTU3N4QWdaaEV6NmEKdVhTYitLNXVHd3BsS29Udmdjc2ZxbHMydmx1VEFlZFljeEhFdjJnSXNRS0JnR1U4S2UzK2FtaVErdlQwUUIycApRRXZTQnl4WGd3UzVkbEhaQ2ozRjh3R0NHcmFKVnFlNmh3SERQeEMvZmJKSTNzb0lLclJTVnl1TDViTmJWWUJICmRtSFEyNmUvZXJvQWJxWkVFamh3eEwwM01zUlVLQWI5M2hKMlUyUG0yc25KREJ5bEhDL0FSaDFuY0wvdXVUbTkKQ1FRbFVGZmlFRG4yZStoS3ltR0tVekRCCi0tLS0tRU5EIFBSSVZBVEUgS0VZLS0tLS0K",
     "KEYPASSWORD": "",
     "LOCKOUT_PROTECTION_CLIENT_CERTIFICATE": true,
-    "LOG_SEVERITY_DIAGNOSTICS": false,
     "MAXCONNECTIONSPERCLIENT": 32,
     "MAXHTTPHEADERSIZE": 8192,
     "MAXREQUESTSIZE": 1048576,
@@ -634,21 +638,24 @@
     "NETWORKADAPTER": "",
     "PERMESSAGEDEFLATEENABLED": true,
     "PLAINADMINISTRATIONENABLED": true,
-    "PROJECTNAME": "",
-    "PROJECTVERSION": "",
+    "PROJECTNAME": "TcHmiResponsiveNavigation",
+    "PROJECTVERSION": "1.0.0.0",
     "REMOTEADMINISTRATIONENABLED": true,
     "REMOTESERVERS": {},
     "REMOTESERVERS_CERTIFICATES": [],
     "REQUIREAUTH": 0,
     "REVALIDATION": true,
+    "SAMESITE_ATTRIBUTE": 2,
     "SELFSIGNEDROOTCA": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUR0akNDQXA2Z0F3SUJBZ0lKQU5hTFVMU0s4RldhTUEwR0NTcUdTSWIzRFFFQkN3VUFNRWd4Q3pBSkJnTlYKQkFZVEFrUkZNUnN3R1FZRFZRUUtEQkpVZDJsdVEwRlVJRWhOU1NCVFpYSjJaWEl4SERBYUJnTlZCQU1NRTBaaApZbkpwZW1sdlFpMU9RakF4WDNKdmIzUXdJQmNOTWpBd09ESXhNRGt6TkRNNFdoZ1BNakExT0RFeU1qQXdPVE0wCk16aGFNRWd4Q3pBSkJnTlZCQVlUQWtSRk1Sc3dHUVlEVlFRS0RCSlVkMmx1UTBGVUlFaE5TU0JUWlhKMlpYSXgKSERBYUJnTlZCQU1NRTBaaFluSnBlbWx2UWkxT1FqQXhYM0p2YjNRd2dnRWlNQTBHQ1NxR1NJYjNEUUVCQVFVQQpBNElCRHdBd2dnRUtBb0lCQVFEb3BnOFBwc1dBbjZYZE1pMmU2aUJyaFRnWnczemVpR2IyenVac2V1SS9ORGFEClRjOEVER2U1SEhqaXpuY2dpQlhCSXFpalZia2pnbHdqOU8zeS9lcHhsOWVIL0l6cmVDeUtpOXBSUU0vczdMQzAKQlorNDVtZmo1UnRnalROTVBvSGZhclQ2enF5UEEzNzVpTENDcFA5RlJkdmJ0R3BVQjRUUmJGNFdDYlU5elJ6WQpudGRZcjdCbzFIalIvd21ZK0UxT0VqNEhiVlgyVE9qSmdwR3BGUE90TVhUY3Z2c3NNN3RzWXlWMCs1d2VnVzd1CmV6a3d5NXA4WFo3QklEYXZmd2xxOUFmbFZiUXBISzBwemZ3QlA5Z1BhYU53Uk96SW0zUXFzZkFGL2hsQzFYbFcKL3lJTDFzNUpJNkt2cmsvMExxY1g0cnFORzFXMUpvQ05jTlVzNXcxSkFnTUJBQUdqZ2FBd2daMHdhd1lEVlIwUgpCR1F3WW9JSmJHOWpZV3hvYjNOMGh3Ui9BQUFCaHhBQUFBQUFBQUFBQUFBQUFBQUFBQUFCZ2c1R1lXSnlhWHBwCmIwSXRUa0l3TVlJYlJtRmljbWw2YVc5Q0xVNUNNREV1WW1WamEyaHZabVl1WTI5dGh3UUtJVU1IaHdUQXFEZ0IKaHdUQXFDb2NNQjBHQTFVZERnUVdCQlJYQkdCWk1Yejl0TEl5YllSa2x4TFBpNExLT0RBUEJnTlZIUk1CQWY4RQpCVEFEQVFIL01BMEdDU3FHU0liM0RRRUJDd1VBQTRJQkFRQkY1Z0wwRlBPY05kV3FVUk0zWjRVeU5zNko3SlA0CnVyb2UreGFNSnlrQ2Q4NEFpSXhUL3UrVDVvT25zTmwrNDJ4M1RxVW91cmdRNkhZMk84NEtRR0RNc1VXNWZhM2EKeHZLRkR1MzA3WHdPemZpUzV4VzBSQ2VpekJWUTMvcW9nSllxdHBpQ0pRV291VSttNGY2L3hHTXNVaVkrSzNRYgpPWE1GMWlXY3oxZmpmdU9STk9odWpuQXp5dm1tUEVEdSt6cWI5SkZkcW1JUGF0OWkxTjF1UUxXWmQ2NHVtZGpFCkE4OHFJWks4OGlaWlBFcUorVkF6WUkvT3hBajNuQjM0N3lKR0lOZzF5QVNjd2M0L0QxK3VPT3U0UDhKbHVPZWgKVVpKeEJ3N0xCTkhqN2pOZmVRZnRIdFo0dm9FV3RNbnJUOElvYVl6Y09EWFBrT3gyUldTL05BQksKLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=",
     "SELFSIGNEDROOTCAKEY": "LS0tLS1CRUdJTiBQUklWQVRFIEtFWS0tLS0tCk1JSUV2Z0lCQURBTkJna3Foa2lHOXcwQkFRRUZBQVNDQktnd2dnU2tBZ0VBQW9JQkFRQ3JwWk43UFM4NnVYVUUKN3lxNXZDRWtubzVGSWZKb0F5VFNBenBvQ1VQWklyNEtlTlNBWkFhZnBQNHhOampSNUlzT2dvMnExbHZpVnVYMwpFQkJsQjVjUEJkVE9aYTdIMkQyK2QzQmNZd2YvQUNTUlc5MFRBM0FUS3BSQUhIbmlqREl2bndFbDQvNWtSY2Q0CnZCZjBnNmcwODZhcTNjak9CTGtpSEFkZEJuZm9uaHN1NE51eDJaTy9CdFJCcWFEcmVtUDQ3Z0FyQjNteXg4YTgKT1o2Q2NTQlVCc1B1cXdLSEozVGdscnE2YzVGZFY0d2cwRzVTUFpJN3dQK3pVb0lNQlFVVHRBRjlsQ1RRUWZCYwprOXNOclUrdkVFaERzZ2ZEMk4xNEdvME5vVFMyUWYreUxWM3JFS3I0UUpFSUdpYytMRFhtTVBFaUU5L2g1eGJPCnFtR1JUK2k5QWdNQkFBRUNnZ0VBYlhEaStmN204REJ6VmpRUUwrQ3QyU1ZuWE5qcU1EdGc3SzYyUE1NN2lXVEgKZXZIVHZCRUswQnRwSDRPTTh2Y2ZXcDhQS05BSVFlWmFOZzcrQlF5ejJoWkR1MTNGOVJJQlBFSDNXRkNrTm9pbQp5QytrWTQwYmxuemRqWXNhZzhJVDlaMFNKRkNjVU43VThqd3JvZkdYL0RzbUYyZlZzdFg4SEsxMlhHL1ZZSER5CmNPU1RZMlRHTHBYSGcwRk9SMDQzL1FKSGM5OUVGSTJvWWJyTGRoMG43dEI4WkdPb25VRS9vWXp2d0ZhRFppR1YKOVFIQlY1MVIybS8rdEFBTHN0Q1BNRDQ2UzVnZVVrdTExOWYydkREeG5tWlJaUlRLcWVzejFRZ1h0aWE2VHdoOApiSTZUYVBTYm1TWkJic21yMEUxREgwWXFNclhlVllOS0h3cHNUNGM3Z1FLQmdRRGo1bFNEUkZERkJGclFaOEUyCmdCQWlsaVFPMno3bTV4Ty8xYzhRRExFaFdIcFpNR0paQk53djJvdlhwdzRxZEJ3NDI0SWR3THdGNjZZc0xoYjUKVjRSaStNTFZnYmx2aVNSU3c0NFgxWm9iejZ6ZnA0V0pDSGp0UzM5ODB6NDk2eVdtK0s5WitLenhrSVlvV0hVawpmeG1NY0lqKzRqcWNXdGJqR2ZyQ05JWitiUUtCZ1FEQXo1NDRmem9DL2VSQldyMy92Zlc0NnZFR3pXVlpnN1R0CmpYUHllWkd4SnY2bjJ2MzVlbVJJM2JvYm5YajFrVlhwM2huMzJWUWE5bmFrZm1wVVo0Y3paVExDSWN5T2VHV04KTk1JV0VuOVBxbzNkd0dSck83TkZrRFhHdTgrMHJaejAyRURQOWVzVUp0WndwT1JheFh5ZzdhUVF1cklvaWNrbQpUSkhhRjBkaGtRS0JnUUMvVStPbndIYStzSVU5YVozQUQ0dDhQZWhQd0tqeVdSVXZmR1MxNkxIY2VOZGVnVXhQCng5RERMQXN6SlVDelMzOVdESk1VUDNhYTBkZFVSKzFwcjV1cEs0Y0drRDRKOFd6WlB1dlAvcmUrbVg5YzFOczYKekM0WnFjU0NHeWFwL1B4RFRZeUpVRWlCRlFCTVp0Y1JxTkxlSUt3aXIvTGN5VGFXdW56WEJoblRrUUtCZ1FDdQo3ZTdMclVveG1xMnpTYU9sMm0rTWRNTjJlM1VmTUtvKytCNGcrSURoSzlMUThaT0krNnp1bXhRVnA5b3RXYzJMCm4vRUpkOGlocWNoY1YwRWJFTTZPSjV0VW5CdWRpc2YvdzhUdkI1c3Y2VHBLM1JsK1hLeTZTU3N4QWdaaEV6NmEKdVhTYitLNXVHd3BsS29Udmdjc2ZxbHMydmx1VEFlZFljeEhFdjJnSXNRS0JnR1U4S2UzK2FtaVErdlQwUUIycApRRXZTQnl4WGd3UzVkbEhaQ2ozRjh3R0NHcmFKVnFlNmh3SERQeEMvZmJKSTNzb0lLclJTVnl1TDViTmJWWUJICmRtSFEyNmUvZXJvQWJxWkVFamh3eEwwM01zUlVLQWI5M2hKMlUyUG0yc25KREJ5bEhDL0FSaDFuY0wvdXVUbTkKQ1FRbFVGZmlFRG4yZStoS3ltR0tVekRCCi0tLS0tRU5EIFBSSVZBVEUgS0VZLS0tLS0K",
     "SESSIONSTORAGE": {},
+    "SHOW_CONFIGURATION_HINTS": true,
     "SHUTDOWNTIMEOUT": "PT10S",
     "SOCKET_TIMEOUT": "PT10S",
     "SYMBOLS": {
         "ADS.AdsSyncReadDeviceInfoReq": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
             "HIDDEN": true,
             "MAPPING": "AdsSyncReadDeviceInfoReq",
@@ -664,6 +671,7 @@
         },
         "ADS.AdsSyncReadReq": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
             "HIDDEN": true,
             "MAPPING": "AdsSyncReadReq",
@@ -697,21 +705,59 @@
         },
         "ADS.AdsSyncReadStateReq": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
             "HIDDEN": true,
             "MAPPING": "AdsSyncReadStateReq",
             "OPTIONS": {},
             "SCHEMA": {
                 "function": true,
+                "properties": {
+                    "AdsState": {
+                        "$ref": "tchmi:server#/definitions/adsState"
+                    },
+                    "DeviceState": {
+                        "type": "integer"
+                    }
+                },
+                "type": "object",
                 "writeValue": {
-                    "doc": "Ads runtime.",
-                    "type": "string"
+                    "oneOf": [
+                        {
+                            "doc": "Ads runtime.",
+                            "type": "string"
+                        },
+                        {
+                            "properties": {
+                                "Port": {
+                                    "allOf": [
+                                        {
+                                            "$ref": "tchmi:general#/definitions/UINT32"
+                                        },
+                                        {
+                                            "const": 10000,
+                                            "doc": "Execute the request for a different ADS port"
+                                        }
+                                    ]
+                                },
+                                "Runtime": {
+                                    "doc": "Ads runtime.",
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "Runtime"
+                            ],
+                            "type": "object"
+                        }
+                    ]
                 }
             },
             "USEMAPPING": true
         },
         "ADS.AdsSyncReadWriteReq": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
             "HIDDEN": true,
             "MAPPING": "AdsSyncReadWriteReq",
@@ -751,6 +797,7 @@
         },
         "ADS.AdsSyncWriteControlReq": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
             "HIDDEN": true,
             "MAPPING": "AdsSyncWriteControlReq",
@@ -760,7 +807,7 @@
                 "writeValue": {
                     "properties": {
                         "AdsState": {
-                            "$ref": "tchmi:general#/definitions/UINT32"
+                            "$ref": "tchmi:server#/definitions/adsState"
                         },
                         "DeviceState": {
                             "$ref": "tchmi:general#/definitions/UINT32"
@@ -786,6 +833,7 @@
         },
         "ADS.AdsSyncWriteReq": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
             "HIDDEN": true,
             "MAPPING": "AdsSyncWriteReq",
@@ -821,6 +869,7 @@
         },
         "ADS.CheckLicense": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
             "HIDDEN": true,
             "MAPPING": "CheckLicense",
@@ -848,6 +897,7 @@
         },
         "ADS.Config": {
             "ACCESS": 0,
+            "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
             "HIDDEN": true,
             "MAPPING": "Config",
@@ -857,6 +907,7 @@
         },
         "ADS.Diagnostics": {
             "ACCESS": 1,
+            "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
             "HIDDEN": true,
             "MAPPING": "Diagnostics",
@@ -925,6 +976,7 @@
         },
         "ADS.GetDefinitions": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
             "HIDDEN": true,
             "MAPPING": "GetDefinitions",
@@ -936,6 +988,7 @@
         },
         "ADS.GetSchema": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
             "HIDDEN": true,
             "MAPPING": "GetSchema",
@@ -947,6 +1000,7 @@
         },
         "ADS.ListCommonTypes": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
             "HIDDEN": true,
             "MAPPING": "ListCommonTypes",
@@ -974,6 +1028,7 @@
         },
         "ADS.ListRoutes": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
             "HIDDEN": true,
             "MAPPING": "ListRoutes",
@@ -1006,6 +1061,7 @@
         },
         "ADS.ListSymbols": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
             "HIDDEN": true,
             "MAPPING": "ListSymbols",
@@ -1017,6 +1073,7 @@
         },
         "ADS.RuntimePorts": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
             "HIDDEN": true,
             "MAPPING": "RuntimePorts",
@@ -1043,22 +1100,30 @@
                 },
                 "type": "array",
                 "writeValue": {
-                    "properties": {
-                        "NETID": {
-                            "type": "string"
+                    "anyOf": [
+                        {
+                            "properties": {
+                                "NETID": {
+                                    "type": "string"
+                                },
+                                "all": {
+                                    "default": false,
+                                    "type": "boolean"
+                                }
+                            },
+                            "type": "object"
                         },
-                        "all": {
-                            "default": false,
-                            "type": "boolean"
+                        {
+                            "$ref": "tchmi:general#/definitions/VOID"
                         }
-                    },
-                    "type": "object"
+                    ]
                 }
             },
             "USEMAPPING": true
         },
         "AddOrChangeUser": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSrv",
             "HIDDEN": true,
             "MAPPING": "AddOrChangeUser",
@@ -1144,6 +1209,7 @@
         },
         "AddSymbol": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSrv",
             "HIDDEN": true,
             "MAPPING": "AddSymbol",
@@ -1175,6 +1241,7 @@
         },
         "AddToConfiguration": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSrv",
             "HIDDEN": true,
             "MAPPING": "AddToConfiguration",
@@ -1208,6 +1275,7 @@
         },
         "ChangeUserSettings": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSrv",
             "HIDDEN": true,
             "MAPPING": "ChangeUserSettings",
@@ -1215,36 +1283,51 @@
             "SCHEMA": {
                 "function": true,
                 "writeValue": {
-                    "additionalProperties": false,
-                    "doc": "Changes to the USERGROUPUSERS entry of the current user",
-                    "properties": {
-                        "changePassword": {
+                    "anyOf": [
+                        {
+                            "additionalProperties": false,
+                            "doc": "Changes to the USERGROUPUSERS entry of the current user",
+                            "properties": {
+                                "changePassword": {
+                                    "allOf": [
+                                        {
+                                            "$ref": "tchmi:general#/definitions/Any"
+                                        },
+                                        {
+                                            "doc": "Parameters that are forwarded to the authentication extension's ChangePassword function."
+                                        }
+                                    ]
+                                },
+                                "locale": {
+                                    "$ref": "tchmi:server#/definitions/userLocale"
+                                },
+                                "timeFormatLocale": {
+                                    "$ref": "tchmi:server#/definitions/userLocale"
+                                },
+                                "timeZone": {
+                                    "$ref": "tchmi:server#/definitions/userTimeZone"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        {
                             "allOf": [
                                 {
-                                    "$ref": "tchmi:general#/definitions/Any"
+                                    "$ref": "tchmi:general#/definitions/VOID"
                                 },
                                 {
-                                    "doc": "Parameters that are forwarded to the authentication extension's ChangePassword function."
+                                    "doc": "Calling this method without writeValue will read the current settings."
                                 }
                             ]
-                        },
-                        "locale": {
-                            "$ref": "tchmi:server#/definitions/userLocale"
-                        },
-                        "timeFormatLocale": {
-                            "$ref": "tchmi:server#/definitions/userLocale"
-                        },
-                        "timeZone": {
-                            "$ref": "tchmi:server#/definitions/userTimeZone"
                         }
-                    },
-                    "type": "object"
+                    ]
                 }
             },
             "USEMAPPING": true
         },
         "ConfirmAlarm": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSrv",
             "HIDDEN": true,
             "MAPPING": "ConfirmAlarm",
@@ -1259,6 +1342,7 @@
         },
         "CreateEvent": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSrv",
             "HIDDEN": true,
             "MAPPING": "CreateEvent",
@@ -1286,6 +1370,7 @@
         },
         "Delete": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSrv",
             "HIDDEN": true,
             "MAPPING": "Delete",
@@ -1313,6 +1398,7 @@
         },
         "DeleteConfiguration": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSrv",
             "HIDDEN": true,
             "MAPPING": "DeleteConfiguration",
@@ -1327,6 +1413,7 @@
         },
         "Diagnostics": {
             "ACCESS": 1,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSrv",
             "HIDDEN": true,
             "MAPPING": "Diagnostics",
@@ -1355,6 +1442,15 @@
                         "readOnly": true,
                         "transient": true,
                         "type": "string"
+                    },
+                    "DOTNETCLASSICVERSIONS": {
+                        "items": {
+                            "readOnly": true,
+                            "type": "string"
+                        },
+                        "readOnly": true,
+                        "transient": true,
+                        "type": "array"
                     },
                     "DOTNETCOREVERSIONS": {
                         "items": {
@@ -1505,6 +1601,7 @@
         },
         "ForceLogout": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSrv",
             "HIDDEN": true,
             "MAPPING": "ForceLogout",
@@ -1548,6 +1645,7 @@
         },
         "GetConfiguration": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSrv",
             "HIDDEN": true,
             "MAPPING": "GetConfiguration",
@@ -1578,6 +1676,7 @@
         },
         "GetCurrentUser": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSrv",
             "HIDDEN": true,
             "MAPPING": "GetCurrentUser",
@@ -1640,7 +1739,9 @@
             "ACCESS": 3,
             "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSrv",
+            "HIDDEN": false,
             "MAPPING": "GetCurrentUser::name",
+            "OPTIONS": {},
             "SCHEMA": {
                 "function": true,
                 "type": "string"
@@ -1649,6 +1750,7 @@
         },
         "GetDefinitions": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSrv",
             "HIDDEN": true,
             "MAPPING": "GetDefinitions",
@@ -1684,6 +1786,7 @@
         },
         "GetSchema": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSrv",
             "HIDDEN": true,
             "MAPPING": "GetSchema",
@@ -1725,6 +1828,7 @@
         },
         "GetServerInformation": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSrv",
             "HIDDEN": true,
             "MAPPING": "GetServerInformation",
@@ -1737,6 +1841,7 @@
         },
         "GetSymbolAccess": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSrv",
             "HIDDEN": true,
             "MAPPING": "GetSymbolAccess",
@@ -1758,6 +1863,7 @@
         },
         "Heartbeat": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSrv",
             "HIDDEN": true,
             "MAPPING": "Heartbeat",
@@ -1769,6 +1875,7 @@
         },
         "Import": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSrv",
             "HIDDEN": true,
             "MAPPING": "Import",
@@ -1780,6 +1887,7 @@
         },
         "IsAuthRequired": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSrv",
             "HIDDEN": true,
             "MAPPING": "IsAuthRequired",
@@ -1792,6 +1900,7 @@
         },
         "ListActiveSessions": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSrv",
             "HIDDEN": true,
             "MAPPING": "ListActiveSessions",
@@ -1805,6 +1914,7 @@
         },
         "ListConfigurations": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSrv",
             "HIDDEN": true,
             "MAPPING": "ListConfigurations",
@@ -1820,6 +1930,7 @@
         },
         "ListDomains": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSrv",
             "HIDDEN": true,
             "MAPPING": "ListDomains",
@@ -1890,6 +2001,7 @@
         },
         "ListEvents": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSrv",
             "HIDDEN": true,
             "MAPPING": "ListEvents",
@@ -1975,6 +2087,7 @@
         },
         "ListInternalSymbols": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSrv",
             "HIDDEN": true,
             "MAPPING": "ListInternalSymbols",
@@ -1987,6 +2100,7 @@
         },
         "ListSymbolNames": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSrv",
             "HIDDEN": true,
             "MAPPING": "ListSymbolNames",
@@ -2003,6 +2117,7 @@
         },
         "ListSymbols": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSrv",
             "HIDDEN": true,
             "MAPPING": "ListSymbols",
@@ -2018,6 +2133,7 @@
         },
         "ListUserNames": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSrv",
             "HIDDEN": true,
             "MAPPING": "ListUserNames",
@@ -2034,6 +2150,7 @@
         },
         "ListUsers": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSrv",
             "HIDDEN": true,
             "MAPPING": "ListUsers",
@@ -2064,6 +2181,7 @@
         },
         "LocalizeText": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSrv",
             "HIDDEN": true,
             "MAPPING": "LocalizeText",
@@ -2107,6 +2225,7 @@
         },
         "Login": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSrv",
             "HIDDEN": true,
             "MAPPING": "Login",
@@ -2135,6 +2254,7 @@
         },
         "Logout": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSrv",
             "HIDDEN": true,
             "MAPPING": "Logout",
@@ -2148,7 +2268,9 @@
             "ACCESS": 3,
             "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
+            "HIDDEN": false,
             "MAPPING": "PLC1::GVL::arrReal",
+            "OPTIONS": {},
             "SCHEMA": {
                 "$ref": "tchmi:server#/definitions/PLC1.ARRAY (0..9) OF REAL"
             },
@@ -2158,7 +2280,9 @@
             "ACCESS": 3,
             "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
+            "HIDDEN": false,
             "MAPPING": "PLC1::GVL::arrStruct",
+            "OPTIONS": {},
             "SCHEMA": {
                 "$ref": "tchmi:server#/definitions/PLC1.ARRAY (0..9) OF ST_MyStruct"
             },
@@ -2168,7 +2292,9 @@
             "ACCESS": 3,
             "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
+            "HIDDEN": false,
             "MAPPING": "PLC1::GVL::iTest",
+            "OPTIONS": {},
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/INT"
             },
@@ -2178,6 +2304,7 @@
             "ACCESS": 3,
             "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
+            "HIDDEN": false,
             "MAPPING": "PLC1::MAIN::Base",
             "OPTIONS": {
                 "comment": "Base FB"
@@ -2191,7 +2318,9 @@
             "ACCESS": 3,
             "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
+            "HIDDEN": false,
             "MAPPING": "PLC1::MAIN::Base::CalcCounter",
+            "OPTIONS": {},
             "SCHEMA": {
                 "$ref": "tchmi:server#/definitions/PLC1.INT(INT)"
             },
@@ -2201,6 +2330,7 @@
             "ACCESS": 3,
             "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
+            "HIDDEN": false,
             "MAPPING": "PLC1::MAIN::ExtBase",
             "OPTIONS": {
                 "comment": "Extended FB\t"
@@ -2214,7 +2344,9 @@
             "ACCESS": 3,
             "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
+            "HIDDEN": false,
             "MAPPING": "PLC1::MAIN::op",
+            "OPTIONS": {},
             "SCHEMA": {
                 "$ref": "tchmi:server#/definitions/PLC1.E_Operator"
             },
@@ -2224,7 +2356,9 @@
             "ACCESS": 3,
             "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
+            "HIDDEN": false,
             "MAPPING": "PLC1::MAIN_1::bAlarm",
+            "OPTIONS": {},
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/BOOL"
             },
@@ -2234,7 +2368,9 @@
             "ACCESS": 3,
             "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
+            "HIDDEN": false,
             "MAPPING": "PLC1::MAIN_1::bClearAlarm",
+            "OPTIONS": {},
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/BOOL"
             },
@@ -2244,7 +2380,9 @@
             "ACCESS": 3,
             "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
+            "HIDDEN": false,
             "MAPPING": "PLC1::MAIN_1::bMessage",
+            "OPTIONS": {},
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/BOOL"
             },
@@ -2254,7 +2392,9 @@
             "ACCESS": 3,
             "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
+            "HIDDEN": false,
             "MAPPING": "PLC1::Parameters::aParameters",
+            "OPTIONS": {},
             "SCHEMA": {
                 "$ref": "tchmi:server#/definitions/PLC1.ARRAY (0..9) OF Parameter"
             },
@@ -2264,7 +2404,9 @@
             "ACCESS": 3,
             "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
+            "HIDDEN": false,
             "MAPPING": "PLC1::Parameters::rParameter01",
+            "OPTIONS": {},
             "SCHEMA": {
                 "$ref": "tchmi:server#/definitions/PLC1.Parameter"
             },
@@ -2274,7 +2416,9 @@
             "ACCESS": 3,
             "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
+            "HIDDEN": false,
             "MAPPING": "PLC1::Parameters::rParameter02",
+            "OPTIONS": {},
             "SCHEMA": {
                 "$ref": "tchmi:server#/definitions/PLC1.Parameter"
             },
@@ -2284,7 +2428,9 @@
             "ACCESS": 3,
             "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
+            "HIDDEN": false,
             "MAPPING": "PLC1::Parameters::rParameter03",
+            "OPTIONS": {},
             "SCHEMA": {
                 "$ref": "tchmi:server#/definitions/PLC1.Parameter"
             },
@@ -2294,7 +2440,9 @@
             "ACCESS": 3,
             "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
+            "HIDDEN": false,
             "MAPPING": "PLC1::Parameters::rParameter04",
+            "OPTIONS": {},
             "SCHEMA": {
                 "$ref": "tchmi:server#/definitions/PLC1.Parameter"
             },
@@ -2304,7 +2452,9 @@
             "ACCESS": 3,
             "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
+            "HIDDEN": false,
             "MAPPING": "PLC1::Parameters::rParameter05",
+            "OPTIONS": {},
             "SCHEMA": {
                 "$ref": "tchmi:server#/definitions/PLC1.Parameter"
             },
@@ -2314,7 +2464,9 @@
             "ACCESS": 3,
             "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
+            "HIDDEN": false,
             "MAPPING": "PLC1::Parameters::rParameter06",
+            "OPTIONS": {},
             "SCHEMA": {
                 "$ref": "tchmi:server#/definitions/PLC1.Parameter"
             },
@@ -2324,7 +2476,9 @@
             "ACCESS": 3,
             "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
+            "HIDDEN": false,
             "MAPPING": "PLC1::Parameters::rParameter07",
+            "OPTIONS": {},
             "SCHEMA": {
                 "$ref": "tchmi:server#/definitions/PLC1.Parameter"
             },
@@ -2334,7 +2488,9 @@
             "ACCESS": 3,
             "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
+            "HIDDEN": false,
             "MAPPING": "PLC1::Parameters::rParameter08",
+            "OPTIONS": {},
             "SCHEMA": {
                 "$ref": "tchmi:server#/definitions/PLC1.Parameter"
             },
@@ -2342,6 +2498,7 @@
         },
         "RefreshDefinitions": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSrv",
             "HIDDEN": true,
             "MAPPING": "RefreshDefinitions",
@@ -2361,6 +2518,7 @@
         },
         "Remove": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSrv",
             "HIDDEN": true,
             "MAPPING": "Remove",
@@ -2396,6 +2554,7 @@
         },
         "RemoveFromConfiguration": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSrv",
             "HIDDEN": true,
             "MAPPING": "RemoveFromConfiguration",
@@ -2429,6 +2588,7 @@
         },
         "RemoveUnusedDefinitions": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSrv",
             "HIDDEN": true,
             "MAPPING": "RemoveUnusedDefinitions",
@@ -2440,6 +2600,7 @@
         },
         "RemoveUser": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSrv",
             "HIDDEN": true,
             "MAPPING": "RemoveUser",
@@ -2468,6 +2629,7 @@
         },
         "Rename": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSrv",
             "HIDDEN": true,
             "MAPPING": "Rename",
@@ -2506,6 +2668,7 @@
         },
         "RenameConfiguration": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSrv",
             "HIDDEN": true,
             "MAPPING": "RenameConfiguration",
@@ -2532,6 +2695,7 @@
         },
         "Restart": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSrv",
             "HIDDEN": true,
             "MAPPING": "Restart",
@@ -2543,6 +2707,7 @@
         },
         "SetConfiguration": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSrv",
             "HIDDEN": true,
             "MAPPING": "SetConfiguration",
@@ -2575,6 +2740,7 @@
         },
         "SetLocale": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSrv",
             "HIDDEN": true,
             "MAPPING": "SetLocale",
@@ -2590,6 +2756,7 @@
         },
         "Shutdown": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSrv",
             "HIDDEN": true,
             "MAPPING": "Shutdown",
@@ -2601,6 +2768,7 @@
         },
         "SubscribeEvents": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSrv",
             "HIDDEN": true,
             "MAPPING": "SubscribeEvents",
@@ -2616,6 +2784,7 @@
         },
         "TcHmiEventLogger.Config": {
             "ACCESS": 0,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiEventLogger",
             "HIDDEN": true,
             "MAPPING": "Config",
@@ -2623,8 +2792,87 @@
             "SCHEMA": {},
             "USEMAPPING": true
         },
+        "TcHmiEventLogger.Diagnostics": {
+            "ACCESS": 1,
+            "DOMAIN": "TcHmiEventLogger",
+            "HIDDEN": true,
+            "MAPPING": "Diagnostics",
+            "OPTIONS": {},
+            "SCHEMA": {
+                "function": true,
+                "properties": {
+                    "TARGET_SYSTEMS": {
+                        "additionalProperties": {
+                            "properties": {
+                                "activeAlarmsCount": {
+                                    "propertyOrder": 9,
+                                    "readOnly": true,
+                                    "type": "integer"
+                                },
+                                "cachedAlarmsCount": {
+                                    "hidden": true,
+                                    "propertyOrder": 7,
+                                    "readOnly": true,
+                                    "type": "integer"
+                                },
+                                "cachedInvalidAlarmsCount": {
+                                    "hidden": true,
+                                    "propertyOrder": 8,
+                                    "readOnly": true,
+                                    "type": "integer"
+                                },
+                                "cachedMessagesCount": {
+                                    "hidden": true,
+                                    "propertyOrder": 6,
+                                    "readOnly": true,
+                                    "type": "integer"
+                                },
+                                "connectionState": {
+                                    "propertyOrder": 1,
+                                    "readOnly": true,
+                                    "type": "string"
+                                },
+                                "importedAlarmsCount": {
+                                    "propertyOrder": 4,
+                                    "readOnly": true,
+                                    "type": "integer"
+                                },
+                                "importedEventsCount": {
+                                    "propertyOrder": 2,
+                                    "readOnly": true,
+                                    "type": "integer"
+                                },
+                                "importedInvalidAlarmsCount": {
+                                    "propertyOrder": 5,
+                                    "readOnly": true,
+                                    "type": "integer"
+                                },
+                                "importedMessagesCount": {
+                                    "propertyOrder": 3,
+                                    "readOnly": true,
+                                    "type": "integer"
+                                }
+                            },
+                            "readOnly": true,
+                            "required": [
+                                "connectionState"
+                            ],
+                            "type": "object"
+                        },
+                        "description": "DESC_TARGET_SYSTEM",
+                        "readOnly": true,
+                        "type": "object"
+                    }
+                },
+                "readOnly": true,
+                "transient": true,
+                "type": "object"
+            },
+            "USEMAPPING": true
+        },
         "TcHmiLua.Config": {
             "ACCESS": 0,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiLua",
             "HIDDEN": true,
             "MAPPING": "Config",
@@ -2634,6 +2882,7 @@
         },
         "TcHmiSqliteHistorize.Config": {
             "ACCESS": 0,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSqliteHistorize",
             "HIDDEN": true,
             "MAPPING": "Config",
@@ -2643,6 +2892,7 @@
         },
         "TcHmiSqliteHistorize.Diagnostics": {
             "ACCESS": 1,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSqliteHistorize",
             "HIDDEN": true,
             "MAPPING": "Diagnostics",
@@ -2693,6 +2943,7 @@
         },
         "TcHmiSqliteHistorize.GetTrendLineData": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSqliteHistorize",
             "HIDDEN": true,
             "MAPPING": "GetTrendLineData",
@@ -2776,6 +3027,7 @@
         },
         "TcHmiSqliteHistorize.GetTrendLineWindow": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSqliteHistorize",
             "HIDDEN": true,
             "MAPPING": "GetTrendLineWindow",
@@ -2837,6 +3089,7 @@
         },
         "TcHmiSqliteHistorize.HistorizeData": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSqliteHistorize",
             "HIDDEN": true,
             "MAPPING": "HistorizeData",
@@ -2848,6 +3101,7 @@
         },
         "TcHmiSqliteLogger.Clear": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSqliteLogger",
             "HIDDEN": true,
             "MAPPING": "Clear",
@@ -2859,6 +3113,7 @@
         },
         "TcHmiSqliteLogger.Config": {
             "ACCESS": 0,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSqliteLogger",
             "HIDDEN": true,
             "MAPPING": "Config",
@@ -2868,6 +3123,7 @@
         },
         "TcHmiSqliteLogger.Diagnostics": {
             "ACCESS": 1,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSqliteLogger",
             "HIDDEN": true,
             "MAPPING": "Diagnostics",
@@ -2956,6 +3212,7 @@
         },
         "TcHmiSqliteLogger.ListEvents": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSqliteLogger",
             "HIDDEN": true,
             "MAPPING": "ListEvents",
@@ -2967,6 +3224,7 @@
         },
         "TcHmiSrv.Config": {
             "ACCESS": 0,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSrv",
             "HIDDEN": true,
             "MAPPING": "Config",
@@ -2976,6 +3234,7 @@
         },
         "TcHmiUserManagement.AddUser": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiUserManagement",
             "HIDDEN": true,
             "MAPPING": "AddUser",
@@ -3008,6 +3267,7 @@
         },
         "TcHmiUserManagement.ChangePassword": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiUserManagement",
             "HIDDEN": true,
             "MAPPING": "ChangePassword",
@@ -3030,6 +3290,7 @@
         },
         "TcHmiUserManagement.Config": {
             "ACCESS": 0,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiUserManagement",
             "HIDDEN": true,
             "MAPPING": "Config",
@@ -3039,6 +3300,7 @@
         },
         "TcHmiUserManagement.DisableUser": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiUserManagement",
             "HIDDEN": true,
             "MAPPING": "DisableUser",
@@ -3054,6 +3316,7 @@
         },
         "TcHmiUserManagement.EnableUser": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiUserManagement",
             "HIDDEN": true,
             "MAPPING": "EnableUser",
@@ -3069,6 +3332,7 @@
         },
         "TcHmiUserManagement.ListDisabledUsers": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiUserManagement",
             "HIDDEN": true,
             "MAPPING": "ListDisabledUsers",
@@ -3084,6 +3348,7 @@
         },
         "TcHmiUserManagement.ListUsers": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiUserManagement",
             "HIDDEN": true,
             "MAPPING": "ListUsers",
@@ -3099,6 +3364,7 @@
         },
         "TcHmiUserManagement.RemoveUser": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiUserManagement",
             "HIDDEN": true,
             "MAPPING": "RemoveUser",
@@ -3114,6 +3380,7 @@
         },
         "TcHmiUserManagement.RenameUser": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiUserManagement",
             "HIDDEN": true,
             "MAPPING": "RenameUser",
@@ -3142,6 +3409,7 @@
         },
         "TcHmiVision.Config": {
             "ACCESS": 0,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiVision",
             "HIDDEN": true,
             "MAPPING": "Config",
@@ -3151,6 +3419,7 @@
         },
         "TcHmiVision.GetSchema": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiVision",
             "HIDDEN": true,
             "MAPPING": "GetSchema",
@@ -3162,6 +3431,7 @@
         },
         "TcHmiVision.ListSymbols": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiVision",
             "HIDDEN": true,
             "MAPPING": "ListSymbols",
@@ -3171,6 +3441,7 @@
         },
         "Unsubscribe": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSrv",
             "HIDDEN": true,
             "MAPPING": "Unsubscribe",
@@ -3186,6 +3457,7 @@
         },
         "UnsubscribeEvents": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSrv",
             "HIDDEN": true,
             "MAPPING": "UnsubscribeEvents",
@@ -3201,6 +3473,7 @@
         },
         "UpdateEventsSubscription": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSrv",
             "HIDDEN": true,
             "MAPPING": "UpdateEventsSubscription",
@@ -3216,6 +3489,7 @@
         },
         "Upload": {
             "ACCESS": 3,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiSrv",
             "HIDDEN": true,
             "MAPPING": "Upload",
@@ -3359,14 +3633,18 @@
                 "USERGROUPUSERS_GROUPS": [
                     "__SystemUsers"
                 ],
-                "USERGROUPUSERS_LOCALE": "project"
+                "USERGROUPUSERS_LOCALE": "project",
+                "USERGROUPUSERS_TIMEFORMATLOCALE": "project",
+                "USERGROUPUSERS_TIMEZONE": "project"
             },
             "JohnDoe": {
                 "USERGROUPUSERS_AUTO_LOGOFF": "P30D",
                 "USERGROUPUSERS_GROUPS": [
                     "__SystemUsers"
                 ],
-                "USERGROUPUSERS_LOCALE": "project"
+                "USERGROUPUSERS_LOCALE": "project",
+                "USERGROUPUSERS_TIMEFORMATLOCALE": "project",
+                "USERGROUPUSERS_TIMEZONE": "project"
             },
             "Pippo": {
                 "USERGROUPUSERS_AUTO_LOGOFF": "P30D",
@@ -3401,16 +3679,16 @@
     "VIDEOSEGMENTSIZE": 1048576,
     "VIRTUALDIRECTORIES": {
         "/": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\TcHmiResponsiveNavigation",
-        "/Beckhoff.TwinCAT.HMI.Controls": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\Packages\\Beckhoff.TwinCAT.HMI.Controls.12.742.5\\runtimes\\native1.12-tchmi",
+        "/Beckhoff.TwinCAT.HMI.Controls": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\Packages\\Beckhoff.TwinCAT.HMI.Controls.12.744.2\\runtimes\\native1.12-tchmi",
         "/Beckhoff.TwinCAT.HMI.EventLogger": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\Packages\\Beckhoff.TwinCAT.HMI.EventLogger.12.742.5",
-        "/Beckhoff.TwinCAT.HMI.Functions": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\Packages\\Beckhoff.TwinCAT.HMI.Functions.12.742.5\\runtimes\\native1.12-tchmi",
-        "/Beckhoff.TwinCAT.HMI.PDFViewer": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\Packages\\Beckhoff.TwinCAT.HMI.PDFViewer.12.742.5\\runtimes\\native1.12-tchmi",
-        "/Beckhoff.TwinCAT.HMI.ResponsiveNavigation": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\Packages\\Beckhoff.TwinCAT.HMI.ResponsiveNavigation.12.742.5\\runtimes\\native1.12-tchmi",
+        "/Beckhoff.TwinCAT.HMI.Functions": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\Packages\\Beckhoff.TwinCAT.HMI.Functions.12.744.2\\runtimes\\native1.12-tchmi",
+        "/Beckhoff.TwinCAT.HMI.PDFViewer": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\Packages\\Beckhoff.TwinCAT.HMI.PDFViewer.12.744.2\\runtimes\\native1.12-tchmi",
+        "/Beckhoff.TwinCAT.HMI.ResponsiveNavigation": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\Packages\\Beckhoff.TwinCAT.HMI.ResponsiveNavigation.12.744.2\\runtimes\\native1.12-tchmi",
         "/Beckhoff.TwinCAT.HMI.SqliteHistorize": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\Packages\\Beckhoff.TwinCAT.HMI.SqliteHistorize.12.742.5",
         "/Beckhoff.TwinCAT.HMI.Vision": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\Packages\\Beckhoff.TwinCAT.HMI.Vision.12.742.5",
         "/JB.TcHmiTextboxExtended": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\Packages\\JB.TcHmiTextboxExtended.1.0.3\\runtimes\\native1.12-tchmi",
         "/bin": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\TcHmiResponsiveNavigation\\bin\\",
         "/bin/framework": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\TcHmiResponsiveNavigation\\bin\\framework",
-        "/framework": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\Packages\\Beckhoff.TwinCAT.HMI.Framework.12.742.5\\runtimes\\native1.12-tchmi"
+        "/framework": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\Packages\\Beckhoff.TwinCAT.HMI.Framework.12.744.2\\runtimes\\native1.12-tchmi"
     }
 }

@@ -137,6 +137,16 @@
   ],
   "content": [
     {
+      "url": "Contents/Documentation/DocBeckhoff.content",
+      "preload": false,
+      "keepAlive": false
+    },
+    {
+      "url": "Contents/Documentation/Friends_Github.content",
+      "preload": false,
+      "keepAlive": false
+    },
+    {
       "url": "Contents/Features/RPC.content",
       "preload": false,
       "keepAlive": false
@@ -172,6 +182,11 @@
       "keepAlive": false
     },
     {
+      "url": "Contents/submenu/Array.content",
+      "preload": false,
+      "keepAlive": false
+    },
+    {
       "url": "Contents/submenu/DataGrid.content",
       "preload": false,
       "keepAlive": false
@@ -183,6 +198,11 @@
     },
     {
       "url": "Contents/submenu/ExampleContents/BeckhoffInfo.content",
+      "preload": false,
+      "keepAlive": false
+    },
+    {
+      "url": "Contents/submenu/LateralMenu.content",
       "preload": false,
       "keepAlive": false
     },
@@ -220,22 +240,12 @@
       "url": "Contents/ThirdPartyCtrl/ChartJS.content",
       "preload": false,
       "keepAlive": false
-    },
-    {
-      "url": "Contents/submenu/LateralMenu.content",
-      "preload": false,
-      "keepAlive": false
-    },
-    {
-      "url": "Contents/submenu/Array.content",
-      "preload": false,
-      "keepAlive": false
     }
   ],
   "views": [
     {
       "url": "Desktop.view",
-      "preload": false,
+      "preload": true,
       "keepAlive": false
     }
   ],
@@ -460,10 +470,11 @@
   "trigger": [],
   "actionTemplates": [],
   "languages": {
-    "it-IT": "Localization\\Language1.localization",
     "de-DE": "Localization\\de-DE.localization",
-    "en-US": "Localization\\en-US.localization"
+    "en-US": "Localization\\en-US.localization",
+    "it-IT": "Localization\\Language1.localization"
   },
+  "languageFallback": "",
   "disableLoadingOptimization": false,
   "creatorSettings": {
     "viewport": {

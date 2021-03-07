@@ -23,10 +23,11 @@
     <EnableTypeScript>true</EnableTypeScript>
     <AzureFunctionsVersion>v2</AzureFunctionsVersion>
     <Name>TcHmiResponsiveNavigation</Name>
-    <HmiCommunicationRouterPort>10113</HmiCommunicationRouterPort>
+    <HmiCommunicationRouterPort>10114</HmiCommunicationRouterPort>
     <HmiCommunicationServerAuthPort>13001</HmiCommunicationServerAuthPort>
     <HmiInitial>1.12.742.0</HmiInitial>
-    <HmiRecent>1.12.742.5</HmiRecent>
+    <HmiRecent>1.12.744.2</HmiRecent>
+    <HmiServerNodeAdvancedView>False</HmiServerNodeAdvancedView>
   </PropertyGroup>
   <PropertyGroup>
     <TwinCATHmi_Tasks>$(TcHmiDirectory)\MSBuild\Beckhoff.TwinCAT.HMI.tasks</TwinCATHmi_Tasks>
@@ -115,6 +116,12 @@
   <Target Name="Clean" DependsOnTargets="BaseClean" />
   <ItemGroup>
     <Content Include="CodeBehind\TopMostLayerHandling.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Contents\Documentation\DocBeckhoff.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Contents\Documentation\Friends_Github.content">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Contents\Features\RPC.content">
@@ -268,6 +275,9 @@
     <Content Include="Images\close_pressed.svg">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Images\GitHub.png">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Images\icons_next_pressed.svg">
       <SubType>Content</SubType>
     </Content>
@@ -405,6 +415,7 @@
       <DependentUpon>UserControls\ucValidationBox.usercontrol</DependentUpon>
     </Content>
     <Folder Include="Contents\Features" />
+    <Folder Include="Contents\Documentation" />
     <Folder Include="Contents\Overview" />
     <Folder Include="Contents\ThirdPartyCtrl" />
     <Folder Include="Contents\Other" />
@@ -603,6 +614,7 @@
     <Content Include="Desktop.view">
       <SubType>Content</SubType>
       <Visible>true</Visible>
+      <Cache>True</Cache>
     </Content>
     <Folder Include="Server\ADS\" />
     <Folder Include="Server\TcHmiLua\" />

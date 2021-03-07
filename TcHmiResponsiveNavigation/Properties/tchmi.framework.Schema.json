@@ -381,10 +381,7 @@
           "spreadUnit": {
             "$ref": "tchmi:framework#/definitions/PixelUnit"
           }
-        },
-        "required": [
-          "color"
-        ]
+        }
       },
       "minItems": 0
     },
@@ -2661,7 +2658,8 @@
       "engineeringColumns": [
         "index",
         "text",
-        "value"
+        "value",
+        "category"
       ],
       "propertiesMeta": [
         {
@@ -2690,6 +2688,15 @@
           "description": "Value which is associated to this entry",
           "defaultValue": null,
           "defaultValueInternal": null
+        },
+        {
+          "name": "category",
+          "displayName": "Category",
+          "category": "General",
+          "displayPriority": 10,
+          "description": "An optional category which will be display on top of the element.",
+          "defaultValue": null,
+          "defaultValueInternal": null
         }
       ],
       "properties": {
@@ -2709,7 +2716,10 @@
             }
           ]
         },
-        "value": {}
+        "value": {},
+        "category": {
+          "type": "string"
+        }
       },
       "required": [
         "text"
@@ -2736,6 +2746,21 @@
     },
     "TcHmiCombobox": {
       "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiCombobox"
+    },
+    "EnumDataSymbol": {
+      "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiCombobox.EnumDataSymbol"
+    },
+    "TcHmi.Controls.Beckhoff.TcHmiCombobox.EnumDataSymbol": {
+      "allOf": [
+        {
+          "$ref": "tchmi:framework#/definitions/Symbol"
+        },
+        {
+          "frameworkSymbolSubType": {
+            "$ref": "tchmi:general#/definitions/Object"
+          }
+        }
+      ]
     },
     "DGColumnDefinitionList": {
       "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiDatagrid.ColumnDefinitionList"
@@ -2909,6 +2934,24 @@
                 "defaultValueInternal": "Center"
               },
               {
+                "name": "headerHorizontalAlignment",
+                "displayName": "Header Horizontal alignment",
+                "category": "General",
+                "displayPriority": 10,
+                "description": "Horizontal alignment of the header of this column",
+                "defaultValue": "Center",
+                "defaultValueInternal": "Center"
+              },
+              {
+                "name": "headerVerticalAlignment",
+                "displayName": "Header Vertical alignment",
+                "category": "General",
+                "displayPriority": 10,
+                "description": "Vertical alignment of the header of this column",
+                "defaultValue": "Center",
+                "defaultValueInternal": "Center"
+              },
+              {
                 "name": "format",
                 "displayName": "Format",
                 "category": "General",
@@ -2995,6 +3038,12 @@
                 "$ref": "tchmi:framework#/definitions/HorizontalAlignment"
               },
               "verticalAlignment": {
+                "$ref": "tchmi:framework#/definitions/VerticalAlignment"
+              },
+              "headerHorizontalAlignment": {
+                "$ref": "tchmi:framework#/definitions/HorizontalAlignment"
+              },
+              "headerVerticalAlignment": {
                 "$ref": "tchmi:framework#/definitions/VerticalAlignment"
               },
               "format": {
@@ -3142,6 +3191,24 @@
               "defaultValueInternal": "Center"
             },
             {
+              "name": "headerHorizontalAlignment",
+              "displayName": " Header Horizontal alignment",
+              "category": "General",
+              "displayPriority": 10,
+              "description": "Horizontal alignment of the header of this column",
+              "defaultValue": "Center",
+              "defaultValueInternal": "Center"
+            },
+            {
+              "name": "headerVerticalAlignment",
+              "displayName": "Header Vertical alignment",
+              "category": "General",
+              "displayPriority": 10,
+              "description": "Vertical alignment of the header of this column",
+              "defaultValue": "Center",
+              "defaultValueInternal": "Center"
+            },
+            {
               "name": "format",
               "displayName": "Format",
               "category": "General",
@@ -3224,6 +3291,12 @@
               "$ref": "tchmi:framework#/definitions/HorizontalAlignment"
             },
             "verticalAlignment": {
+              "$ref": "tchmi:framework#/definitions/VerticalAlignment"
+            },
+            "headerHorizontalAlignment": {
+              "$ref": "tchmi:framework#/definitions/HorizontalAlignment"
+            },
+            "headerVerticalAlignment": {
               "$ref": "tchmi:framework#/definitions/VerticalAlignment"
             },
             "format": {
@@ -4043,7 +4116,9 @@
       "type": "string",
       "enum": [
         "Horizontal",
-        "Vertical"
+        "Vertical",
+        "HorizontalInverted",
+        "VerticalInverted"
       ],
       "default": "Horizontal"
     },
@@ -4528,6 +4603,16 @@
       ],
       "default": "Inside"
     },
+    "TcHmi.Controls.Beckhoff.TcHmiRadialGauge.GaugeAlignment": {
+      "title": "GaugeAlignment",
+      "type": "string",
+      "enum": [
+        "Start",
+        "Center",
+        "End"
+      ],
+      "default": "Start"
+    },
     "TcHmiRadialGauge": {
       "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiRadialGauge"
     },
@@ -4572,6 +4657,32 @@
     },
     "TcHmiRectangle": {
       "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiRectangle"
+    },
+    "TcHmi.Controls.Beckhoff.TcHmiTachometer": {
+      "$schema": "http://json-schema.org/draft-04/schema",
+      "type": "object",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkControlType": "TcHmiTachometer",
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff"
+    },
+    "TcHmi.Controls.Beckhoff.TcHmiTachometer.LabelPosition": {
+      "title": "LabelPosition",
+      "type": "string",
+      "enum": [
+        "Outside",
+        "Inside"
+      ],
+      "default": "Inside"
+    },
+    "TcHmi.Controls.Beckhoff.TcHmiTachometer.GaugeAlignment": {
+      "title": "GaugeAlignment",
+      "type": "string",
+      "enum": [
+        "Start",
+        "Center",
+        "End"
+      ],
+      "default": "Inside"
     },
     "TcHmi.Controls.Beckhoff.TcHmiTextblock": {
       "$schema": "http://json-schema.org/draft-04/schema",
@@ -5202,6 +5313,269 @@
     },
     "TcHmiRecipeSelect": {
       "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiRecipeSelect"
+    },
+    "TcHmi.Controls.Beckhoff.TcHmiThemeSelect": {
+      "$schema": "http://json-schema.org/draft-04/schema",
+      "type": "object",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkControlType": "TcHmiThemeSelect",
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff"
+    },
+    "TcHmiThemeSelect": {
+      "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiThemeSelect"
+    },
+    "TcHmi.Controls.Beckhoff.TcHmiLocalizationSelect": {
+      "$schema": "http://json-schema.org/draft-04/schema",
+      "type": "object",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkControlType": "TcHmiLocalizationSelect",
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff"
+    },
+    "TcHmiLocalizationSelect": {
+      "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiLocalizationSelect"
+    },
+    "TcHmi.Controls.Beckhoff.TcHmiLocalizationSelect.ListItem": {
+      "title": "List Item",
+      "description": "List Item List",
+      "type": "object",
+      "engineeringColumns": [
+        "code",
+        "text"
+      ],
+      "propertiesMeta": [
+        {
+          "name": "code",
+          "displayName": "Localization Code",
+          "category": "General",
+          "displayPriority": 10,
+          "description": "A Localization code like 'de-DE'. ",
+          "defaultValue": null,
+          "defaultValueInternal": null
+        },
+        {
+          "name": "text",
+          "displayName": "Text",
+          "category": "General",
+          "displayPriority": 10,
+          "description": "Text to show for the defined localization code",
+          "defaultValue": null,
+          "defaultValueInternal": null
+        }
+      ],
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "code",
+        "text"
+      ]
+    },
+    "TcHmi.Controls.Beckhoff.TcHmiLocalizationSelect.ListItemList": {
+      "title": "ListItemList",
+      "description": "List Item List",
+      "engineeringDefaultDatatype": 0,
+      "type": "array",
+      "items": {
+        "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiLocalizationSelect.ListItem"
+      }
+    },
+    "TcHmi.Controls.Beckhoff.TcHmiDateTimeDisplay": {
+      "type": "object",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkControlType": "TcHmiTime",
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff"
+    },
+    "TcHmi.Controls.Beckhoff.TcHmiDateTimeDisplay.TimeDisplayLayout": {
+      "type": "string",
+      "enum": [
+        "Time",
+        "Date",
+        "TimeDateSingleLine",
+        "TimeDateMultiLine",
+        "DateTimeSingleLine",
+        "DateTimeMultiLine"
+      ]
+    },
+    "TcHmi.Controls.Beckhoff.TcHmiInput": {
+      "$schema": "http://json-schema.org/draft-04/schema",
+      "type": "object",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkControlType": "TcHmiInput",
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff"
+    },
+    "TcHmiInput": {
+      "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiInput"
+    },
+    "TcHmi.Controls.Beckhoff.TcHmiNumericInput": {
+      "$schema": "http://json-schema.org/draft-04/schema",
+      "type": "object",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkControlType": "TcHmiNumericInput",
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff"
+    },
+    "TcHmiNumericInput": {
+      "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiNumericInput"
+    },
+    "TcHmi.Controls.Beckhoff.TcHmiPasswordInput": {
+      "$schema": "http://json-schema.org/draft-04/schema",
+      "type": "object",
+      "frameworkInstanceOf": "TcHmi.Controls.Beckhoff.TcHmiInput",
+      "frameworkControlType": "TcHmiPasswordInput",
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff"
+    },
+    "TcHmiPasswordInput": {
+      "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiPasswordInput"
+    },
+    "TcHmi.Controls.Beckhoff.TcHmiSpinboxInput": {
+      "$schema": "http://json-schema.org/draft-04/schema",
+      "type": "object",
+      "frameworkInstanceOf": "TcHmi.Controls.Beckhoff.TcHmiNumericInput",
+      "frameworkControlType": "TcHmiSpinboxInput",
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff"
+    },
+    "TcHmiSpinboxInput": {
+      "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiSpinboxInput"
+    },
+    "TcHmi.Controls.Beckhoff.TcHmiSpinboxInput.ButtonPosition": {
+      "title": "SpinboxInputButtonPosition",
+      "type": "string",
+      "enum": [
+        "BothLeft",
+        "BothRight",
+        "PlusLeftAndMinusRight",
+        "MinusLeftAndPlusRight"
+      ],
+      "default": "MinusLeftAndPlusRight"
+    },
+    "TcHmi.Controls.Beckhoff.TcHmiAudio": {
+      "$schema": "http://json-schema.org/draft-04/schema",
+      "type": "object",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkControlType": "TcHmiAudio",
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff"
+    },
+    "TcHmi.Controls.Beckhoff.TcHmiAudio.AudioSourceList": {
+      "title": "AudioSourceList",
+      "description": "Audio Source List",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "title": "Audio Source",
+        "engineeringColumns": [
+          "source",
+          "type"
+        ],
+        "properties": {
+          "source": {
+            "$ref": "tchmi:framework#/definitions/Path"
+          },
+          "type": {
+            "type": "string",
+            "category": "Common",
+            "enum": [
+              "",
+              "audio/mpeg",
+              "audio/ogg",
+              "audio/wav",
+              "application/dash+xml",
+              "application/vnd.apple.mpegurl"
+            ],
+            "options": [
+              {
+                "label": "<auto detect>",
+                "value": ""
+              }
+            ],
+            "default": ""
+          }
+        },
+        "propertiesMeta": [
+          {
+            "name": "source",
+            "displayName": "Source",
+            "category": "General",
+            "displayPriority": 10,
+            "description": "The source path of the audio source",
+            "defaultValue": null,
+            "defaultValueInternal": null
+          },
+          {
+            "name": "type",
+            "displayName": "Audio Type",
+            "category": "General",
+            "displayPriority": 10,
+            "description": "The type of the audio source.",
+            "defaultValue": null,
+            "defaultValueInternal": null
+          }
+        ],
+        "required": [
+          "source"
+        ]
+      }
+    },
+    "TcHmiAudio": {
+      "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiAudio"
+    },
+    "TcHmi.Controls.Beckhoff.TcHmiStateImage": {
+      "type": "object",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkControlType": "TcHmiStateImage",
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff"
+    },
+    "TcHmi.Controls.Beckhoff.TcHmiStateImage.StateList": {
+      "title": "StateList",
+      "description": "State List",
+      "type": "array",
+      "items": {
+        "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiStateImage.StateListItem"
+      }
+    },
+    "TcHmi.Controls.Beckhoff.TcHmiStateImage.StateListItem": {
+      "title": "State List Item",
+      "description": "State List Item",
+      "type": "object",
+      "engineeringColumns": [
+        "state",
+        "stateIcon"
+      ],
+      "propertiesMeta": [
+        {
+          "name": "state",
+          "displayName": "Value",
+          "category": "General",
+          "displayPriority": 10,
+          "description": "State Value",
+          "defaultValue": null,
+          "defaultValueInternal": null
+        },
+        {
+          "name": "stateIcon",
+          "displayName": "Icon",
+          "category": "General",
+          "displayPriority": 10,
+          "description": "Icon Path for this entry.",
+          "defaultValue": null,
+          "defaultValueInternal": null
+        }
+      ],
+      "properties": {
+        "state": {
+          "$ref": "tchmi:general#/definitions/Any"
+        },
+        "stateIcon": {
+          "$ref": "tchmi:framework#/definitions/Path"
+        }
+      },
+      "required": [
+        "state",
+        "stateIcon"
+      ]
     },
     "TcHmi.Controls.System.TcHmiControl": {
       "$schema": "http://json-schema.org/draft-04/schema",

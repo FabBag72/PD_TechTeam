@@ -1,0 +1,13 @@
+﻿<div id="Friends_Github" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="800" data-tchmi-height="640">
+
+    <div id="TcHmiHtmlHost" data-tchmi-type="TcHmi.Controls.System.TcHmiHtmlHost" data-tchmi-height="24" data-tchmi-height-unit="px" data-tchmi-left="256" data-tchmi-left-unit="px" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="492" data-tchmi-width-unit="px">
+        <a href="https://github.com/PerfectlyMint/TcHmiEx">
+            PerfectlyMint/TcHmiEx
+        </a>.
+    </div>
+
+<div id="TcHmiImage_24" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="150" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px"  data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="236" data-tchmi-width-unit="px" data-tchmi-src="Images/GitHub.png">
+
+</div>
+
+</div>

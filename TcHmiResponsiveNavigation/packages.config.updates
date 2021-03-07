@@ -1,0 +1,34 @@
+﻿[
+  {
+    "id": "Beckhoff.TwinCAT.HMI.Controls",
+    "version": "12.744.3"
+  },
+  {
+    "id": "Beckhoff.TwinCAT.HMI.EventLogger",
+    "version": "12.744.3"
+  },
+  {
+    "id": "Beckhoff.TwinCAT.HMI.Framework",
+    "version": "12.744.3"
+  },
+  {
+    "id": "Beckhoff.TwinCAT.HMI.Functions",
+    "version": "12.744.3"
+  },
+  {
+    "id": "Beckhoff.TwinCAT.HMI.PDFViewer",
+    "version": "12.744.3"
+  },
+  {
+    "id": "Beckhoff.TwinCAT.HMI.ResponsiveNavigation",
+    "version": "12.744.3"
+  },
+  {
+    "id": "Beckhoff.TwinCAT.HMI.SqliteHistorize",
+    "version": "12.744.3"
+  },
+  {
+    "id": "Beckhoff.TwinCAT.HMI.Vision",
+    "version": "12.744.3"
+  }
+]
