@@ -30,6 +30,10 @@ List of content.
     * LogOut, UserManager.content.
   * EventGrid
     * EventGrid Sample, EventGridSample.content.
+* Documentation:
+  * Beckhoff
+  * Friends
+    * GitHub, all repository with TcHMI interesting project  
 
 * Features
   * RPC, Remote Procedure Call, PLC FB method calling by TcHMI framework. Read/Write FB Property.
