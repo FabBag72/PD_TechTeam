@@ -1,4 +1,4 @@
-# PD_TechTeam - TwinCAT HMI 1.12 Project Template with some example.
+# TwinCAT HMI 1.12 Project Template with some examples inside.
 Padova_BIT
 
 THE SAMPLE CODE CONTAINED IN THIS PUBLICATION IS PROVIDED “AS IS” WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED, IMPLIED OR STATUTORY, INCLUDING WITHOUT LIMITATION, ANY WARRANTY WITH RESPECT TO NON-INFRINGEMENT, FREEDOM FROM PROPRIETARY RIGHTS OF THIRD PARTIES OR FITNESS FOR ANY PARTICULAR PURPOSE. 
@@ -23,6 +23,7 @@ List of content.
     * DataGrid, DataGrid.content, see the video tutorial: Data entry by Data Grid list of parameters. Checking of min/max/isNaN. 
   * Dialog:
     * Dialog message, Dialog.content, Two ways for dialog message box or pop-up message.
+  * P&I Diagram: the diagram is a SVG with attribute preserveAspectRatio="none" so the diagram can fit to many aspect ratios. The SVG code is hosted in a HTML_host control. Then there are two popup windows linked to two elements: valve and compressor. Valve and compressor are two little SVG image embedded in a HTML Host as well. The position of the two element is relative to the parent so they are always in the same position related to main P&I Diagram.
 
 * Submenu2:
   * User Managment
