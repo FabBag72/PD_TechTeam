@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.4">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.9">
   <POU Name="MAIN" Id="{5a7f3348-1a83-45b6-b2c9-8e76ac5cc7b6}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
 	bInit: BOOL;
 	i: INT;
-	j: INT;
+	j, kk: INT;
 	
 	// FB Instances
 	Base : FB_Base;			//Base FB
