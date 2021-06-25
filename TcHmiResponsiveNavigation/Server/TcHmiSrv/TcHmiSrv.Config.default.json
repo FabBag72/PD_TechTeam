@@ -11,6 +11,7 @@
     "CHECKSUMENABLED": true,
     "CHUNKSIZE": 1048576,
     "CLIENTCERTIFICATES": [],
+    "CLIENT_CACHE_MAX_AGE": 0,
     "CONFIGURATIONS": [
         "remote"
     ],
@@ -218,7 +219,8 @@
     "DIAGNOSTICS_DOMAINS": [],
     "DISCOVERY": 2,
     "ENDPOINTS": [
-        "http://127.0.0.1:13001",
+        "http://10.39.2.6:13001",
+        "http://10.39.2.6:3002",
         "http://127.0.0.1:3002"
     ],
     "ETAGENABLED": true,
@@ -1990,6 +1992,15 @@
                         "version": {
                             "doc": "The version of the extension.",
                             "type": "string"
+                        },
+                        "visibility": {
+                            "doc": "Indicates under which circumstances the extension configuration should be visible.",
+                            "enum": [
+                                "AlwaysShow",
+                                "AlwaysHide",
+                                "HideInEngineering"
+                            ],
+                            "type": "string"
                         }
                     },
                     "type": "object"
@@ -2794,6 +2805,7 @@
         },
         "TcHmiEventLogger.Diagnostics": {
             "ACCESS": 1,
+            "CUSTOMERDATA": "",
             "DOMAIN": "TcHmiEventLogger",
             "HIDDEN": true,
             "MAPPING": "Diagnostics",
@@ -3680,12 +3692,12 @@
     "VIRTUALDIRECTORIES": {
         "/": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\TcHmiResponsiveNavigation",
         "/Beckhoff.TwinCAT.HMI.Controls": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\Packages\\Beckhoff.TwinCAT.HMI.Controls.12.744.2\\runtimes\\native1.12-tchmi",
-        "/Beckhoff.TwinCAT.HMI.EventLogger": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\Packages\\Beckhoff.TwinCAT.HMI.EventLogger.12.742.5",
+        "/Beckhoff.TwinCAT.HMI.EventLogger": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\Packages\\Beckhoff.TwinCAT.HMI.EventLogger.12.744.2",
         "/Beckhoff.TwinCAT.HMI.Functions": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\Packages\\Beckhoff.TwinCAT.HMI.Functions.12.744.2\\runtimes\\native1.12-tchmi",
         "/Beckhoff.TwinCAT.HMI.PDFViewer": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\Packages\\Beckhoff.TwinCAT.HMI.PDFViewer.12.744.2\\runtimes\\native1.12-tchmi",
         "/Beckhoff.TwinCAT.HMI.ResponsiveNavigation": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\Packages\\Beckhoff.TwinCAT.HMI.ResponsiveNavigation.12.744.2\\runtimes\\native1.12-tchmi",
-        "/Beckhoff.TwinCAT.HMI.SqliteHistorize": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\Packages\\Beckhoff.TwinCAT.HMI.SqliteHistorize.12.742.5",
-        "/Beckhoff.TwinCAT.HMI.Vision": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\Packages\\Beckhoff.TwinCAT.HMI.Vision.12.742.5",
+        "/Beckhoff.TwinCAT.HMI.SqliteHistorize": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\Packages\\Beckhoff.TwinCAT.HMI.SqliteHistorize.12.744.2",
+        "/Beckhoff.TwinCAT.HMI.Vision": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\Packages\\Beckhoff.TwinCAT.HMI.Vision.12.744.2",
         "/JB.TcHmiTextboxExtended": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\Packages\\JB.TcHmiTextboxExtended.1.0.3\\runtimes\\native1.12-tchmi",
         "/bin": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\TcHmiResponsiveNavigation\\bin\\",
         "/bin/framework": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\TcHmiResponsiveNavigation\\bin\\framework",

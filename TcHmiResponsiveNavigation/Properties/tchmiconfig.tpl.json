@@ -251,43 +251,43 @@
   ],
   "userFunctions": [
     {
-      "url": "Function\\NumberValidation.js"
+      "url": "Function/NumberValidation.js"
     },
     {
-      "url": "Function\\SetStructElementByIndex.js"
+      "url": "Function/SetStructElementByIndex.js"
     },
     {
-      "url": "Function\\ExampleClassesProvider.js"
+      "url": "Function/ExampleClassesProvider.js"
     },
     {
-      "url": "Function\\CalculationMethod.js"
+      "url": "Function/CalculationMethod.js"
     },
     {
-      "url": "Function\\Animate.js"
+      "url": "Function/Animate.js"
     },
     {
-      "url": "Function\\ListGroups.js"
+      "url": "Function/ListGroups.js"
     },
     {
-      "url": "Function\\ImportUserConfig.js"
+      "url": "Function/ImportUserConfig.js"
     },
     {
-      "url": "Function\\IMPORTServerConfig.js"
+      "url": "Function/IMPORTServerConfig.js"
     },
     {
-      "url": "Function\\ExportUserConfig.js"
+      "url": "Function/ExportUserConfig.js"
     },
     {
-      "url": "Function\\ExportServerConfig.js"
+      "url": "Function/ExportServerConfig.js"
     },
     {
-      "url": "Function\\ChangePsw.js"
+      "url": "Function/ChangePsw.js"
     },
     {
-      "url": "Function\\AddUser.js"
+      "url": "Function/AddUser.js"
     },
     {
-      "url": "Function\\SetColor.js"
+      "url": "Function/SetColor.js"
     }
   ],
   "symbols": {
@@ -481,6 +481,9 @@
       "defaultWidth": 800,
       "defaultHeight": 600
     }
+  },
+  "binding": {
+    "symbolError": "Ignore"
   },
   "packages": [
     {
