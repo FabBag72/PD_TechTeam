@@ -236,8 +236,7 @@
         "TcHmiEventLogger": {
             "ENABLED": true,
             "NAME": "TcHmiEventLogger",
-            "PATH": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.EventLogger.12.744.2\\runtimes\\win-x64\\native\\",
-            "PROCESSID": -1,
+            "PATH": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.EventLogger.12.748.0\\runtimes\\win-x64\\native\\",
             "REQUIRED": false,
             "STARTUPTYPE": 1
         },
@@ -252,8 +251,7 @@
         "TcHmiSqliteHistorize": {
             "ENABLED": true,
             "NAME": "TcHmiSqliteHistorize",
-            "PATH": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.SqliteHistorize.12.744.2\\runtimes\\win-x64\\native\\",
-            "PROCESSID": -1,
+            "PATH": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.SqliteHistorize.12.748.0\\runtimes\\win-x64\\native\\",
             "REQUIRED": false,
             "STARTUPTYPE": 1
         },
@@ -276,8 +274,7 @@
         "TcHmiVision": {
             "ENABLED": true,
             "NAME": "TcHmiVision",
-            "PATH": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.Vision.12.744.2\\runtimes\\win\\net472\\",
-            "PROCESSID": -1,
+            "PATH": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.Vision.12.748.0\\runtimes\\win\\net472\\",
             "REQUIRED": false,
             "STARTUPTYPE": 1
         }
@@ -3832,16 +3829,16 @@
     "VIDEOSEGMENTSIZE": 1048576,
     "VIRTUALDIRECTORIES": {
         "/": "..\\..\\TcHmiResponsiveNavigation\\",
-        "/Beckhoff.TwinCAT.HMI.Controls": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.Controls.12.744.2\\runtimes\\native1.12-tchmi",
+        "/Beckhoff.TwinCAT.HMI.Controls": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.Controls.12.748.0\\runtimes\\native1.12-tchmi",
         "/Beckhoff.TwinCAT.HMI.EventLogger": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.EventLogger.12.744.2",
-        "/Beckhoff.TwinCAT.HMI.Functions": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.Functions.12.744.2\\runtimes\\native1.12-tchmi",
-        "/Beckhoff.TwinCAT.HMI.PDFViewer": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.PDFViewer.12.744.2\\runtimes\\native1.12-tchmi",
-        "/Beckhoff.TwinCAT.HMI.ResponsiveNavigation": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.ResponsiveNavigation.12.744.2\\runtimes\\native1.12-tchmi",
+        "/Beckhoff.TwinCAT.HMI.Functions": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.Functions.12.748.0\\runtimes\\native1.12-tchmi",
+        "/Beckhoff.TwinCAT.HMI.PDFViewer": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.PDFViewer.12.748.0\\runtimes\\native1.12-tchmi",
+        "/Beckhoff.TwinCAT.HMI.ResponsiveNavigation": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.ResponsiveNavigation.12.748.0\\runtimes\\native1.12-tchmi",
         "/Beckhoff.TwinCAT.HMI.SqliteHistorize": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.SqliteHistorize.12.744.2",
         "/Beckhoff.TwinCAT.HMI.Vision": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.Vision.12.744.2",
         "/JB.TcHmiTextboxExtended": "..\\..\\Packages\\JB.TcHmiTextboxExtended.1.0.3\\runtimes\\native1.12-tchmi",
         "/bin": "..\\..\\TcHmiResponsiveNavigation\\bin\\",
         "/bin/framework": "..\\..\\TcHmiResponsiveNavigation\\bin\\framework",
-        "/framework": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.Framework.12.744.2\\runtimes\\native1.12-tchmi"
+        "/framework": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.Framework.12.748.0\\runtimes\\native1.12-tchmi"
     }
 }

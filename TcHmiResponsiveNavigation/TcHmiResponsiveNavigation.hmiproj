@@ -23,7 +23,7 @@
     <EnableTypeScript>true</EnableTypeScript>
     <AzureFunctionsVersion>v2</AzureFunctionsVersion>
     <Name>TcHmiResponsiveNavigation</Name>
-    <HmiCommunicationRouterPort>10116</HmiCommunicationRouterPort>
+    <HmiCommunicationRouterPort>10117</HmiCommunicationRouterPort>
     <HmiCommunicationServerAuthPort>13001</HmiCommunicationServerAuthPort>
     <HmiInitial>1.12.742.0</HmiInitial>
     <HmiRecent>1.12.748.0</HmiRecent>
