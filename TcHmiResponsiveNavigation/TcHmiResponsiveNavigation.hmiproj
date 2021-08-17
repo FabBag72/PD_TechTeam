@@ -26,7 +26,7 @@
     <HmiCommunicationRouterPort>10116</HmiCommunicationRouterPort>
     <HmiCommunicationServerAuthPort>13001</HmiCommunicationServerAuthPort>
     <HmiInitial>1.12.742.0</HmiInitial>
-    <HmiRecent>1.12.746.0</HmiRecent>
+    <HmiRecent>1.12.748.0</HmiRecent>
     <HmiServerNodeAdvancedView>False</HmiServerNodeAdvancedView>
   </PropertyGroup>
   <PropertyGroup>

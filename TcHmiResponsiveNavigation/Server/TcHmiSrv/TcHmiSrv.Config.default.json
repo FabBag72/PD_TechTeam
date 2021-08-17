@@ -11,6 +11,7 @@
     "CHECKSUMENABLED": true,
     "CHUNKSIZE": 1048576,
     "CLIENTCERTIFICATES": [],
+    "CLIENTPRIORITYLIST": [],
     "CLIENT_CACHE_MAX_AGE": 0,
     "CONFIGURATIONS": [
         "remote"
@@ -219,8 +220,7 @@
     "DIAGNOSTICS_DOMAINS": [],
     "DISCOVERY": 2,
     "ENDPOINTS": [
-        "http://10.39.2.6:13001",
-        "http://10.39.2.6:3002",
+        "http://127.0.0.1:13001",
         "http://127.0.0.1:3002"
     ],
     "ETAGENABLED": true,
@@ -237,6 +237,7 @@
             "ENABLED": true,
             "NAME": "TcHmiEventLogger",
             "PATH": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.EventLogger.12.744.2\\runtimes\\win-x64\\native\\",
+            "PROCESSID": -1,
             "REQUIRED": false,
             "STARTUPTYPE": 1
         },
@@ -252,6 +253,7 @@
             "ENABLED": true,
             "NAME": "TcHmiSqliteHistorize",
             "PATH": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.SqliteHistorize.12.744.2\\runtimes\\win-x64\\native\\",
+            "PROCESSID": -1,
             "REQUIRED": false,
             "STARTUPTYPE": 1
         },
@@ -275,6 +277,7 @@
             "ENABLED": true,
             "NAME": "TcHmiVision",
             "PATH": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.Vision.12.744.2\\runtimes\\win\\net472\\",
+            "PROCESSID": -1,
             "REQUIRED": false,
             "STARTUPTYPE": 1
         }
@@ -1342,6 +1345,44 @@
             },
             "USEMAPPING": true
         },
+        "Copy": {
+            "ACCESS": 3,
+            "DOMAIN": "TcHmiSrv",
+            "HIDDEN": true,
+            "MAPPING": "Copy",
+            "OPTIONS": {},
+            "SCHEMA": {
+                "function": true,
+                "writeValue": {
+                    "properties": {
+                        "configuration": {
+                            "default": "default",
+                            "doc": "Configuration name.",
+                            "type": "string"
+                        },
+                        "domain": {
+                            "doc": "Extension domain.",
+                            "type": "string"
+                        },
+                        "new": {
+                            "doc": "Path to the new entry.",
+                            "type": "string"
+                        },
+                        "old": {
+                            "doc": "Path to the old entry.",
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "old",
+                        "new",
+                        "domain"
+                    ],
+                    "type": "object"
+                }
+            },
+            "USEMAPPING": true
+        },
         "CreateEvent": {
             "ACCESS": 3,
             "CUSTOMERDATA": "",
@@ -1984,6 +2025,10 @@
                             ],
                             "type": "string"
                         },
+                        "thirdParty": {
+                            "doc": "indicate the extension is a customer extension",
+                            "type": "boolean"
+                        },
                         "updated": {
                             "doc": "Shows last update time of the config.",
                             "format": "date-time",
@@ -2093,6 +2138,47 @@
                     ]
                 },
                 "type": "array"
+            },
+            "USEMAPPING": true
+        },
+        "ListFiles": {
+            "ACCESS": 3,
+            "DOMAIN": "TcHmiSrv",
+            "HIDDEN": true,
+            "MAPPING": "ListFiles",
+            "OPTIONS": {},
+            "SCHEMA": {
+                "additionalProperties": {
+                    "properties": {
+                        "fileFlags": {
+                            "items": {
+                                "enum": [
+                                    "Directory",
+                                    "ReadOnly"
+                                ],
+                                "type": "string"
+                            },
+                            "type": "array"
+                        },
+                        "fileSize": {
+                            "displayClass": "kilobyte",
+                            "type": "number"
+                        },
+                        "modificationTime": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "modificationTime",
+                        "fileFlags"
+                    ],
+                    "type": "object"
+                },
+                "function": true,
+                "type": "object",
+                "writeValue": {
+                    "type": "string"
+                }
             },
             "USEMAPPING": true
         },
@@ -3158,27 +3244,61 @@
                                 ]
                             },
                             "numEvents": {
-                                "propertyOrder": 2,
+                                "propertyOrder": 3,
                                 "readOnly": true,
                                 "type": "integer"
                             },
                             "numEventsWithAlarmPayload": {
-                                "propertyOrder": 4,
+                                "propertyOrder": 7,
                                 "readOnly": true,
                                 "type": "integer"
                             },
                             "numEventsWithMessagePayload": {
-                                "propertyOrder": 3,
+                                "propertyOrder": 5,
                                 "readOnly": true,
                                 "type": "integer"
+                            },
+                            "numPersistentEvents": {
+                                "hidden": true,
+                                "propertyOrder": 4,
+                                "readOnly": true,
+                                "type": "integer"
+                            },
+                            "numPersistentEventsWithAlarmPayload": {
+                                "hidden": true,
+                                "propertyOrder": 8,
+                                "readOnly": true,
+                                "type": "integer"
+                            },
+                            "numPersistentEventsWithMessagePayload": {
+                                "hidden": true,
+                                "propertyOrder": 6,
+                                "readOnly": true,
+                                "type": "integer"
+                            },
+                            "persistentDatabaseSize": {
+                                "allOf": [
+                                    {
+                                        "$ref": "tchmi:general#/definitions/INT64"
+                                    },
+                                    {
+                                        "displayClass": "byte",
+                                        "propertyOrder": 2,
+                                        "readOnly": true
+                                    }
+                                ]
                             }
                         },
                         "readOnly": true,
                         "required": [
                             "databaseSize",
+                            "persistentDatabaseSize",
                             "numEvents",
+                            "numPersistentEvents",
                             "numEventsWithMessagePayload",
-                            "numEventsWithAlarmPayload"
+                            "numPersistentEventsWithMessagePayload",
+                            "numEventsWithAlarmPayload",
+                            "numPersistentEventsWithAlarmPayload"
                         ],
                         "type": "object"
                     },
@@ -3191,20 +3311,41 @@
                                     "type": "integer"
                                 },
                                 "numEventsWithAlarmPayload": {
-                                    "propertyOrder": 3,
+                                    "propertyOrder": 5,
                                     "readOnly": true,
                                     "type": "integer"
                                 },
                                 "numEventsWithMessagePayload": {
+                                    "propertyOrder": 3,
+                                    "readOnly": true,
+                                    "type": "integer"
+                                },
+                                "numPersistentEvents": {
+                                    "hidden": true,
                                     "propertyOrder": 2,
+                                    "readOnly": true,
+                                    "type": "integer"
+                                },
+                                "numPersistentEventsWithAlarmPayload": {
+                                    "hidden": true,
+                                    "propertyOrder": 6,
+                                    "readOnly": true,
+                                    "type": "integer"
+                                },
+                                "numPersistentEventsWithMessagePayload": {
+                                    "hidden": true,
+                                    "propertyOrder": 4,
                                     "readOnly": true,
                                     "type": "integer"
                                 }
                             },
                             "required": [
                                 "numEvents",
+                                "numPersistentEvents",
                                 "numEventsWithMessagePayload",
-                                "numEventsWithAlarmPayload"
+                                "numPersistentEventsWithMessagePayload",
+                                "numEventsWithAlarmPayload",
+                                "numPersistentEventsWithAlarmPayload"
                             ],
                             "type": "object"
                         },
@@ -3690,17 +3831,17 @@
     "USERSELECTTYPE": 0,
     "VIDEOSEGMENTSIZE": 1048576,
     "VIRTUALDIRECTORIES": {
-        "/": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\TcHmiResponsiveNavigation",
-        "/Beckhoff.TwinCAT.HMI.Controls": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\Packages\\Beckhoff.TwinCAT.HMI.Controls.12.744.2\\runtimes\\native1.12-tchmi",
-        "/Beckhoff.TwinCAT.HMI.EventLogger": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\Packages\\Beckhoff.TwinCAT.HMI.EventLogger.12.744.2",
-        "/Beckhoff.TwinCAT.HMI.Functions": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\Packages\\Beckhoff.TwinCAT.HMI.Functions.12.744.2\\runtimes\\native1.12-tchmi",
-        "/Beckhoff.TwinCAT.HMI.PDFViewer": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\Packages\\Beckhoff.TwinCAT.HMI.PDFViewer.12.744.2\\runtimes\\native1.12-tchmi",
-        "/Beckhoff.TwinCAT.HMI.ResponsiveNavigation": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\Packages\\Beckhoff.TwinCAT.HMI.ResponsiveNavigation.12.744.2\\runtimes\\native1.12-tchmi",
-        "/Beckhoff.TwinCAT.HMI.SqliteHistorize": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\Packages\\Beckhoff.TwinCAT.HMI.SqliteHistorize.12.744.2",
-        "/Beckhoff.TwinCAT.HMI.Vision": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\Packages\\Beckhoff.TwinCAT.HMI.Vision.12.744.2",
-        "/JB.TcHmiTextboxExtended": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\Packages\\JB.TcHmiTextboxExtended.1.0.3\\runtimes\\native1.12-tchmi",
-        "/bin": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\TcHmiResponsiveNavigation\\bin\\",
-        "/bin/framework": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\TcHmiResponsiveNavigation\\bin\\framework",
-        "/framework": "C:\\Users\\FabrizioB\\Documents\\TcXaeShell\\HMI\\TcHmiResponsiveNavigation1.12\\Packages\\Beckhoff.TwinCAT.HMI.Framework.12.744.2\\runtimes\\native1.12-tchmi"
+        "/": "..\\..\\TcHmiResponsiveNavigation\\",
+        "/Beckhoff.TwinCAT.HMI.Controls": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.Controls.12.744.2\\runtimes\\native1.12-tchmi",
+        "/Beckhoff.TwinCAT.HMI.EventLogger": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.EventLogger.12.744.2",
+        "/Beckhoff.TwinCAT.HMI.Functions": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.Functions.12.744.2\\runtimes\\native1.12-tchmi",
+        "/Beckhoff.TwinCAT.HMI.PDFViewer": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.PDFViewer.12.744.2\\runtimes\\native1.12-tchmi",
+        "/Beckhoff.TwinCAT.HMI.ResponsiveNavigation": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.ResponsiveNavigation.12.744.2\\runtimes\\native1.12-tchmi",
+        "/Beckhoff.TwinCAT.HMI.SqliteHistorize": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.SqliteHistorize.12.744.2",
+        "/Beckhoff.TwinCAT.HMI.Vision": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.Vision.12.744.2",
+        "/JB.TcHmiTextboxExtended": "..\\..\\Packages\\JB.TcHmiTextboxExtended.1.0.3\\runtimes\\native1.12-tchmi",
+        "/bin": "..\\..\\TcHmiResponsiveNavigation\\bin\\",
+        "/bin/framework": "..\\..\\TcHmiResponsiveNavigation\\bin\\framework",
+        "/framework": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.Framework.12.744.2\\runtimes\\native1.12-tchmi"
     }
 }

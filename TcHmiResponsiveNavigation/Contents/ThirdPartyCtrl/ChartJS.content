@@ -72,7 +72,7 @@
 
 </div>
 
-<div id="Doughnut_1" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="326" data-tchmi-height-unit="px" data-tchmi-left="339" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls/Doughnut.usercontrol" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="373" data-tchmi-width-unit="px" data-tchmi-data1="%i%Data1%/i%" data-tchmi-data2="%i%Data2%/i%" data-tchmi-data3="%i%Data3%/i%" data-tchmi-data4="%i%Data4%/i%" data-tchmi-data5="%i%Data5%/i%" data-tchmi-data1_label="'EL1008'" data-tchmi-data2_label="'EL2008'" data-tchmi-data3_label="'EL1918'" data-tchmi-data4_label="'EL2904'" data-tchmi-data5_label="'EL6224'" data-tchmi-title_text="'Production'">
+<div id="Doughnut_1" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="326" data-tchmi-height-unit="px" data-tchmi-left="339" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls/Doughnut.usercontrol" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="373" data-tchmi-width-unit="px" data-tchmi-data1="%i%Data1%/i%" data-tchmi-data2="%i%Data2%/i%" data-tchmi-data3="%i%Data3%/i%" data-tchmi-data4="%i%Data4%/i%" data-tchmi-data5="%i%Data5%/i%" data-tchmi-data1_label="'EL1008'" data-tchmi-data2_label="'EL2008'" data-tchmi-data3_label="'EL1918'" data-tchmi-data4_label="'EL2904'" data-tchmi-data5_label="'EL6224'" data-tchmi-title_text="'Production'" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px">
 
 </div>
 
