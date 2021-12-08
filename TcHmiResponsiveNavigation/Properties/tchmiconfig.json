@@ -1,5 +1,5 @@
 ﻿{
-  "$schema": "../../Packages/Beckhoff.TwinCAT.HMI.Framework-12.748.0/runtimes/native1.12-tchmi/Schema/TchmiConfig.Schema.json",
+  "$schema": "./../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.752.0/runtimes/native1.12-tchmi/Schema/TchmiConfig.Schema.json",
   "basePath": "./framework",
   "scaleMode": "None",
   "startupView": "Desktop.view",
@@ -65,11 +65,6 @@
       "type": "JavaScript"
     },
     {
-      "name": "Imports/Chart.bundle.min.js",
-      "description": "",
-      "type": "JavaScript"
-    },
-    {
       "name": "Function/Animate.js",
       "description": "",
       "type": "JavaScript"
@@ -113,6 +108,11 @@
       "name": "Function/SetColor.js",
       "description": "",
       "type": "JavaScript"
+    },
+    {
+      "name": "Imports/Chart.bundle.min.js",
+      "description": "",
+      "type": "JavaScript"
     }
   ],
   "userControls": [
@@ -139,155 +139,198 @@
     {
       "url": "Contents/Documentation/DocBeckhoff.content",
       "preload": false,
-      "keepAlive": false
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
     },
     {
       "url": "Contents/Documentation/Friends_Github.content",
       "preload": false,
-      "keepAlive": false
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
     },
     {
       "url": "Contents/Features/RPC.content",
       "preload": false,
-      "keepAlive": false
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
     },
     {
       "url": "Contents/Features/TcHMI_Animation.content",
       "preload": false,
-      "keepAlive": false
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
     },
     {
       "url": "Contents/Other/Language.content",
       "preload": false,
-      "keepAlive": false
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
     },
     {
       "url": "Contents/StartPage.content",
       "preload": false,
-      "keepAlive": false
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
     },
     {
       "url": "Contents/submenu2/EventGridSample.content",
       "preload": false,
-      "keepAlive": false
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
     },
     {
       "url": "Contents/submenu2/HistoricalSelecting.content",
       "preload": false,
-      "keepAlive": false
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
     },
     {
       "url": "Contents/submenu2/UserManager.content",
       "preload": false,
-      "keepAlive": false
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
     },
     {
       "url": "Contents/submenu/Array.content",
       "preload": false,
-      "keepAlive": false
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
     },
     {
       "url": "Contents/submenu/DataGrid.content",
       "preload": false,
-      "keepAlive": false
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
     },
     {
       "url": "Contents/submenu/Dialog.content",
       "preload": false,
-      "keepAlive": false
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
     },
     {
       "url": "Contents/submenu/ExampleContents/BeckhoffInfo.content",
       "preload": false,
-      "keepAlive": false
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
     },
     {
       "url": "Contents/submenu/LateralMenu.content",
       "preload": false,
-      "keepAlive": false
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
     },
     {
       "url": "Contents/submenu/OtherMenus.content",
       "preload": false,
-      "keepAlive": false
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
     },
     {
       "url": "Contents/submenu/P_and_I_Diagram.content",
       "preload": false,
-      "keepAlive": false
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
     },
     {
       "url": "Contents/submenu/Responsive Navigation.content",
       "preload": false,
-      "keepAlive": false
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
     },
     {
       "url": "Contents/submenu/Settings.content",
       "preload": false,
-      "keepAlive": false
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
     },
     {
       "url": "Contents/submenu/SimpleData.content",
       "preload": false,
-      "keepAlive": false
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
     },
     {
       "url": "Contents/submenu/TabMenu.content",
       "preload": false,
-      "keepAlive": false
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
     },
     {
       "url": "Contents/ThirdPartyCtrl/ChartJS.content",
       "preload": false,
-      "keepAlive": false
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
     }
   ],
   "views": [
     {
       "url": "Desktop.view",
       "preload": true,
-      "keepAlive": false
+      "keepAlive": false,
+      "preloadBindings": false
     }
   ],
   "userFunctions": [
     {
-      "url": "Function/NumberValidation.js"
-    },
-    {
-      "url": "Function/SetStructElementByIndex.js"
-    },
-    {
-      "url": "Function/ExampleClassesProvider.js"
-    },
-    {
-      "url": "Function/CalculationMethod.js"
+      "url": "Function/AddUser.js"
     },
     {
       "url": "Function/Animate.js"
     },
     {
-      "url": "Function/ListGroups.js"
-    },
-    {
-      "url": "Function/ImportUserConfig.js"
-    },
-    {
-      "url": "Function/IMPORTServerConfig.js"
-    },
-    {
-      "url": "Function/ExportUserConfig.js"
-    },
-    {
-      "url": "Function/ExportServerConfig.js"
+      "url": "Function/CalculationMethod.js"
     },
     {
       "url": "Function/ChangePsw.js"
     },
     {
-      "url": "Function/AddUser.js"
+      "url": "Function/ExampleClassesProvider.js"
+    },
+    {
+      "url": "Function/ExportServerConfig.js"
+    },
+    {
+      "url": "Function/ExportUserConfig.js"
+    },
+    {
+      "url": "Function/IMPORTServerConfig.js"
+    },
+    {
+      "url": "Function/ImportUserConfig.js"
+    },
+    {
+      "url": "Function/ListGroups.js"
+    },
+    {
+      "url": "Function/NumberValidation.js"
     },
     {
       "url": "Function/SetColor.js"
+    },
+    {
+      "url": "Function/SetStructElementByIndex.js"
     }
   ],
   "symbols": {
@@ -470,9 +513,9 @@
   "trigger": [],
   "actionTemplates": [],
   "languages": {
-    "de-DE": "Localization\\de-DE.localization",
-    "en-US": "Localization\\en-US.localization",
-    "it-IT": "Localization\\Language1.localization"
+    "de-DE": "Localization/de-DE.localization",
+    "en-US": "Localization/en-US.localization",
+    "it-IT": "Localization/Language1.localization"
   },
   "languageFallback": "",
   "disableLoadingOptimization": false,
@@ -499,12 +542,12 @@
       "basePath": "/Beckhoff.TwinCAT.HMI.Functions"
     },
     {
-      "name": "Beckhoff.TwinCAT.HMI.ResponsiveNavigation",
-      "basePath": "/Beckhoff.TwinCAT.HMI.ResponsiveNavigation"
-    },
-    {
       "name": "Beckhoff.TwinCAT.HMI.PDFViewer",
       "basePath": "/Beckhoff.TwinCAT.HMI.PDFViewer"
+    },
+    {
+      "name": "Beckhoff.TwinCAT.HMI.ResponsiveNavigation",
+      "basePath": "/Beckhoff.TwinCAT.HMI.ResponsiveNavigation"
     },
     {
       "name": "JB.TcHmiTextboxExtended",

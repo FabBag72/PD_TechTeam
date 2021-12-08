@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
+# TcXaeShell Solution File, Format Version 11.00
 VisualStudioVersion = 15.0.28010.2050
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FE7A1B72-C5B7-4D7C-BB7D-76384D4DE8E1}") = "TcHmiResponsiveNavigation", "TcHmiResponsiveNavigation\TcHmiResponsiveNavigation.hmiproj", "{E18F6A0B-8CD3-4217-8929-14F49ABA2C35}"

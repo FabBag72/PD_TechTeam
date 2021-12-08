@@ -26,7 +26,7 @@
     <HmiCommunicationRouterPort>10117</HmiCommunicationRouterPort>
     <HmiCommunicationServerAuthPort>13001</HmiCommunicationServerAuthPort>
     <HmiInitial>1.12.742.0</HmiInitial>
-    <HmiRecent>1.12.748.0</HmiRecent>
+    <HmiRecent>1.12.752.0</HmiRecent>
     <HmiServerNodeAdvancedView>False</HmiServerNodeAdvancedView>
   </PropertyGroup>
   <PropertyGroup>
@@ -441,7 +441,9 @@
     <Folder Include="Server\TcHmiSqliteHistorize" />
     <Folder Include="Themes" />
     <Folder Include="Themes\Base\" />
-    <Folder Include="Server" />
+    <Folder Include="Server">
+      <WorkingDirectory>TcHmiResponsiveNavigation</WorkingDirectory>
+    </Folder>
     <Folder Include="Properties" />
     <Content Include=".eslintrc.json">
       <Visible>false</Visible>
