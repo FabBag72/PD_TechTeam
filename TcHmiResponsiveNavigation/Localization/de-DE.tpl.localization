@@ -18,6 +18,13 @@
     "L_AllEvents": "Alle Events",
     "L_Language": "Sprache",
     "L_NewKey": "AAAA",
-    "L_StoredValue": "Stored Value"
+    "L_StoredValue": "Stored Value",
+    "sum": "Sum: ",
+    "subtract": "Subtract: ",
+    "mul": "Multiplication: ",
+    "ratio": "Ratio: ",
+    "op_counter": "Operations Counter",
+    "arguments": "Arguments",
+    "results": "Results"
   }
 }

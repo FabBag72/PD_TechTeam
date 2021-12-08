@@ -40,40 +40,35 @@
 
 </div>
 
-<div id="TcHmi_Controls_Beckhoff_TcHmiTextblock_15" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="213" data-tchmi-left-unit="px" data-tchmi-text="%f%'Somma: ' + TcHmi.Functions.TcHmiResponsiveNavigation.CalculationMethod(%i%Data2%/i%, %i%Data1%/i%, 1)%/f%" data-tchmi-top="159" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+<div id="TcHmi_Controls_Beckhoff_TcHmiTextblock_15" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="213" data-tchmi-left-unit="px" data-tchmi-text="%f%%l%sum%/l% + TcHmi.Functions.TcHmiResponsiveNavigation.CalculationMethod(%i%Data2%/i%, %i%Data1%/i%, 1)%/f%" data-tchmi-top="159" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
 </div>
 
-<div id="TcHmi_Controls_Beckhoff_TcHmiTextblock_16" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="53" data-tchmi-left-unit="px" data-tchmi-text="Operandi" data-tchmi-top="123" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+<div id="TcHmi_Controls_Beckhoff_TcHmiTextblock_16" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="53" data-tchmi-left-unit="px" data-tchmi-text="%l%arguments%/l%" data-tchmi-top="123" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
 </div>
 
-<div id="TcHmi_Controls_Beckhoff_TcHmiTextblock_17" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="213" data-tchmi-left-unit="px" data-tchmi-text="Risultati" data-tchmi-top="123" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+<div id="TcHmi_Controls_Beckhoff_TcHmiTextblock_17" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="213" data-tchmi-left-unit="px" data-tchmi-text="%l%results%/l%" data-tchmi-top="123" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
 </div>
 
-<div id="TcHmi_Controls_Beckhoff_TcHmiTextblock_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="213" data-tchmi-left-unit="px" data-tchmi-text="%f%'Differenza: ' + TcHmi.Functions.TcHmiResponsiveNavigation.CalculationMethod(%i%Data1%/i%, %i%Data2%/i%, 2)%/f%" data-tchmi-top="195" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+<div id="TcHmi_Controls_Beckhoff_TcHmiTextblock_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="213" data-tchmi-left-unit="px" data-tchmi-text="%f%%l%subtract%/l% + TcHmi.Functions.TcHmiResponsiveNavigation.CalculationMethod(%i%Data1%/i%, %i%Data2%/i%, 2)%/f%" data-tchmi-top="195" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
 </div>
 
-<div id="TcHmi_Controls_Beckhoff_TcHmiTextblock_19" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="213" data-tchmi-left-unit="px" data-tchmi-text="%f%'Moltiplicazione: ' + TcHmi.Functions.TcHmiResponsiveNavigation.CalculationMethod(%i%Data1%/i%, %i%Data2%/i%, 3)%/f%" data-tchmi-top="231" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+<div id="TcHmi_Controls_Beckhoff_TcHmiTextblock_19" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="213" data-tchmi-left-unit="px" data-tchmi-text="%f%%l%mul%/l% + TcHmi.Functions.TcHmiResponsiveNavigation.CalculationMethod(%i%Data1%/i%, %i%Data2%/i%, 3)%/f%" data-tchmi-top="231" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
 </div>
 
-<div id="TcHmi_Controls_Beckhoff_TcHmiTextblock_20" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="213" data-tchmi-left-unit="px" data-tchmi-text="%f%'Divisione: ' + TcHmi.Functions.TcHmiResponsiveNavigation.CalculationMethod(%i%Data1%/i%, %i%Data2%/i%, 4)%/f%" data-tchmi-top="267" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+<div id="TcHmi_Controls_Beckhoff_TcHmiTextblock_20" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="213" data-tchmi-left-unit="px" data-tchmi-text="%f%%l%ratio%/l% + TcHmi.Functions.TcHmiResponsiveNavigation.CalculationMethod(%i%Data1%/i%, %i%Data2%/i%, 4)%/f%" data-tchmi-top="267" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
 </div>
 
-<div id="TcHmi_Controls_Beckhoff_TcHmiTextblock_21" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="53" data-tchmi-left-unit="px" data-tchmi-text="Conta operazioni" data-tchmi-top="1" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+<div id="TcHmi_Controls_Beckhoff_TcHmiTextblock_21" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="53" data-tchmi-left-unit="px" data-tchmi-text="%l%op_counter%/l%" data-tchmi-top="1" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
 </div>
 
-<div id="TcHmi_Controls_Beckhoff_TcHmiTextblock_24" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="84" data-tchmi-height-unit="px" data-tchmi-left="415" data-tchmi-left-unit="px" data-tchmi-text="{attribute 'TcRpcEnable'}
-METHOD Calculation : REAL
-VAR_INPUT	
-	in1, in2 : REAL;
-	operator : E_Operator;
-END_VAR" data-tchmi-top="27" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True">
+<div id="TcHmi_Controls_Beckhoff_TcHmiTextblock_24" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="112" data-tchmi-height-unit="px" data-tchmi-left="415" data-tchmi-left-unit="px" data-tchmi-text="//PLC CODE\n{attribute 'TcRpcEnable'}\nMETHOD Calculation : REAL\nVAR_INPUT	\n	in1, in2 : REAL;\n	operator : E_Operator;\nEND_VAR" data-tchmi-top="27" data-tchmi-top-unit="px" data-tchmi-width="212" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-is-enabled="true">
 
 </div>
 
@@ -87,7 +82,17 @@ END_VAR" data-tchmi-top="27" data-tchmi-top-unit="px" data-tchmi-width="150" dat
 	E_Operator.mul_operator:
 		Calculation := in1 * in2;
 	E_Operator.ratio_operator:
-		IF in2 data-tchmi-top="121" data-tchmi-top-unit="px" data-tchmi-width="212" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" <> 0 THEN
+		IF in2 data-tchmi-top="
+	E_Operator.idle_operator:
+		;
+	E_Operator.sum_operator:
+		Calculation := in1 + in2;
+	E_Operator.diff_operator:
+		Calculation := in1 - in2;
+	E_Operator.mul_operator:
+		Calculation := in1 * in2;
+	E_Operator.ratio_operator:
+		IF in2 data-tchmi-top="149" data-tchmi-top-unit="px" data-tchmi-width="212" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-is-enabled="true" <> 0 THEN
 			Calculation := in1 / in2;
 		END_IF	
 END_CASE
@@ -161,12 +166,26 @@ _CalcCounter := _CalcCounter + 1;"
 			Calculation := in1 / in2;
 		END_IF	
 EN data-tchmi-top="216" data-tchmi-width="150" data-tchmi-word-wrap="True"D_CASE
-_CalcCounter := _CalcCounter + 1;"	E_Operator.idle_operator:		;	E_Operator.sum_operator:		Calculation := in1 + in2;	E_Operator.diff_operator:		Calculation := in1 - in2;	E_Operator.mul_operator:		Calculation := in1 * in2;	E_Operator.ratio_operator:		IF in2 data-tchmi-top-unit="px" data-tchmi-width-unit="px" <> 0 THEN			Calculation := in1 / in2;		END_IF	END_CASE_CalcCounter := _CalcCounter + 1;" data-tchmi-top="216" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True">
+_CalcCounter := _CalcCounter + 1;"
+	E_Operator.idle_operator:
+		;
+	E_Operator.sum_operator:
+		Calculation := in1 + in2;
+	E_Operator.diff_operator:
+		Calculation := in1 - in2;
+	E_Operator.mul_operator:
+		Calculation := in1 * in2;
+	E_Operator.ratio_operator:
+		IF in2 data-tchmi-top-unit="px" data-tchmi-width-unit="px" <> 0 THEN
+			Calculation := in1 / in2;
+		END_IF	
+END_CASE
+_CalcCounter := _CalcCounter + 1;" data-tchmi-top="216" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True">
 
 </div>
 
-<div id="TcHmi_Controls_Beckhoff_TcHmiTextblock_26" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="38" data-tchmi-height-unit="px" data-tchmi-left="213" data-tchmi-left-unit="px" data-tchmi-text="{attribute 'monitoring' := 'call'}
-PROPERTY CalcCounter : INT" data-tchmi-top="37" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True">
+<div id="TcHmi_Controls_Beckhoff_TcHmiTextblock_26" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="74" data-tchmi-height-unit="px" data-tchmi-left="213" data-tchmi-left-unit="px" data-tchmi-text="//PLC CODE\n{attribute 'monitoring' := 'call'}
+\nPROPERTY CalcCounter : INT" data-tchmi-top="37" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-is-enabled="true">
 
 </div>
 

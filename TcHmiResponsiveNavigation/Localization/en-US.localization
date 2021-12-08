@@ -18,6 +18,13 @@
     "L_AllEvents": "All Events",
     "L_Language": "Language",
     "L_NewKey": "AABB",
-    "L_StoredValue": "Stored Value"
+    "L_StoredValue": "Stored Value",
+    "sum": "Sum: ",
+    "subtract": "Subtract: ",
+    "mul": "Multiplication: ",
+    "ratio": "Ratio: ",
+    "op_counter": "Operations Counter",
+    "arguments": "Arguments",
+    "results": "Results"
   }
 }

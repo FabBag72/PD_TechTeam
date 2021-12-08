@@ -18,6 +18,13 @@
     "L_AllEvents": "Tutti gli eventi",
     "L_Language": "Lingua",
     "L_NewKey": "CCCC",
-    "L_StoredValue": "Stored Value"
+    "L_StoredValue": "Stored Value",
+    "sum": "Somma: ",
+    "subtract": "Differenza: ",
+    "mul": "Moltiplicazione: ",
+    "ratio": "Divisione: ",
+    "op_counter": "Contatore Operazioni",
+    "arguments": "Argomenti",
+    "results": "Risultati"
   }
 }
