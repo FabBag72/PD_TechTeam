@@ -7683,12 +7683,11 @@
         "name"
       ]
     },
-    "TcHmiTextboxExtended": {
-      "$schema": "http://json-schema.org/draft-04/schema",
+    "TcHmi.Controls.TcHmiTextboxExtended.TcHmiTextboxExtendedControl": {
       "type": "object",
       "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
-      "frameworkControlType": "tc-hmi-textbox-extended",
-      "frameworkControlNamespace": "TcHmi.Controls.Custom"
+      "frameworkControlType": "TcHmiTextboxExtendedControl",
+      "frameworkControlNamespace": "TcHmi.Controls.TcHmiTextboxExtended"
     },
     "TcHmi.Functions.Beckhoff.Increment.IncrementValueSymbol": {
       "allOf": [
