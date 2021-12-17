@@ -270,6 +270,13 @@
       "preloadBindings": false
     },
     {
+      "url": "Contents/submenu/Slider.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
       "url": "Contents/submenu/TabMenu.content",
       "preload": false,
       "keepAlive": false,
@@ -503,6 +510,30 @@
         "readonly": false
       },
       "bBlack": {
+        "value": false,
+        "type": "tchmi:general#/definitions/Boolean",
+        "persist": false,
+        "readonly": false
+      },
+      "bSliderState1": {
+        "value": false,
+        "type": "tchmi:general#/definitions/Boolean",
+        "persist": false,
+        "readonly": false
+      },
+      "bSliderState2": {
+        "value": false,
+        "type": "tchmi:general#/definitions/Boolean",
+        "persist": false,
+        "readonly": false
+      },
+      "bSliderState3": {
+        "value": false,
+        "type": "tchmi:general#/definitions/Boolean",
+        "persist": false,
+        "readonly": false
+      },
+      "bSliderState4": {
         "value": false,
         "type": "tchmi:general#/definitions/Boolean",
         "persist": false,

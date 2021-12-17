@@ -103,8 +103,7 @@
             "children": "",
             "accessRight": ""
           }
-        ],
-        "accessRight": ""
+        ]
       },
       {
         "name": "Insert Data",
@@ -158,8 +157,7 @@
             "children": "",
             "accessRight": ""
           }
-        ],
-        "accessRight": ""
+        ]
       },
       {
         "name": "Dialog",
@@ -177,8 +175,7 @@
             "children": "",
             "accessRight": ""
           }
-        ],
-        "accessRight": ""
+        ]
       },
       {
         "name": "P&I Diagram",
@@ -189,18 +186,12 @@
             "page": "Contents/submenu/P_and_I_Diagram.content",
             "parameter": "",
             "image": "",
-            "imageWidth": null,
-            "imageWidthUnit": "",
-            "imageHeight": null,
-            "imageHeightUnit": "",
-            "children": "",
-            "accessRight": ""
+            "imageWidthUnit": "px",
+            "imageHeightUnit": "px"
           }
-        ],
-        "accessRight": ""
+        ]
       }
-    ],
-    "accessRight": ""
+    ]
   },
   {
     "name": "Submenu2",
@@ -268,8 +259,7 @@
         ],
         "accessRight": ""
       }
-    ],
-    "accessRight": ""
+    ]
   },
   {
     "name": "Features",
@@ -318,8 +308,7 @@
         ],
         "accessRight": ""
       }
-    ],
-    "accessRight": ""
+    ]
   },
   {
     "name": "Third Party Controls",
@@ -349,8 +338,7 @@
         ],
         "accessRight": ""
       }
-    ],
-    "accessRight": ""
+    ]
   },
   {
     "name": "Documentation",
